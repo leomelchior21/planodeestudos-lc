@@ -1,0 +1,80 @@
+[
+  {
+    "id": "les",
+    "name": "LES",
+    "description": "Lista de exercícios da semana",
+    "url": "",
+    "active": true,
+    "weeklyMinimum": 1,
+    "preferredWeekdays": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "mandatoryBonus": 30
+  },
+  {
+    "id": "plurall",
+    "name": "Plurall",
+    "description": "Exercícios e revisão dos conteúdos",
+    "url": "https://www.plurall.net/",
+    "active": true,
+    "weeklyMinimum": 0,
+    "preferredWeekdays": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "mandatoryBonus": 25
+  },
+  {
+    "id": "ngl",
+    "name": "National Geographic Learning",
+    "description": "Prática de língua inglesa",
+    "url": "https://eltngl.com/",
+    "active": true,
+    "weeklyMinimum": 0,
+    "preferredWeekdays": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "mandatoryBonus": 25
+  },
+  {
+    "id": "profedeele",
+    "name": "Profedeele",
+    "description": "Atividades de língua espanhola",
+    "url": "https://www.profedeele.es/",
+    "active": true,
+    "weeklyMinimum": 0,
+    "preferredWeekdays": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "mandatoryBonus": 25
+  },
+  {
+    "id": "evo",
+    "name": "EVO-Trilhas",
+    "description": "Trilhas de aprendizagem e revisão",
+    "url": "",
+    "active": true,
+    "weeklyMinimum": 1,
+    "preferredWeekdays": [
+      3,
+      4,
+      5
+    ],
+    "mandatoryBonus": 25
+  }
+]

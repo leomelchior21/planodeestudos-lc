@@ -1,0 +1,98 @@
+[
+  {
+    "id": "priority_subject_bonus",
+    "code": "priority_subject_bonus",
+    "name": "Prioridade do aluno",
+    "value": 40,
+    "description": "Bônus da primeira disciplina prioritária.",
+    "active": true
+  },
+  {
+    "id": "priority_rank_step",
+    "code": "priority_rank_step",
+    "name": "Intervalo entre prioridades",
+    "value": 10,
+    "description": "Desconto a cada posição na lista de prioridades.",
+    "active": true
+  },
+  {
+    "id": "same_day_subject_bonus",
+    "code": "same_day_subject_bonus",
+    "name": "Aula no mesmo dia",
+    "value": 25,
+    "description": "Reforça conteúdos estudados antes da sessão.",
+    "active": true
+  },
+  {
+    "id": "upcoming_event_bonus",
+    "code": "upcoming_event_bonus",
+    "name": "Avaliação próxima",
+    "value": 35,
+    "description": "Bônus adicional durante o período de preparação.",
+    "active": true
+  },
+  {
+    "id": "repeat_subject_penalty",
+    "code": "repeat_subject_penalty",
+    "name": "Repetição na semana",
+    "value": -15,
+    "description": "Desconto por sessão da mesma disciplina na semana.",
+    "active": true
+  },
+  {
+    "id": "yesterday_penalty",
+    "code": "yesterday_penalty",
+    "name": "Estudada ontem",
+    "value": -20,
+    "description": "Favorece o espaçamento entre práticas.",
+    "active": true
+  },
+  {
+    "id": "not_recently_studied_bonus",
+    "code": "not_recently_studied_bonus",
+    "name": "Prática espaçada",
+    "value": 15,
+    "description": "Bônus para disciplinas não estudadas recentemente.",
+    "active": true
+  },
+  {
+    "id": "spaced_days",
+    "code": "spaced_days",
+    "name": "Intervalo para prática espaçada",
+    "value": 3,
+    "description": "Quantidade de dias sem estudar a disciplina.",
+    "active": true
+  },
+  {
+    "id": "daily_load_penalty",
+    "code": "daily_load_penalty",
+    "name": "Carga no mesmo dia",
+    "value": -30,
+    "description": "Desconto por sessão já alocada no dia.",
+    "active": true
+  },
+  {
+    "id": "preferred_day_bonus",
+    "code": "preferred_day_bonus",
+    "name": "Dia preferido do material",
+    "value": 15,
+    "description": "Bônus para cumprir um material no dia recomendado.",
+    "active": true
+  },
+  {
+    "id": "activity_match_bonus",
+    "code": "activity_match_bonus",
+    "name": "Atividade recomendada",
+    "value": 15,
+    "description": "Bônus da receita compatível com a fase do evento.",
+    "active": true
+  },
+  {
+    "id": "resource_priority_penalty",
+    "code": "resource_priority_penalty",
+    "name": "Preferência de material",
+    "value": 5,
+    "description": "Desconto para materiais de prioridade secundária.",
+    "active": true
+  }
+]

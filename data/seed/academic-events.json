@@ -1,0 +1,114 @@
+[
+  {
+    "id": "event-0",
+    "title": "AP de Matemática",
+    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "eventTypeId": "assessment",
+    "startDate": "2026-09-28",
+    "endDate": "2026-09-28",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "math",
+    "importance": 3,
+    "affectsStudyPlan": true,
+    "metadata": {
+      "sample": true
+    }
+  },
+  {
+    "id": "event-1",
+    "title": "Entrega de projeto de Geografia",
+    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "eventTypeId": "project",
+    "startDate": "2026-10-02",
+    "endDate": "2026-10-02",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "geography",
+    "importance": 3,
+    "affectsStudyPlan": true,
+    "metadata": {
+      "sample": true
+    }
+  },
+  {
+    "id": "event-2",
+    "title": "Avaliação de Ciências",
+    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "eventTypeId": "assessment",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-08",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "science",
+    "importance": 3,
+    "affectsStudyPlan": true,
+    "metadata": {
+      "sample": true
+    }
+  },
+  {
+    "id": "event-3",
+    "title": "Nossa Senhora Aparecida",
+    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "eventTypeId": "holiday",
+    "startDate": "2026-10-12",
+    "endDate": "2026-10-12",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": null,
+    "importance": 3,
+    "affectsStudyPlan": true,
+    "metadata": {
+      "sample": true
+    }
+  },
+  {
+    "id": "event-4",
+    "title": "Roteiro de Língua Portuguesa",
+    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "eventTypeId": "study_guide",
+    "startDate": "2026-10-15",
+    "endDate": "2026-10-15",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "portuguese",
+    "importance": 3,
+    "affectsStudyPlan": true,
+    "metadata": {
+      "sample": true
+    }
+  },
+  {
+    "id": "event-5",
+    "title": "AP de Geografia",
+    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "eventTypeId": "assessment",
+    "startDate": "2026-10-20",
+    "endDate": "2026-10-20",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "geography",
+    "importance": 3,
+    "affectsStudyPlan": true,
+    "metadata": {
+      "sample": true
+    }
+  },
+  {
+    "id": "event-6",
+    "title": "Finados",
+    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "eventTypeId": "holiday",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-02",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": null,
+    "importance": 3,
+    "affectsStudyPlan": true,
+    "metadata": {
+      "sample": true
+    }
+  }
+]

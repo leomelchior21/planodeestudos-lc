@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.env*
+!.env.example
+.local/
+*.tsbuildinfo
+test-results/
+playwright-report/
+# Source references supplied for local consultation, not application assets.
+/*.pdf
+/design-reference.png

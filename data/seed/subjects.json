@@ -1,0 +1,58 @@
+[
+  {
+    "id": "math",
+    "code": "MAT",
+    "name": "Matemática",
+    "icon": "Calculator",
+    "color": "#7755CC",
+    "active": true
+  },
+  {
+    "id": "portuguese",
+    "code": "LP",
+    "name": "Língua Portuguesa",
+    "icon": "BookOpen",
+    "color": "#CA6E87",
+    "active": true
+  },
+  {
+    "id": "science",
+    "code": "CIE",
+    "name": "Ciências",
+    "icon": "FlaskConical",
+    "color": "#4D9B8D",
+    "active": true
+  },
+  {
+    "id": "geography",
+    "code": "GEO",
+    "name": "Geografia",
+    "icon": "Globe2",
+    "color": "#5693BD",
+    "active": true
+  },
+  {
+    "id": "history",
+    "code": "HIS",
+    "name": "História",
+    "icon": "Landmark",
+    "color": "#B9854F",
+    "active": true
+  },
+  {
+    "id": "english",
+    "code": "ING",
+    "name": "Inglês",
+    "icon": "MessageCircle",
+    "color": "#9770B8",
+    "active": true
+  },
+  {
+    "id": "spanish",
+    "code": "ESP",
+    "name": "Espanhol",
+    "icon": "Languages",
+    "color": "#C17B54",
+    "active": true
+  }
+]

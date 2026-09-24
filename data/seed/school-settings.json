@@ -1,0 +1,19 @@
+{
+  "schoolName": "Lourenço Castanho",
+  "academicYear": 2026,
+  "planDefaultWeeks": 4,
+  "minimumStudyMinutes": 30,
+  "maxStudyMinutesPerDay": 90,
+  "targetStudyLoadPercentage": 0.5,
+  "availabilitySlotMinutes": 30,
+  "weekdays": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "startTime": "14:00",
+  "endTime": "19:00",
+  "allowHolidays": false
+}

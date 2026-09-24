@@ -1,0 +1,62 @@
+[
+  {
+    "id": "assessment",
+    "code": "assessment",
+    "name": "Avaliação",
+    "studyWeight": 40,
+    "preparationDays": 14,
+    "color": "#7955BC",
+    "icon": "CalendarDays",
+    "blocksStudy": false
+  },
+  {
+    "id": "project",
+    "code": "project",
+    "name": "Projeto",
+    "studyWeight": 30,
+    "preparationDays": 14,
+    "color": "#539888",
+    "icon": "CalendarDays",
+    "blocksStudy": false
+  },
+  {
+    "id": "study_guide",
+    "code": "study_guide",
+    "name": "Roteiro de estudos",
+    "studyWeight": 20,
+    "preparationDays": 7,
+    "color": "#AC8652",
+    "icon": "CalendarDays",
+    "blocksStudy": false
+  },
+  {
+    "id": "recovery",
+    "code": "recovery",
+    "name": "Recuperação",
+    "studyWeight": 45,
+    "preparationDays": 14,
+    "color": "#C07070",
+    "icon": "CalendarDays",
+    "blocksStudy": false
+  },
+  {
+    "id": "holiday",
+    "code": "holiday",
+    "name": "Feriado",
+    "studyWeight": 0,
+    "preparationDays": 0,
+    "color": "#88909B",
+    "icon": "CalendarDays",
+    "blocksStudy": true
+  },
+  {
+    "id": "school_event",
+    "code": "school_event",
+    "name": "Evento escolar",
+    "studyWeight": 0,
+    "preparationDays": 0,
+    "color": "#7088B1",
+    "icon": "CalendarDays",
+    "blocksStudy": false
+  }
+]

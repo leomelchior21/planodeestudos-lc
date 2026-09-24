@@ -1,0 +1,2027 @@
+[
+  {
+    "id": "class-6a-1-0",
+    "classId": "class-6a",
+    "weekday": 1,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6a-1-1",
+    "classId": "class-6a",
+    "weekday": 1,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6a-1-2",
+    "classId": "class-6a",
+    "weekday": 1,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6a-1-3",
+    "classId": "class-6a",
+    "weekday": 1,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6a-1-4",
+    "classId": "class-6a",
+    "weekday": 1,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6a-2-0",
+    "classId": "class-6a",
+    "weekday": 2,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6a-2-1",
+    "classId": "class-6a",
+    "weekday": 2,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6a-2-2",
+    "classId": "class-6a",
+    "weekday": 2,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6a-2-3",
+    "classId": "class-6a",
+    "weekday": 2,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6a-2-4",
+    "classId": "class-6a",
+    "weekday": 2,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6a-3-0",
+    "classId": "class-6a",
+    "weekday": 3,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6a-3-1",
+    "classId": "class-6a",
+    "weekday": 3,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6a-3-2",
+    "classId": "class-6a",
+    "weekday": 3,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6a-3-3",
+    "classId": "class-6a",
+    "weekday": 3,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6a-3-4",
+    "classId": "class-6a",
+    "weekday": 3,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6a-4-0",
+    "classId": "class-6a",
+    "weekday": 4,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6a-4-1",
+    "classId": "class-6a",
+    "weekday": 4,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6a-4-2",
+    "classId": "class-6a",
+    "weekday": 4,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6a-4-3",
+    "classId": "class-6a",
+    "weekday": 4,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6a-4-4",
+    "classId": "class-6a",
+    "weekday": 4,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6a-5-0",
+    "classId": "class-6a",
+    "weekday": 5,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6a-5-1",
+    "classId": "class-6a",
+    "weekday": 5,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6a-5-2",
+    "classId": "class-6a",
+    "weekday": 5,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6a-5-3",
+    "classId": "class-6a",
+    "weekday": 5,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6a-5-4",
+    "classId": "class-6a",
+    "weekday": 5,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6b-1-0",
+    "classId": "class-6b",
+    "weekday": 1,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6b-1-1",
+    "classId": "class-6b",
+    "weekday": 1,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6b-1-2",
+    "classId": "class-6b",
+    "weekday": 1,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6b-1-3",
+    "classId": "class-6b",
+    "weekday": 1,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6b-1-4",
+    "classId": "class-6b",
+    "weekday": 1,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6b-2-0",
+    "classId": "class-6b",
+    "weekday": 2,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6b-2-1",
+    "classId": "class-6b",
+    "weekday": 2,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6b-2-2",
+    "classId": "class-6b",
+    "weekday": 2,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6b-2-3",
+    "classId": "class-6b",
+    "weekday": 2,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6b-2-4",
+    "classId": "class-6b",
+    "weekday": 2,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6b-3-0",
+    "classId": "class-6b",
+    "weekday": 3,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6b-3-1",
+    "classId": "class-6b",
+    "weekday": 3,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6b-3-2",
+    "classId": "class-6b",
+    "weekday": 3,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6b-3-3",
+    "classId": "class-6b",
+    "weekday": 3,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6b-3-4",
+    "classId": "class-6b",
+    "weekday": 3,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6b-4-0",
+    "classId": "class-6b",
+    "weekday": 4,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6b-4-1",
+    "classId": "class-6b",
+    "weekday": 4,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6b-4-2",
+    "classId": "class-6b",
+    "weekday": 4,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6b-4-3",
+    "classId": "class-6b",
+    "weekday": 4,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6b-4-4",
+    "classId": "class-6b",
+    "weekday": 4,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6b-5-0",
+    "classId": "class-6b",
+    "weekday": 5,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6b-5-1",
+    "classId": "class-6b",
+    "weekday": 5,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6b-5-2",
+    "classId": "class-6b",
+    "weekday": 5,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6b-5-3",
+    "classId": "class-6b",
+    "weekday": 5,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6b-5-4",
+    "classId": "class-6b",
+    "weekday": 5,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6c-1-0",
+    "classId": "class-6c",
+    "weekday": 1,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6c-1-1",
+    "classId": "class-6c",
+    "weekday": 1,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6c-1-2",
+    "classId": "class-6c",
+    "weekday": 1,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6c-1-3",
+    "classId": "class-6c",
+    "weekday": 1,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6c-1-4",
+    "classId": "class-6c",
+    "weekday": 1,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6c-2-0",
+    "classId": "class-6c",
+    "weekday": 2,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6c-2-1",
+    "classId": "class-6c",
+    "weekday": 2,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6c-2-2",
+    "classId": "class-6c",
+    "weekday": 2,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6c-2-3",
+    "classId": "class-6c",
+    "weekday": 2,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6c-2-4",
+    "classId": "class-6c",
+    "weekday": 2,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6c-3-0",
+    "classId": "class-6c",
+    "weekday": 3,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6c-3-1",
+    "classId": "class-6c",
+    "weekday": 3,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6c-3-2",
+    "classId": "class-6c",
+    "weekday": 3,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6c-3-3",
+    "classId": "class-6c",
+    "weekday": 3,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6c-3-4",
+    "classId": "class-6c",
+    "weekday": 3,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6c-4-0",
+    "classId": "class-6c",
+    "weekday": 4,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6c-4-1",
+    "classId": "class-6c",
+    "weekday": 4,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6c-4-2",
+    "classId": "class-6c",
+    "weekday": 4,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6c-4-3",
+    "classId": "class-6c",
+    "weekday": 4,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6c-4-4",
+    "classId": "class-6c",
+    "weekday": 4,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6c-5-0",
+    "classId": "class-6c",
+    "weekday": 5,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6c-5-1",
+    "classId": "class-6c",
+    "weekday": 5,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6c-5-2",
+    "classId": "class-6c",
+    "weekday": 5,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6c-5-3",
+    "classId": "class-6c",
+    "weekday": 5,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6c-5-4",
+    "classId": "class-6c",
+    "weekday": 5,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7a-1-0",
+    "classId": "class-7a",
+    "weekday": 1,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-7a-1-1",
+    "classId": "class-7a",
+    "weekday": 1,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7a-1-2",
+    "classId": "class-7a",
+    "weekday": 1,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7a-1-3",
+    "classId": "class-7a",
+    "weekday": 1,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7a-1-4",
+    "classId": "class-7a",
+    "weekday": 1,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7a-2-0",
+    "classId": "class-7a",
+    "weekday": 2,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7a-2-1",
+    "classId": "class-7a",
+    "weekday": 2,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7a-2-2",
+    "classId": "class-7a",
+    "weekday": 2,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7a-2-3",
+    "classId": "class-7a",
+    "weekday": 2,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7a-2-4",
+    "classId": "class-7a",
+    "weekday": 2,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7a-3-0",
+    "classId": "class-7a",
+    "weekday": 3,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7a-3-1",
+    "classId": "class-7a",
+    "weekday": 3,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7a-3-2",
+    "classId": "class-7a",
+    "weekday": 3,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7a-3-3",
+    "classId": "class-7a",
+    "weekday": 3,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-7a-3-4",
+    "classId": "class-7a",
+    "weekday": 3,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7a-4-0",
+    "classId": "class-7a",
+    "weekday": 4,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7a-4-1",
+    "classId": "class-7a",
+    "weekday": 4,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-7a-4-2",
+    "classId": "class-7a",
+    "weekday": 4,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7a-4-3",
+    "classId": "class-7a",
+    "weekday": 4,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7a-4-4",
+    "classId": "class-7a",
+    "weekday": 4,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7a-5-0",
+    "classId": "class-7a",
+    "weekday": 5,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7a-5-1",
+    "classId": "class-7a",
+    "weekday": 5,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7a-5-2",
+    "classId": "class-7a",
+    "weekday": 5,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7a-5-3",
+    "classId": "class-7a",
+    "weekday": 5,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7a-5-4",
+    "classId": "class-7a",
+    "weekday": 5,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7b-1-0",
+    "classId": "class-7b",
+    "weekday": 1,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7b-1-1",
+    "classId": "class-7b",
+    "weekday": 1,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7b-1-2",
+    "classId": "class-7b",
+    "weekday": 1,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7b-1-3",
+    "classId": "class-7b",
+    "weekday": 1,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7b-1-4",
+    "classId": "class-7b",
+    "weekday": 1,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7b-2-0",
+    "classId": "class-7b",
+    "weekday": 2,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7b-2-1",
+    "classId": "class-7b",
+    "weekday": 2,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7b-2-2",
+    "classId": "class-7b",
+    "weekday": 2,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7b-2-3",
+    "classId": "class-7b",
+    "weekday": 2,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7b-2-4",
+    "classId": "class-7b",
+    "weekday": 2,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-7b-3-0",
+    "classId": "class-7b",
+    "weekday": 3,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7b-3-1",
+    "classId": "class-7b",
+    "weekday": 3,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7b-3-2",
+    "classId": "class-7b",
+    "weekday": 3,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-7b-3-3",
+    "classId": "class-7b",
+    "weekday": 3,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7b-3-4",
+    "classId": "class-7b",
+    "weekday": 3,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7b-4-0",
+    "classId": "class-7b",
+    "weekday": 4,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-7b-4-1",
+    "classId": "class-7b",
+    "weekday": 4,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7b-4-2",
+    "classId": "class-7b",
+    "weekday": 4,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7b-4-3",
+    "classId": "class-7b",
+    "weekday": 4,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7b-4-4",
+    "classId": "class-7b",
+    "weekday": 4,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7b-5-0",
+    "classId": "class-7b",
+    "weekday": 5,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7b-5-1",
+    "classId": "class-7b",
+    "weekday": 5,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7b-5-2",
+    "classId": "class-7b",
+    "weekday": 5,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7b-5-3",
+    "classId": "class-7b",
+    "weekday": 5,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7b-5-4",
+    "classId": "class-7b",
+    "weekday": 5,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7c-1-0",
+    "classId": "class-7c",
+    "weekday": 1,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7c-1-1",
+    "classId": "class-7c",
+    "weekday": 1,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7c-1-2",
+    "classId": "class-7c",
+    "weekday": 1,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7c-1-3",
+    "classId": "class-7c",
+    "weekday": 1,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7c-1-4",
+    "classId": "class-7c",
+    "weekday": 1,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7c-2-0",
+    "classId": "class-7c",
+    "weekday": 2,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7c-2-1",
+    "classId": "class-7c",
+    "weekday": 2,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7c-2-2",
+    "classId": "class-7c",
+    "weekday": 2,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7c-2-3",
+    "classId": "class-7c",
+    "weekday": 2,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-7c-2-4",
+    "classId": "class-7c",
+    "weekday": 2,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7c-3-0",
+    "classId": "class-7c",
+    "weekday": 3,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7c-3-1",
+    "classId": "class-7c",
+    "weekday": 3,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-7c-3-2",
+    "classId": "class-7c",
+    "weekday": 3,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7c-3-3",
+    "classId": "class-7c",
+    "weekday": 3,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7c-3-4",
+    "classId": "class-7c",
+    "weekday": 3,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7c-4-0",
+    "classId": "class-7c",
+    "weekday": 4,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7c-4-1",
+    "classId": "class-7c",
+    "weekday": 4,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7c-4-2",
+    "classId": "class-7c",
+    "weekday": 4,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7c-4-3",
+    "classId": "class-7c",
+    "weekday": 4,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7c-4-4",
+    "classId": "class-7c",
+    "weekday": 4,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7c-5-0",
+    "classId": "class-7c",
+    "weekday": 5,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7c-5-1",
+    "classId": "class-7c",
+    "weekday": 5,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7c-5-2",
+    "classId": "class-7c",
+    "weekday": 5,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7c-5-3",
+    "classId": "class-7c",
+    "weekday": 5,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7c-5-4",
+    "classId": "class-7c",
+    "weekday": 5,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8a-1-0",
+    "classId": "class-8a",
+    "weekday": 1,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8a-1-1",
+    "classId": "class-8a",
+    "weekday": 1,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8a-1-2",
+    "classId": "class-8a",
+    "weekday": 1,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8a-1-3",
+    "classId": "class-8a",
+    "weekday": 1,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8a-1-4",
+    "classId": "class-8a",
+    "weekday": 1,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8a-2-0",
+    "classId": "class-8a",
+    "weekday": 2,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8a-2-1",
+    "classId": "class-8a",
+    "weekday": 2,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8a-2-2",
+    "classId": "class-8a",
+    "weekday": 2,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8a-2-3",
+    "classId": "class-8a",
+    "weekday": 2,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8a-2-4",
+    "classId": "class-8a",
+    "weekday": 2,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8a-3-0",
+    "classId": "class-8a",
+    "weekday": 3,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8a-3-1",
+    "classId": "class-8a",
+    "weekday": 3,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8a-3-2",
+    "classId": "class-8a",
+    "weekday": 3,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8a-3-3",
+    "classId": "class-8a",
+    "weekday": 3,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8a-3-4",
+    "classId": "class-8a",
+    "weekday": 3,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8a-4-0",
+    "classId": "class-8a",
+    "weekday": 4,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8a-4-1",
+    "classId": "class-8a",
+    "weekday": 4,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8a-4-2",
+    "classId": "class-8a",
+    "weekday": 4,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8a-4-3",
+    "classId": "class-8a",
+    "weekday": 4,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8a-4-4",
+    "classId": "class-8a",
+    "weekday": 4,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8a-5-0",
+    "classId": "class-8a",
+    "weekday": 5,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8a-5-1",
+    "classId": "class-8a",
+    "weekday": 5,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8a-5-2",
+    "classId": "class-8a",
+    "weekday": 5,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8a-5-3",
+    "classId": "class-8a",
+    "weekday": 5,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8a-5-4",
+    "classId": "class-8a",
+    "weekday": 5,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8b-1-0",
+    "classId": "class-8b",
+    "weekday": 1,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8b-1-1",
+    "classId": "class-8b",
+    "weekday": 1,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8b-1-2",
+    "classId": "class-8b",
+    "weekday": 1,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8b-1-3",
+    "classId": "class-8b",
+    "weekday": 1,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8b-1-4",
+    "classId": "class-8b",
+    "weekday": 1,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8b-2-0",
+    "classId": "class-8b",
+    "weekday": 2,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8b-2-1",
+    "classId": "class-8b",
+    "weekday": 2,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8b-2-2",
+    "classId": "class-8b",
+    "weekday": 2,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8b-2-3",
+    "classId": "class-8b",
+    "weekday": 2,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8b-2-4",
+    "classId": "class-8b",
+    "weekday": 2,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8b-3-0",
+    "classId": "class-8b",
+    "weekday": 3,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8b-3-1",
+    "classId": "class-8b",
+    "weekday": 3,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8b-3-2",
+    "classId": "class-8b",
+    "weekday": 3,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8b-3-3",
+    "classId": "class-8b",
+    "weekday": 3,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8b-3-4",
+    "classId": "class-8b",
+    "weekday": 3,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8b-4-0",
+    "classId": "class-8b",
+    "weekday": 4,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8b-4-1",
+    "classId": "class-8b",
+    "weekday": 4,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8b-4-2",
+    "classId": "class-8b",
+    "weekday": 4,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8b-4-3",
+    "classId": "class-8b",
+    "weekday": 4,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8b-4-4",
+    "classId": "class-8b",
+    "weekday": 4,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8b-5-0",
+    "classId": "class-8b",
+    "weekday": 5,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8b-5-1",
+    "classId": "class-8b",
+    "weekday": 5,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8b-5-2",
+    "classId": "class-8b",
+    "weekday": 5,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8b-5-3",
+    "classId": "class-8b",
+    "weekday": 5,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8b-5-4",
+    "classId": "class-8b",
+    "weekday": 5,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8c-1-0",
+    "classId": "class-8c",
+    "weekday": 1,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8c-1-1",
+    "classId": "class-8c",
+    "weekday": 1,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8c-1-2",
+    "classId": "class-8c",
+    "weekday": 1,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8c-1-3",
+    "classId": "class-8c",
+    "weekday": 1,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8c-1-4",
+    "classId": "class-8c",
+    "weekday": 1,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8c-2-0",
+    "classId": "class-8c",
+    "weekday": 2,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8c-2-1",
+    "classId": "class-8c",
+    "weekday": 2,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8c-2-2",
+    "classId": "class-8c",
+    "weekday": 2,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8c-2-3",
+    "classId": "class-8c",
+    "weekday": 2,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8c-2-4",
+    "classId": "class-8c",
+    "weekday": 2,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8c-3-0",
+    "classId": "class-8c",
+    "weekday": 3,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8c-3-1",
+    "classId": "class-8c",
+    "weekday": 3,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8c-3-2",
+    "classId": "class-8c",
+    "weekday": 3,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8c-3-3",
+    "classId": "class-8c",
+    "weekday": 3,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8c-3-4",
+    "classId": "class-8c",
+    "weekday": 3,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8c-4-0",
+    "classId": "class-8c",
+    "weekday": 4,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8c-4-1",
+    "classId": "class-8c",
+    "weekday": 4,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8c-4-2",
+    "classId": "class-8c",
+    "weekday": 4,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8c-4-3",
+    "classId": "class-8c",
+    "weekday": 4,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8c-4-4",
+    "classId": "class-8c",
+    "weekday": 4,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8c-5-0",
+    "classId": "class-8c",
+    "weekday": 5,
+    "periodNumber": 1,
+    "startTime": "07:30",
+    "endTime": "08:20",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8c-5-1",
+    "classId": "class-8c",
+    "weekday": 5,
+    "periodNumber": 2,
+    "startTime": "08:20",
+    "endTime": "09:10",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8c-5-2",
+    "classId": "class-8c",
+    "weekday": 5,
+    "periodNumber": 3,
+    "startTime": "09:10",
+    "endTime": "10:00",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8c-5-3",
+    "classId": "class-8c",
+    "weekday": 5,
+    "periodNumber": 4,
+    "startTime": "10:00",
+    "endTime": "10:50",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8c-5-4",
+    "classId": "class-8c",
+    "weekday": 5,
+    "periodNumber": 5,
+    "startTime": "10:50",
+    "endTime": "11:40",
+    "subjectId": "portuguese"
+  }
+]

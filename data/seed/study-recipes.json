@@ -1,0 +1,1394 @@
+[
+  {
+    "id": "math-les-practice-30",
+    "name": "LES · Prática · 30 min",
+    "subjectId": "math",
+    "resourceId": "les",
+    "durationMinutes": 30,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-math-les-practice-30-0",
+        "activityId": "math-les-practice-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-math-les-practice-30-1",
+        "activityId": "math-les-practice-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-math-les-practice-30-2",
+        "activityId": "math-les-practice-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "math-les-practice-60",
+    "name": "LES · Prática · 60 min",
+    "subjectId": "math",
+    "resourceId": "les",
+    "durationMinutes": 60,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-math-les-practice-60-0",
+        "activityId": "math-les-practice-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-math-les-practice-60-1",
+        "activityId": "math-les-practice-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-math-les-practice-60-2",
+        "activityId": "math-les-practice-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "math-les-review-30",
+    "name": "LES · Revisão · 30 min",
+    "subjectId": "math",
+    "resourceId": "les",
+    "durationMinutes": 30,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-math-les-review-30-0",
+        "activityId": "math-les-review-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-math-les-review-30-1",
+        "activityId": "math-les-review-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-math-les-review-30-2",
+        "activityId": "math-les-review-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "math-les-review-60",
+    "name": "LES · Revisão · 60 min",
+    "subjectId": "math",
+    "resourceId": "les",
+    "durationMinutes": 60,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-math-les-review-60-0",
+        "activityId": "math-les-review-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-math-les-review-60-1",
+        "activityId": "math-les-review-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-math-les-review-60-2",
+        "activityId": "math-les-review-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "math-les-preparation-30",
+    "name": "LES · Preparação · 30 min",
+    "subjectId": "math",
+    "resourceId": "les",
+    "durationMinutes": 30,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-math-les-preparation-30-0",
+        "activityId": "math-les-preparation-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-math-les-preparation-30-1",
+        "activityId": "math-les-preparation-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-math-les-preparation-30-2",
+        "activityId": "math-les-preparation-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "math-les-preparation-60",
+    "name": "LES · Preparação · 60 min",
+    "subjectId": "math",
+    "resourceId": "les",
+    "durationMinutes": 60,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-math-les-preparation-60-0",
+        "activityId": "math-les-preparation-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-math-les-preparation-60-1",
+        "activityId": "math-les-preparation-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-math-les-preparation-60-2",
+        "activityId": "math-les-preparation-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "portuguese-plurall-practice-30",
+    "name": "Plurall · Prática · 30 min",
+    "subjectId": "portuguese",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-portuguese-plurall-practice-30-0",
+        "activityId": "portuguese-plurall-practice-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-portuguese-plurall-practice-30-1",
+        "activityId": "portuguese-plurall-practice-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-portuguese-plurall-practice-30-2",
+        "activityId": "portuguese-plurall-practice-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "portuguese-plurall-practice-60",
+    "name": "Plurall · Prática · 60 min",
+    "subjectId": "portuguese",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-portuguese-plurall-practice-60-0",
+        "activityId": "portuguese-plurall-practice-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-portuguese-plurall-practice-60-1",
+        "activityId": "portuguese-plurall-practice-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-portuguese-plurall-practice-60-2",
+        "activityId": "portuguese-plurall-practice-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "portuguese-plurall-review-30",
+    "name": "Plurall · Revisão · 30 min",
+    "subjectId": "portuguese",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-portuguese-plurall-review-30-0",
+        "activityId": "portuguese-plurall-review-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-portuguese-plurall-review-30-1",
+        "activityId": "portuguese-plurall-review-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-portuguese-plurall-review-30-2",
+        "activityId": "portuguese-plurall-review-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "portuguese-plurall-review-60",
+    "name": "Plurall · Revisão · 60 min",
+    "subjectId": "portuguese",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-portuguese-plurall-review-60-0",
+        "activityId": "portuguese-plurall-review-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-portuguese-plurall-review-60-1",
+        "activityId": "portuguese-plurall-review-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-portuguese-plurall-review-60-2",
+        "activityId": "portuguese-plurall-review-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "portuguese-plurall-preparation-30",
+    "name": "Plurall · Preparação · 30 min",
+    "subjectId": "portuguese",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-portuguese-plurall-preparation-30-0",
+        "activityId": "portuguese-plurall-preparation-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-portuguese-plurall-preparation-30-1",
+        "activityId": "portuguese-plurall-preparation-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-portuguese-plurall-preparation-30-2",
+        "activityId": "portuguese-plurall-preparation-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "portuguese-plurall-preparation-60",
+    "name": "Plurall · Preparação · 60 min",
+    "subjectId": "portuguese",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-portuguese-plurall-preparation-60-0",
+        "activityId": "portuguese-plurall-preparation-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-portuguese-plurall-preparation-60-1",
+        "activityId": "portuguese-plurall-preparation-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-portuguese-plurall-preparation-60-2",
+        "activityId": "portuguese-plurall-preparation-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "science-plurall-practice-30",
+    "name": "Plurall · Prática · 30 min",
+    "subjectId": "science",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-science-plurall-practice-30-0",
+        "activityId": "science-plurall-practice-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-science-plurall-practice-30-1",
+        "activityId": "science-plurall-practice-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-science-plurall-practice-30-2",
+        "activityId": "science-plurall-practice-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "science-plurall-practice-60",
+    "name": "Plurall · Prática · 60 min",
+    "subjectId": "science",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-science-plurall-practice-60-0",
+        "activityId": "science-plurall-practice-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-science-plurall-practice-60-1",
+        "activityId": "science-plurall-practice-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-science-plurall-practice-60-2",
+        "activityId": "science-plurall-practice-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "science-plurall-review-30",
+    "name": "Plurall · Revisão · 30 min",
+    "subjectId": "science",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-science-plurall-review-30-0",
+        "activityId": "science-plurall-review-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-science-plurall-review-30-1",
+        "activityId": "science-plurall-review-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-science-plurall-review-30-2",
+        "activityId": "science-plurall-review-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "science-plurall-review-60",
+    "name": "Plurall · Revisão · 60 min",
+    "subjectId": "science",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-science-plurall-review-60-0",
+        "activityId": "science-plurall-review-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-science-plurall-review-60-1",
+        "activityId": "science-plurall-review-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-science-plurall-review-60-2",
+        "activityId": "science-plurall-review-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "science-plurall-preparation-30",
+    "name": "Plurall · Preparação · 30 min",
+    "subjectId": "science",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-science-plurall-preparation-30-0",
+        "activityId": "science-plurall-preparation-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-science-plurall-preparation-30-1",
+        "activityId": "science-plurall-preparation-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-science-plurall-preparation-30-2",
+        "activityId": "science-plurall-preparation-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "science-plurall-preparation-60",
+    "name": "Plurall · Preparação · 60 min",
+    "subjectId": "science",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-science-plurall-preparation-60-0",
+        "activityId": "science-plurall-preparation-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-science-plurall-preparation-60-1",
+        "activityId": "science-plurall-preparation-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-science-plurall-preparation-60-2",
+        "activityId": "science-plurall-preparation-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "geography-plurall-practice-30",
+    "name": "Plurall · Prática · 30 min",
+    "subjectId": "geography",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-geography-plurall-practice-30-0",
+        "activityId": "geography-plurall-practice-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-geography-plurall-practice-30-1",
+        "activityId": "geography-plurall-practice-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-geography-plurall-practice-30-2",
+        "activityId": "geography-plurall-practice-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "geography-plurall-practice-60",
+    "name": "Plurall · Prática · 60 min",
+    "subjectId": "geography",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-geography-plurall-practice-60-0",
+        "activityId": "geography-plurall-practice-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-geography-plurall-practice-60-1",
+        "activityId": "geography-plurall-practice-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-geography-plurall-practice-60-2",
+        "activityId": "geography-plurall-practice-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "geography-plurall-review-30",
+    "name": "Plurall · Revisão · 30 min",
+    "subjectId": "geography",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-geography-plurall-review-30-0",
+        "activityId": "geography-plurall-review-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-geography-plurall-review-30-1",
+        "activityId": "geography-plurall-review-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-geography-plurall-review-30-2",
+        "activityId": "geography-plurall-review-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "geography-plurall-review-60",
+    "name": "Plurall · Revisão · 60 min",
+    "subjectId": "geography",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-geography-plurall-review-60-0",
+        "activityId": "geography-plurall-review-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-geography-plurall-review-60-1",
+        "activityId": "geography-plurall-review-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-geography-plurall-review-60-2",
+        "activityId": "geography-plurall-review-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "geography-plurall-preparation-30",
+    "name": "Plurall · Preparação · 30 min",
+    "subjectId": "geography",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-geography-plurall-preparation-30-0",
+        "activityId": "geography-plurall-preparation-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-geography-plurall-preparation-30-1",
+        "activityId": "geography-plurall-preparation-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-geography-plurall-preparation-30-2",
+        "activityId": "geography-plurall-preparation-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "geography-plurall-preparation-60",
+    "name": "Plurall · Preparação · 60 min",
+    "subjectId": "geography",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-geography-plurall-preparation-60-0",
+        "activityId": "geography-plurall-preparation-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-geography-plurall-preparation-60-1",
+        "activityId": "geography-plurall-preparation-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-geography-plurall-preparation-60-2",
+        "activityId": "geography-plurall-preparation-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "history-plurall-practice-30",
+    "name": "Plurall · Prática · 30 min",
+    "subjectId": "history",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-history-plurall-practice-30-0",
+        "activityId": "history-plurall-practice-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-history-plurall-practice-30-1",
+        "activityId": "history-plurall-practice-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-history-plurall-practice-30-2",
+        "activityId": "history-plurall-practice-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "history-plurall-practice-60",
+    "name": "Plurall · Prática · 60 min",
+    "subjectId": "history",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-history-plurall-practice-60-0",
+        "activityId": "history-plurall-practice-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-history-plurall-practice-60-1",
+        "activityId": "history-plurall-practice-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-history-plurall-practice-60-2",
+        "activityId": "history-plurall-practice-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "history-plurall-review-30",
+    "name": "Plurall · Revisão · 30 min",
+    "subjectId": "history",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-history-plurall-review-30-0",
+        "activityId": "history-plurall-review-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-history-plurall-review-30-1",
+        "activityId": "history-plurall-review-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-history-plurall-review-30-2",
+        "activityId": "history-plurall-review-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "history-plurall-review-60",
+    "name": "Plurall · Revisão · 60 min",
+    "subjectId": "history",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-history-plurall-review-60-0",
+        "activityId": "history-plurall-review-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-history-plurall-review-60-1",
+        "activityId": "history-plurall-review-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-history-plurall-review-60-2",
+        "activityId": "history-plurall-review-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "history-plurall-preparation-30",
+    "name": "Plurall · Preparação · 30 min",
+    "subjectId": "history",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-history-plurall-preparation-30-0",
+        "activityId": "history-plurall-preparation-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-history-plurall-preparation-30-1",
+        "activityId": "history-plurall-preparation-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-history-plurall-preparation-30-2",
+        "activityId": "history-plurall-preparation-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "history-plurall-preparation-60",
+    "name": "Plurall · Preparação · 60 min",
+    "subjectId": "history",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-history-plurall-preparation-60-0",
+        "activityId": "history-plurall-preparation-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-history-plurall-preparation-60-1",
+        "activityId": "history-plurall-preparation-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-history-plurall-preparation-60-2",
+        "activityId": "history-plurall-preparation-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "english-ngl-practice-30",
+    "name": "National Geographic Learning · Prática · 30 min",
+    "subjectId": "english",
+    "resourceId": "ngl",
+    "durationMinutes": 30,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-english-ngl-practice-30-0",
+        "activityId": "english-ngl-practice-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-english-ngl-practice-30-1",
+        "activityId": "english-ngl-practice-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-english-ngl-practice-30-2",
+        "activityId": "english-ngl-practice-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "english-ngl-practice-60",
+    "name": "National Geographic Learning · Prática · 60 min",
+    "subjectId": "english",
+    "resourceId": "ngl",
+    "durationMinutes": 60,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-english-ngl-practice-60-0",
+        "activityId": "english-ngl-practice-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-english-ngl-practice-60-1",
+        "activityId": "english-ngl-practice-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-english-ngl-practice-60-2",
+        "activityId": "english-ngl-practice-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "english-ngl-review-30",
+    "name": "National Geographic Learning · Revisão · 30 min",
+    "subjectId": "english",
+    "resourceId": "ngl",
+    "durationMinutes": 30,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-english-ngl-review-30-0",
+        "activityId": "english-ngl-review-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-english-ngl-review-30-1",
+        "activityId": "english-ngl-review-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-english-ngl-review-30-2",
+        "activityId": "english-ngl-review-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "english-ngl-review-60",
+    "name": "National Geographic Learning · Revisão · 60 min",
+    "subjectId": "english",
+    "resourceId": "ngl",
+    "durationMinutes": 60,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-english-ngl-review-60-0",
+        "activityId": "english-ngl-review-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-english-ngl-review-60-1",
+        "activityId": "english-ngl-review-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-english-ngl-review-60-2",
+        "activityId": "english-ngl-review-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "english-ngl-preparation-30",
+    "name": "National Geographic Learning · Preparação · 30 min",
+    "subjectId": "english",
+    "resourceId": "ngl",
+    "durationMinutes": 30,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-english-ngl-preparation-30-0",
+        "activityId": "english-ngl-preparation-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-english-ngl-preparation-30-1",
+        "activityId": "english-ngl-preparation-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-english-ngl-preparation-30-2",
+        "activityId": "english-ngl-preparation-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "english-ngl-preparation-60",
+    "name": "National Geographic Learning · Preparação · 60 min",
+    "subjectId": "english",
+    "resourceId": "ngl",
+    "durationMinutes": 60,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-english-ngl-preparation-60-0",
+        "activityId": "english-ngl-preparation-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-english-ngl-preparation-60-1",
+        "activityId": "english-ngl-preparation-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-english-ngl-preparation-60-2",
+        "activityId": "english-ngl-preparation-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "spanish-profedeele-practice-30",
+    "name": "Profedeele · Prática · 30 min",
+    "subjectId": "spanish",
+    "resourceId": "profedeele",
+    "durationMinutes": 30,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-spanish-profedeele-practice-30-0",
+        "activityId": "spanish-profedeele-practice-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-spanish-profedeele-practice-30-1",
+        "activityId": "spanish-profedeele-practice-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-spanish-profedeele-practice-30-2",
+        "activityId": "spanish-profedeele-practice-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "spanish-profedeele-practice-60",
+    "name": "Profedeele · Prática · 60 min",
+    "subjectId": "spanish",
+    "resourceId": "profedeele",
+    "durationMinutes": 60,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-spanish-profedeele-practice-60-0",
+        "activityId": "spanish-profedeele-practice-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-spanish-profedeele-practice-60-1",
+        "activityId": "spanish-profedeele-practice-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-spanish-profedeele-practice-60-2",
+        "activityId": "spanish-profedeele-practice-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "spanish-profedeele-review-30",
+    "name": "Profedeele · Revisão · 30 min",
+    "subjectId": "spanish",
+    "resourceId": "profedeele",
+    "durationMinutes": 30,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-spanish-profedeele-review-30-0",
+        "activityId": "spanish-profedeele-review-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-spanish-profedeele-review-30-1",
+        "activityId": "spanish-profedeele-review-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-spanish-profedeele-review-30-2",
+        "activityId": "spanish-profedeele-review-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "spanish-profedeele-review-60",
+    "name": "Profedeele · Revisão · 60 min",
+    "subjectId": "spanish",
+    "resourceId": "profedeele",
+    "durationMinutes": 60,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-spanish-profedeele-review-60-0",
+        "activityId": "spanish-profedeele-review-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-spanish-profedeele-review-60-1",
+        "activityId": "spanish-profedeele-review-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-spanish-profedeele-review-60-2",
+        "activityId": "spanish-profedeele-review-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "spanish-profedeele-preparation-30",
+    "name": "Profedeele · Preparação · 30 min",
+    "subjectId": "spanish",
+    "resourceId": "profedeele",
+    "durationMinutes": 30,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-spanish-profedeele-preparation-30-0",
+        "activityId": "spanish-profedeele-preparation-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-spanish-profedeele-preparation-30-1",
+        "activityId": "spanish-profedeele-preparation-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-spanish-profedeele-preparation-30-2",
+        "activityId": "spanish-profedeele-preparation-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "spanish-profedeele-preparation-60",
+    "name": "Profedeele · Preparação · 60 min",
+    "subjectId": "spanish",
+    "resourceId": "profedeele",
+    "durationMinutes": 60,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-spanish-profedeele-preparation-60-0",
+        "activityId": "spanish-profedeele-preparation-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-spanish-profedeele-preparation-60-1",
+        "activityId": "spanish-profedeele-preparation-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-spanish-profedeele-preparation-60-2",
+        "activityId": "spanish-profedeele-preparation-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "science-evo-practice-30",
+    "name": "EVO-Trilhas · Prática · 30 min",
+    "subjectId": "science",
+    "resourceId": "evo",
+    "durationMinutes": 30,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-science-evo-practice-30-0",
+        "activityId": "science-evo-practice-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-science-evo-practice-30-1",
+        "activityId": "science-evo-practice-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-science-evo-practice-30-2",
+        "activityId": "science-evo-practice-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "science-evo-practice-60",
+    "name": "EVO-Trilhas · Prática · 60 min",
+    "subjectId": "science",
+    "resourceId": "evo",
+    "durationMinutes": 60,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-science-evo-practice-60-0",
+        "activityId": "science-evo-practice-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-science-evo-practice-60-1",
+        "activityId": "science-evo-practice-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-science-evo-practice-60-2",
+        "activityId": "science-evo-practice-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "science-evo-review-30",
+    "name": "EVO-Trilhas · Revisão · 30 min",
+    "subjectId": "science",
+    "resourceId": "evo",
+    "durationMinutes": 30,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-science-evo-review-30-0",
+        "activityId": "science-evo-review-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-science-evo-review-30-1",
+        "activityId": "science-evo-review-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-science-evo-review-30-2",
+        "activityId": "science-evo-review-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "science-evo-review-60",
+    "name": "EVO-Trilhas · Revisão · 60 min",
+    "subjectId": "science",
+    "resourceId": "evo",
+    "durationMinutes": 60,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-science-evo-review-60-0",
+        "activityId": "science-evo-review-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-science-evo-review-60-1",
+        "activityId": "science-evo-review-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-science-evo-review-60-2",
+        "activityId": "science-evo-review-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "science-evo-preparation-30",
+    "name": "EVO-Trilhas · Preparação · 30 min",
+    "subjectId": "science",
+    "resourceId": "evo",
+    "durationMinutes": 30,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-science-evo-preparation-30-0",
+        "activityId": "science-evo-preparation-30-0",
+        "durationMinutes": 5,
+        "order": 0
+      },
+      {
+        "id": "step-science-evo-preparation-30-1",
+        "activityId": "science-evo-preparation-30-1",
+        "durationMinutes": 20,
+        "order": 1
+      },
+      {
+        "id": "step-science-evo-preparation-30-2",
+        "activityId": "science-evo-preparation-30-2",
+        "durationMinutes": 5,
+        "order": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "science-evo-preparation-60",
+    "name": "EVO-Trilhas · Preparação · 60 min",
+    "subjectId": "science",
+    "resourceId": "evo",
+    "durationMinutes": 60,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-science-evo-preparation-60-0",
+        "activityId": "science-evo-preparation-60-0",
+        "durationMinutes": 10,
+        "order": 0
+      },
+      {
+        "id": "step-science-evo-preparation-60-1",
+        "activityId": "science-evo-preparation-60-1",
+        "durationMinutes": 40,
+        "order": 1
+      },
+      {
+        "id": "step-science-evo-preparation-60-2",
+        "activityId": "science-evo-preparation-60-2",
+        "durationMinutes": 10,
+        "order": 2
+      }
+    ],
+    "active": true
+  }
+]

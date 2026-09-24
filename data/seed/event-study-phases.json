@@ -1,0 +1,34 @@
+[
+  {
+    "id": "phase-0",
+    "eventTypeId": "assessment",
+    "daysBeforeMin": 10,
+    "daysBeforeMax": 14,
+    "weight": 5,
+    "recommendedActivityType": "preparation"
+  },
+  {
+    "id": "phase-1",
+    "eventTypeId": "assessment",
+    "daysBeforeMin": 5,
+    "daysBeforeMax": 9,
+    "weight": 15,
+    "recommendedActivityType": "practice"
+  },
+  {
+    "id": "phase-2",
+    "eventTypeId": "assessment",
+    "daysBeforeMin": 2,
+    "daysBeforeMax": 4,
+    "weight": 30,
+    "recommendedActivityType": "practice"
+  },
+  {
+    "id": "phase-3",
+    "eventTypeId": "assessment",
+    "daysBeforeMin": 0,
+    "daysBeforeMax": 1,
+    "weight": 40,
+    "recommendedActivityType": "review"
+  }
+]

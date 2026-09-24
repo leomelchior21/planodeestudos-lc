@@ -1,0 +1,27 @@
+[
+  {
+    "id": "PRIORITY_SUBJECT",
+    "code": "PRIORITY_SUBJECT",
+    "text": "Você escolheu esta disciplina como uma prioridade."
+  },
+  {
+    "id": "SAME_DAY_CLASS",
+    "code": "SAME_DAY_CLASS",
+    "text": "Você teve esta disciplina na escola hoje."
+  },
+  {
+    "id": "UPCOMING_EVENT",
+    "code": "UPCOMING_EVENT",
+    "text": "Um evento próximo pede um pouco mais de atenção a este conteúdo."
+  },
+  {
+    "id": "SPACED_PRACTICE",
+    "code": "SPACED_PRACTICE",
+    "text": "Retomar o conteúdo depois de alguns dias ajuda a fixar o aprendizado."
+  },
+  {
+    "id": "WEEKLY_RESOURCE",
+    "code": "WEEKLY_RESOURCE",
+    "text": "Este material faz parte das atividades semanais recomendadas pela escola."
+  }
+]

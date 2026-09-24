@@ -1,0 +1,317 @@
+[
+  {
+    "id": "class-6a-math",
+    "classId": "class-6a",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6a-portuguese",
+    "classId": "class-6a",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6a-science",
+    "classId": "class-6a",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6a-geography",
+    "classId": "class-6a",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6a-history",
+    "classId": "class-6a",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6a-english",
+    "classId": "class-6a",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6a-spanish",
+    "classId": "class-6a",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6b-math",
+    "classId": "class-6b",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6b-portuguese",
+    "classId": "class-6b",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6b-science",
+    "classId": "class-6b",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6b-geography",
+    "classId": "class-6b",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6b-history",
+    "classId": "class-6b",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6b-english",
+    "classId": "class-6b",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6b-spanish",
+    "classId": "class-6b",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6c-math",
+    "classId": "class-6c",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6c-portuguese",
+    "classId": "class-6c",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6c-science",
+    "classId": "class-6c",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6c-geography",
+    "classId": "class-6c",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6c-history",
+    "classId": "class-6c",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6c-english",
+    "classId": "class-6c",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6c-spanish",
+    "classId": "class-6c",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7a-math",
+    "classId": "class-7a",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7a-portuguese",
+    "classId": "class-7a",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7a-science",
+    "classId": "class-7a",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7a-geography",
+    "classId": "class-7a",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7a-history",
+    "classId": "class-7a",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7a-english",
+    "classId": "class-7a",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-7a-spanish",
+    "classId": "class-7a",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7b-math",
+    "classId": "class-7b",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7b-portuguese",
+    "classId": "class-7b",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7b-science",
+    "classId": "class-7b",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7b-geography",
+    "classId": "class-7b",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7b-history",
+    "classId": "class-7b",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7b-english",
+    "classId": "class-7b",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-7b-spanish",
+    "classId": "class-7b",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7c-math",
+    "classId": "class-7c",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7c-portuguese",
+    "classId": "class-7c",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7c-science",
+    "classId": "class-7c",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7c-geography",
+    "classId": "class-7c",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7c-history",
+    "classId": "class-7c",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7c-english",
+    "classId": "class-7c",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-7c-spanish",
+    "classId": "class-7c",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8a-math",
+    "classId": "class-8a",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8a-portuguese",
+    "classId": "class-8a",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8a-science",
+    "classId": "class-8a",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8a-geography",
+    "classId": "class-8a",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8a-history",
+    "classId": "class-8a",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8a-english",
+    "classId": "class-8a",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8a-spanish",
+    "classId": "class-8a",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8b-math",
+    "classId": "class-8b",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8b-portuguese",
+    "classId": "class-8b",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8b-science",
+    "classId": "class-8b",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8b-geography",
+    "classId": "class-8b",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8b-history",
+    "classId": "class-8b",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8b-english",
+    "classId": "class-8b",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8b-spanish",
+    "classId": "class-8b",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8c-math",
+    "classId": "class-8c",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8c-portuguese",
+    "classId": "class-8c",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8c-science",
+    "classId": "class-8c",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8c-geography",
+    "classId": "class-8c",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8c-history",
+    "classId": "class-8c",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8c-english",
+    "classId": "class-8c",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8c-spanish",
+    "classId": "class-8c",
+    "subjectId": "spanish"
+  }
+]

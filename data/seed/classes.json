@@ -1,0 +1,74 @@
+[
+  {
+    "id": "class-6a",
+    "schoolYearId": "year-6",
+    "name": "Turma A",
+    "code": "6A",
+    "order": 0,
+    "active": true
+  },
+  {
+    "id": "class-6b",
+    "schoolYearId": "year-6",
+    "name": "Turma B",
+    "code": "6B",
+    "order": 1,
+    "active": true
+  },
+  {
+    "id": "class-6c",
+    "schoolYearId": "year-6",
+    "name": "Turma C",
+    "code": "6C",
+    "order": 2,
+    "active": true
+  },
+  {
+    "id": "class-7a",
+    "schoolYearId": "year-7",
+    "name": "Turma A",
+    "code": "7A",
+    "order": 0,
+    "active": true
+  },
+  {
+    "id": "class-7b",
+    "schoolYearId": "year-7",
+    "name": "Turma B",
+    "code": "7B",
+    "order": 1,
+    "active": true
+  },
+  {
+    "id": "class-7c",
+    "schoolYearId": "year-7",
+    "name": "Turma C",
+    "code": "7C",
+    "order": 2,
+    "active": true
+  },
+  {
+    "id": "class-8a",
+    "schoolYearId": "year-8",
+    "name": "Turma A",
+    "code": "8A",
+    "order": 0,
+    "active": true
+  },
+  {
+    "id": "class-8b",
+    "schoolYearId": "year-8",
+    "name": "Turma B",
+    "code": "8B",
+    "order": 1,
+    "active": true
+  },
+  {
+    "id": "class-8c",
+    "schoolYearId": "year-8",
+    "name": "Turma C",
+    "code": "8C",
+    "order": 2,
+    "active": true
+  }
+]

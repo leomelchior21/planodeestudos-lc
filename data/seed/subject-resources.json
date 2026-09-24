@@ -1,0 +1,50 @@
+[
+  {
+    "id": "mapping-0",
+    "subjectId": "math",
+    "resourceId": "les",
+    "priority": 1
+  },
+  {
+    "id": "mapping-1",
+    "subjectId": "portuguese",
+    "resourceId": "plurall",
+    "priority": 1
+  },
+  {
+    "id": "mapping-2",
+    "subjectId": "science",
+    "resourceId": "plurall",
+    "priority": 1
+  },
+  {
+    "id": "mapping-3",
+    "subjectId": "geography",
+    "resourceId": "plurall",
+    "priority": 1
+  },
+  {
+    "id": "mapping-4",
+    "subjectId": "history",
+    "resourceId": "plurall",
+    "priority": 1
+  },
+  {
+    "id": "mapping-5",
+    "subjectId": "english",
+    "resourceId": "ngl",
+    "priority": 1
+  },
+  {
+    "id": "mapping-6",
+    "subjectId": "spanish",
+    "resourceId": "profedeele",
+    "priority": 1
+  },
+  {
+    "id": "mapping-7",
+    "subjectId": "science",
+    "resourceId": "evo",
+    "priority": 2
+  }
+]
