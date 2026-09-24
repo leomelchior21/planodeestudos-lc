@@ -15,24 +15,24 @@ npm run dev
 
 Abra **http://localhost:3000/student**. O painel está em **http://localhost:3000/admin**. O servidor de desenvolvimento escuta somente na interface local (`127.0.0.1`).
 
-Sem credenciais Supabase, a aplicação lê os exemplos em `data/seed/school-data.json`. Alterações administrativas são gravadas em `.local/school-data.json`; planos são gravados em `.local/plans/`. A persistência é no servidor e funciona entre recargas e navegadores. O diretório é privado, não versionado e não publicado como arquivo estático.
+Com `SCHOOL_STORAGE=local` (padrão), a aplicação lê os exemplos em `data/seed/school-data.json`. Alterações administrativas feitas em desenvolvimento local são gravadas em `.local/school-data.json`. Os novos planos são salvos no armazenamento do navegador, inclusive entre recargas. Planos antigos gravados em `.local/plans/` continuam legíveis. O diretório `.local/` é privado e não publicado como arquivo estático.
 
-No desenvolvimento local, o Admin é acessível sem senha. Para protegê-lo, copie `.env.example` para `.env.local`, defina `ADMIN_PASSWORD` e reinicie o servidor. Em produção a senha é obrigatória. A sessão administrativa usa cookie HTTP-only assinado, com validade de oito horas, SameSite Strict e Secure em produção. As APIs de escrita verificam a sessão e a origem da requisição. O endpoint de login limita tentativas em memória; em múltiplas instâncias, utilize também rate limiting compartilhado no proxy.
+No desenvolvimento local, o Admin é acessível sem senha. Para protegê-lo, copie `.env.example` para `.env.local`, defina `ADMIN_PASSWORD` e reinicie o servidor. Para acessar o Admin em produção, a senha é obrigatória. A sessão administrativa usa cookie HTTP-only assinado, com validade de oito horas, SameSite Strict e Secure em produção. As APIs de escrita verificam a sessão e a origem da requisição. O endpoint de login limita tentativas em memória; em múltiplas instâncias, utilize também rate limiting compartilhado no proxy.
 
 ## Fluxo do aluno
 
 1. Informar o nome e escolher um ano e uma turma ativos.
 2. Selecionar e ordenar prioridades com os botões de subir/descer. Nenhuma prioridade também é permitido.
-3. Marcar disponibilidade por clique, toque ou arraste com mouse. Teclado: Tab e espaço. Horários consecutivos são agrupados; nome e período são opcionais.
+3. Marcar disponibilidade por clique, toque ou arraste com mouse. Teclado: Tab e espaço. Horários consecutivos são agrupados; o período é opcional.
 4. Gerar e visualizar semanas, eventos e etapas de cada sessão.
 5. Abrir “Por que isso está aqui?” e baixar um PDF real, com etapas e durações, cabeçalho, período e paginação.
 
-Os planos salvos usam um retrato completo das configurações. Mudanças no Admin afetam somente os próximos planos. URLs de planos têm identificadores UUID não sequenciais; qualquer pessoa com o link pode abri-lo. Informe apenas o primeiro nome ou um apelido, pois qualquer pessoa com o link pode vê-lo. A aplicação não implementa contas individuais de alunos neste MVP.
+Os planos salvos usam um retrato completo das configurações. Mudanças no Admin afetam somente os próximos planos. Novos planos ficam no navegador em que foram criados: o link não abre em outro aparelho ou navegador e os dados podem desaparecer se o armazenamento do site for apagado. Informe apenas o primeiro nome ou um apelido em aparelhos compartilhados. A aplicação não implementa contas individuais de alunos neste MVP.
 
 ## Arquitetura
 
 ```text
-JSON / Supabase PostgreSQL
+JSON local / Supabase PostgreSQL opcional
            ↓
 SchoolRepository + validação Zod e referências
            ↓
@@ -95,10 +95,10 @@ Campos adicionais: `end_date`, `description`, `importance`, `affects_study_plan`
 
 JSON de calendários/grades/materiais deve ser uma lista de objetos com os mesmos cabeçalhos do CSV. Para restauração completa, selecione **Backup completo** e use o arquivo gerado por `exportSchoolData()`. `importSchoolData()` valida a estrutura e as referências antes de aplicar. A exportação inclui a configuração, não os planos individuais.
 
-## Supabase
+## Supabase (opcional)
 
 1. Crie um projeto Supabase e copie `.env.example` para `.env.local`.
-2. Preencha `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` e `ADMIN_PASSWORD`. A service-role key é usada somente no servidor, nunca em uma variável `NEXT_PUBLIC_*`.
+2. Defina `SCHOOL_STORAGE=supabase` e preencha `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` e `ADMIN_PASSWORD`. A service-role key é usada somente no servidor, nunca em uma variável `NEXT_PUBLIC_*`.
 3. No SQL Editor, execute `supabase/migrations/202609230001_school.sql` e depois `supabase/seed.sql`. **O seed substitui configurações existentes; use apenas no setup ou com backup.**
 4. Alternativamente, com Supabase CLI e Docker instalados:
 
@@ -133,9 +133,9 @@ Testes cobrem determinismo, horários restritos, mínimo, prioridade, evento imi
 ## Deploy na Vercel
 
 1. Envie este projeto para um repositório Git e importe-o na Vercel como Next.js.
-2. Configure Supabase conforme acima. O armazenamento local não é adequado ao filesystem efêmero da Vercel.
-3. Defina `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` e uma `ADMIN_PASSWORD` forte nas variáveis do projeto.
-4. Faça o deploy com `npm run build` como comando de build. HTTPS mantém o cookie administrativo seguro.
-5. Valide o calendário oficial, os materiais, o acesso administrativo e um plano completo antes de disponibilizar aos alunos.
+2. Para gerar planos com os dados incluídos no projeto, não é preciso configurar Supabase nem variáveis de ambiente. Os planos ficam no navegador do aluno.
+3. Faça o deploy com `npm run build` como comando de build.
+4. Valide o calendário, os materiais, a geração de um plano, a recarga da página e o PDF antes de disponibilizar aos alunos.
+5. Para salvar alterações do Admin entre deploys ou compartilhar planos entre aparelhos, configure armazenamento persistente antes de habilitar esses fluxos em produção. Se usar o Admin, defina uma `ADMIN_PASSWORD` forte.
 
 Documentação de referência: [Next.js](https://nextjs.org/docs/app/getting-started/installation) e [RLS no Supabase](https://supabase.com/docs/guides/database/postgres/row-level-security).

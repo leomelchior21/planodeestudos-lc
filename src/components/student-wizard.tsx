@@ -23,8 +23,9 @@ import { Shell, Progress } from "./shell";
 import { StudentHero } from "./student-hero";
 import { SubjectIcon } from "./icons";
 import { AvailabilityGrid, slotsToAvailability } from "./availability-grid";
-import type { SchoolData } from "@/domain/types";
+import type { SavedPlan, SchoolData } from "@/domain/types";
 import { addDays, today } from "@/domain/dates";
+import { saveBrowserPlan } from "@/lib/browser-plans";
 
 export function StudentWizard({
   school,
@@ -89,9 +90,14 @@ export function StudentWizard({
           availability: slotsToAvailability(slots, school.settings),
         }),
       });
-      const result = await response.json();
-      if (!response.ok) throw new Error(result.error);
-      router.push(`/plan/${result.id}${simulator ? "?debug=true" : ""}`);
+      const result = (await response.json()) as {
+        saved?: SavedPlan;
+        error?: string;
+      };
+      if (!response.ok || !result.saved)
+        throw new Error(result.error ?? "Não foi possível gerar o plano.");
+      saveBrowserPlan(result.saved);
+      router.push(`/plan/${result.saved.plan.id}${simulator ? "?debug=true" : ""}`);
     } catch (e) {
       setError(
         e instanceof Error ? e.message : "Não foi possível gerar o plano.",

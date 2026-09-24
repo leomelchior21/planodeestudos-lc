@@ -44,6 +44,8 @@ try {
   await page.getByRole("button", { name: "Gerar meu plano" }).click();
   await page.waitForURL(/\/plan\//, { timeout: 120000 });
   await page.getByRole("heading", { name: "Seu plano está pronto!" }).waitFor();
+  await page.reload({ waitUntil: "networkidle" });
+  await page.getByRole("heading", { name: "Seu plano está pronto!" }).waitFor();
   assert.ok((await page.locator(".session-card").count()) > 0);
   await page.locator(".session-card summary").first().click();
   await page

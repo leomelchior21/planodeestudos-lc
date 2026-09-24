@@ -116,9 +116,12 @@ class SupabasePlanRepository implements StudyPlanRepository {
     if (error) throw new Error(error.message);
   }
 }
-const remote = !!(
-  process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const remote = process.env.SCHOOL_STORAGE === "supabase";
+if (
+  remote &&
+  (!process.env.SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY)
+)
+  throw new Error("SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY são obrigatórios com SCHOOL_STORAGE=supabase.");
 export const schoolRepository: SchoolRepository = remote
   ? new SupabaseSchoolRepository()
   : new LocalSchoolRepository();

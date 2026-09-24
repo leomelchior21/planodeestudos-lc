@@ -1,9 +1,5 @@
 import { NextResponse } from "next/server";
-import {
-  schoolRepository,
-  planRepository,
-  storageMode,
-} from "@/repositories/school-repository";
+import { schoolRepository } from "@/repositories/school-repository";
 import { generateStudyPlan } from "@/domain/study-plan/engine";
 import { checkOrigin } from "@/lib/admin-auth";
 export async function POST(request: Request) {
@@ -35,21 +31,7 @@ export async function POST(request: Request) {
       { status: 400 },
     );
   }
-  if (process.env.NODE_ENV === "production" && storageMode === "local")
-    return NextResponse.json(
-      { error: "O salvamento de planos precisa do Supabase. Configure SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY na Vercel." },
-      { status: 503 },
-    );
   plan.id = crypto.randomUUID();
   plan.createdAt = new Date().toISOString();
-  try {
-    await planRepository.save({ plan, school });
-    return NextResponse.json({ id: plan.id });
-  } catch (error) {
-    console.error("Could not save study plan", error);
-    return NextResponse.json(
-      { error: "Não foi possível salvar o plano. Verifique a conexão com o Supabase e tente novamente." },
-      { status: 503 },
-    );
-  }
+  return NextResponse.json({ saved: { plan, school } });
 }
