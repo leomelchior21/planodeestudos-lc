@@ -32,7 +32,7 @@ h4 {
   letter-spacing: -0.035em;
 }
 .site-header {
-  height: 88px;
+  height: 68px;
   border-bottom-color: #ece8f3;
 }
 .header-inner {
@@ -40,7 +40,7 @@ h4 {
   padding-inline: 28px;
 }
 .brand-logo {
-  width: 184px;
+  width: 165px;
 }
 .site-header nav {
   gap: 34px;
@@ -1524,13 +1524,13 @@ textarea {
 }
 @media (max-width: 800px) {
   .site-header {
-    height: 80px;
+    height: 62px;
   }
   .header-inner {
     padding-inline: 22px;
   }
   .brand-logo {
-    width: 168px;
+    width: 150px;
   }
   .student-main {
     padding: 22px 22px 0;
@@ -1792,13 +1792,13 @@ textarea {
     padding: 18px 16px 0;
   }
   .site-header {
-    height: 75px;
+    height: 58px;
   }
   .header-inner {
     padding-inline: 19px;
   }
   .brand-logo {
-    width: 155px;
+    width: 140px;
   }
   .admin-link {
     font-size: 11px;
