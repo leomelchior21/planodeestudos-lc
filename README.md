@@ -21,13 +21,13 @@ No desenvolvimento local, o Admin é acessível sem senha. Para protegê-lo, cop
 
 ## Fluxo do aluno
 
-1. Escolher um ano e uma turma ativos.
+1. Informar o nome e escolher um ano e uma turma ativos.
 2. Selecionar e ordenar prioridades com os botões de subir/descer. Nenhuma prioridade também é permitido.
 3. Marcar disponibilidade por clique, toque ou arraste com mouse. Teclado: Tab e espaço. Horários consecutivos são agrupados; nome e período são opcionais.
 4. Gerar e visualizar semanas, eventos e etapas de cada sessão.
 5. Abrir “Por que isso está aqui?” e baixar um PDF real, com etapas e durações, cabeçalho, período e paginação.
 
-Os planos salvos usam um retrato completo das configurações. Mudanças no Admin afetam somente os próximos planos. URLs de planos têm identificadores UUID não sequenciais; qualquer pessoa com o link pode abri-lo. Não inclua informações sensíveis no nome opcional. A aplicação não implementa contas individuais de alunos neste MVP.
+Os planos salvos usam um retrato completo das configurações. Mudanças no Admin afetam somente os próximos planos. URLs de planos têm identificadores UUID não sequenciais; qualquer pessoa com o link pode abri-lo. Informe apenas o primeiro nome ou um apelido, pois qualquer pessoa com o link pode vê-lo. A aplicação não implementa contas individuais de alunos neste MVP.
 
 ## Arquitetura
 
@@ -113,6 +113,8 @@ npm run seed
 ```
 
 5. Reinicie `npm run dev`. O Admin indicará “Supabase conectado”. Não há fallback silencioso se as credenciais configuradas falharem.
+
+Para uma base Supabase já existente, aplique `supabase/migrations/202609240001_add_class_6d.sql` para criar a turma 6D e seus vínculos com as disciplinas sem substituir dados. Depois, cadastre a grade horária real da turma no Admin. O seed SQL é apenas para uma base nova e substitui as configurações existentes.
 
 O schema inclui todas as entidades escolares, passos das receitas, configurações e planos. Cada entidade armazena um registro JSONB tipado como fonte de verdade; colunas geradas expõem os campos relacionais, com chaves estrangeiras e índices. Os passos das receitas também são normalizados em `study_recipe_steps`. `import_school_data` grava tudo em uma transação e serializa gravações concorrentes. `export_school_data` lê um snapshot consistente. As tabelas têm RLS e não concedem acesso anônimo/autenticado direto; apenas o servidor autorizado utiliza a service role.
 

@@ -7,14 +7,16 @@ const schoolYears = [6, 7, 8].map((n, i) => ({
   active: true,
 }));
 const classes = schoolYears.flatMap((y, i) =>
-  ["A", "B", "C"].map((letter, order) => ({
-    id: `class-${i + 6}${letter.toLowerCase()}`,
-    schoolYearId: y.id,
-    name: `Turma ${letter}`,
-    code: `${i + 6}${letter}`,
-    order,
-    active: true,
-  })),
+  (i === 0 ? ["A", "B", "C", "D"] : ["A", "B", "C"]).map(
+    (letter, order) => ({
+      id: `class-${i + 6}${letter.toLowerCase()}`,
+      schoolYearId: y.id,
+      name: `Turma ${letter}`,
+      code: `${i + 6}${letter}`,
+      order,
+      active: true,
+    }),
+  ),
 );
 const subjects = [
   ["math", "MAT", "Matemática", "Calculator", "#7755CC"],
@@ -277,7 +279,7 @@ const data: SchoolData = {
       subjectId: s.id,
     })),
   ),
-  schedules: classes.flatMap((c, ci) =>
+  schedules: classes.flatMap((c) =>
     [1, 2, 3, 4, 5].flatMap((day) =>
       Array.from({ length: 5 }, (_, period) => ({
         id: `${c.id}-${day}-${period}`,
@@ -286,7 +288,11 @@ const data: SchoolData = {
         periodNumber: period + 1,
         startTime: `${String(7 + Math.floor((30 + period * 50) / 60)).padStart(2, "0")}:${String((30 + period * 50) % 60).padStart(2, "0")}`,
         endTime: `${String(7 + Math.floor((80 + period * 50) / 60)).padStart(2, "0")}:${String((80 + period * 50) % 60).padStart(2, "0")}`,
-        subjectId: subjects[(day * 2 + period + ci) % subjects.length].id,
+        subjectId:
+          subjects[
+            (day * 2 + period + (Number(c.code[0]) - 6) * 3 + c.order) %
+              subjects.length
+          ].id,
       })),
     ),
   ),

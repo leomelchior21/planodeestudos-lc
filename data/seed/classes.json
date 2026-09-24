@@ -24,6 +24,14 @@
     "active": true
   },
   {
+    "id": "class-6d",
+    "schoolYearId": "year-6",
+    "name": "Turma D",
+    "code": "6D",
+    "order": 3,
+    "active": true
+  },
+  {
     "id": "class-7a",
     "schoolYearId": "year-7",
     "name": "Turma A",

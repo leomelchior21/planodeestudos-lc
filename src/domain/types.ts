@@ -168,7 +168,7 @@ export type SchoolData = z.infer<typeof schoolSchema>;
 export type Subject = SchoolData["subjects"][number];
 export const planInputSchema = z.object({
   classId: id,
-  studentName: z.string().max(100).default(""),
+  studentName: z.string().trim().min(1, "Informe seu nome.").max(100),
   startDate: date,
   endDate: date,
   priorities: z.array(

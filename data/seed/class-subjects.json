@@ -105,6 +105,41 @@
     "subjectId": "spanish"
   },
   {
+    "id": "class-6d-math",
+    "classId": "class-6d",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6d-portuguese",
+    "classId": "class-6d",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6d-science",
+    "classId": "class-6d",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6d-geography",
+    "classId": "class-6d",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6d-history",
+    "classId": "class-6d",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6d-english",
+    "classId": "class-6d",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6d-spanish",
+    "classId": "class-6d",
+    "subjectId": "spanish"
+  },
+  {
     "id": "class-7a-math",
     "classId": "class-7a",
     "subjectId": "math"

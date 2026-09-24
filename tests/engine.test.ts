@@ -12,7 +12,7 @@ import type { PlanInput } from "../src/domain/types";
 const school = () => parseSchoolData(structuredClone(seed));
 const input = (overrides: Partial<PlanInput> = {}): PlanInput => ({
   classId: "class-7a",
-  studentName: "",
+  studentName: "Aluno Teste",
   startDate: "2026-09-21",
   endDate: "2026-10-18",
   priorities: [{ subjectId: "math", priorityRank: 1 }],
@@ -27,6 +27,18 @@ const sessions = (p: ReturnType<typeof generateStudyPlan>) =>
   p.weeks.flatMap((w) => w.sessions);
 test("seed válido e sem dependências específicas no motor", () => {
   assert.equal(school().schoolYears.length, 3);
+});
+test("6º ano oferece as turmas A, B, C e D e gera plano para a D", () => {
+  const data = school();
+  assert.deepEqual(
+    data.classes.filter((c) => c.schoolYearId === "year-6").map((c) => c.code),
+    ["6A", "6B", "6C", "6D"],
+  );
+  const plan = generateStudyPlan(data, input({ classId: "class-6d" }));
+  assert.ok(sessions(plan).length > 0);
+});
+test("nome em branco não é aceito no plano", () => {
+  assert.throws(() => generateStudyPlan(school(), input({ studentName: "   " })));
 });
 test("somente segunda 15–16 nunca gera em outro dia ou horário", () => {
   const p = generateStudyPlan(

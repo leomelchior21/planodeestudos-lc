@@ -105,7 +105,7 @@ export function StudentWizard({
     "Vamos encontrar o seu tempo.",
   ][step];
   const subtitle = [
-    "Escolha seu ano e sua turma para começar.",
+    "Diga seu nome e escolha seu ano e sua turma para começar.",
     "Escolha as matérias que deseja priorizar no seu plano.",
     "Selecione apenas os horários que você consegue cumprir.",
   ][step];
@@ -140,6 +140,19 @@ export function StudentWizard({
           <div className="step-content" key={step}>
             {step === 0 ? (
               <div className="student-basics">
+                <div className="basics-panel name-panel">
+                  <label htmlFor="student-name">Seu nome</label>
+                  <input
+                    id="student-name"
+                    name="studentName"
+                    autoComplete="name"
+                    value={studentName}
+                    onChange={(e) => setName(e.target.value)}
+                    maxLength={100}
+                    placeholder="Como podemos chamar você?"
+                    required
+                  />
+                </div>
                 <div className="basics-panel">
                   <div className="field-heading">
                     <Layers size={18} />
@@ -296,18 +309,9 @@ export function StudentWizard({
                 </div>
                 <details className="period-options">
                   <summary>
-                    Personalizar nome e período <ChevronRight size={14} />
+                    Personalizar período <ChevronRight size={14} />
                   </summary>
                   <div className="form-grid">
-                    <label>
-                      Seu nome (opcional)
-                      <input
-                        value={studentName}
-                        onChange={(e) => setName(e.target.value)}
-                        maxLength={100}
-                        placeholder="Como podemos chamar você?"
-                      />
-                    </label>
                     <label>
                       Início
                       <input
@@ -354,7 +358,7 @@ export function StudentWizard({
               className="button primary"
               disabled={
                 busy ||
-                (step === 0 && !classId) ||
+                (step === 0 && (!classId || !studentName.trim())) ||
                 (step === 2 && !slots.length)
               }
               onClick={() => (step < 2 ? setStep(step + 1) : generate())}

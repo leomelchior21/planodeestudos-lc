@@ -23,6 +23,7 @@ try {
  await page.goto('http://localhost:3000/student',{waitUntil:'networkidle'});
  await page.getByRole('button',{name:/7º ano/}).click();
  await page.getByRole('button',{name:'Turma A',exact:true}).click();
+ await page.getByLabel('Seu nome',{exact:true}).fill('Aluno de demonstração');
  await page.getByRole('button',{name:'Continuar',exact:true}).click();
  await page.getByRole('button',{name:'Definir horários',exact:true}).click();
  const first=page.getByRole('button',{name:'Seg 15:00 às 15:30',exact:true});

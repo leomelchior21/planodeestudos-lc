@@ -20,6 +20,7 @@ try {
   });
   await page.getByRole("button", { name: /7º ano/ }).click();
   await page.getByRole("button", { name: "Turma A", exact: true }).click();
+  await page.getByLabel("Seu nome", { exact: true }).fill("Aluno de demonstração");
   await page.screenshot({ path: ".local/student-desktop.png", fullPage: true });
   await page.getByRole("button", { name: "Continuar", exact: true }).click();
   for (const name of ["GEO Geografia", "MAT Matemática", "CIE Ciências"])
@@ -37,8 +38,7 @@ try {
       await page
         .getByRole("button", { name: `${day} ${time}`, exact: true })
         .click();
-  await page.getByText("Personalizar nome e período").click();
-  await page.getByLabel("Seu nome (opcional)").fill("Aluno de demonstração");
+  await page.getByText("Personalizar período").click();
   await page.getByLabel("Início", { exact: true }).fill("2026-09-23");
   await page.getByLabel("Fim", { exact: true }).fill("2026-10-20");
   await page.getByRole("button", { name: "Gerar meu plano" }).click();
@@ -131,6 +131,7 @@ try {
   await mobile.goto(`${base}/student`, { waitUntil: "networkidle" });
   await mobile.getByRole("button", { name: /7º ano/ }).click();
   await mobile.getByRole("button", { name: "Turma A", exact: true }).click();
+  await mobile.getByLabel("Seu nome", { exact: true }).fill("Aluno de demonstração");
   assert.ok(
     await mobile.evaluate(
       () => document.documentElement.scrollWidth <= window.innerWidth,

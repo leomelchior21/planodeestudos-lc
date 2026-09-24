@@ -327,6 +327,12 @@ h4 {
 .basics-panel {
   min-width: 0;
 }
+.name-panel {
+  grid-column: 1 / -1;
+}
+.name-panel input {
+  max-width: 430px;
+}
 .class-panel {
   padding-left: 22px;
   border-left: 1px solid #eee8f6;
