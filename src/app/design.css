@@ -40,7 +40,7 @@ h4 {
   padding-inline: 28px;
 }
 .brand-logo {
-  width: 132px;
+  width: 160px;
 }
 .site-header nav {
   gap: 34px;
@@ -1531,7 +1531,7 @@ textarea {
     padding-inline: 22px;
   }
   .brand-logo {
-    width: 120px;
+    width: 145px;
   }
   .student-main {
     padding: 22px 22px 0;
@@ -1799,7 +1799,7 @@ textarea {
     padding-inline: 19px;
   }
   .brand-logo {
-    width: 110px;
+    width: 130px;
   }
   .admin-link {
     font-size: 11px;

@@ -18,17 +18,18 @@ export function Brand({
   name: string;
   variant?: "color" | "white";
 }) {
+  const white = variant === "white";
   return (
     <Link href="/student" className="brand" aria-label={`${name} — início`}>
       <Image
         src={
-          variant === "white"
+          white
             ? "/logo-lourenco-castanho-branco.png"
             : "/logo-lourenco-castanho.jpg"
         }
         alt={name}
-        width={664}
-        height={226}
+        width={white ? 700 : 664}
+        height={white ? 158 : 226}
         className="brand-logo"
         preload
       />
