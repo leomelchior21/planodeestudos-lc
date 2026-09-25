@@ -11,11 +11,21 @@ import {
   ShieldCheck,
   X,
 } from "lucide-react";
-export function Brand({ name }: { name: string }) {
+export function Brand({
+  name,
+  variant = "color",
+}: {
+  name: string;
+  variant?: "color" | "white";
+}) {
   return (
     <Link href="/student" className="brand" aria-label={`${name} — início`}>
       <Image
-        src="/logo-lourenco-castanho.jpg"
+        src={
+          variant === "white"
+            ? "/logo-lourenco-castanho-branco.png"
+            : "/logo-lourenco-castanho.jpg"
+        }
         alt={name}
         width={664}
         height={226}
@@ -38,7 +48,7 @@ export function Shell({
     <>
       <header className="site-header">
         <div className="header-inner">
-          <Brand name={schoolName} />
+          <Brand name={schoolName} variant="white" />
           <nav aria-label="Menu principal">
             <Link href="/student" className="nav-active">
               Plano de estudos
