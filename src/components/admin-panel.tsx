@@ -1355,7 +1355,7 @@ export function AdminPanel({
             <>
               {collection(
                 "recipes",
-                "As etapas referenciam os identificadores das atividades. A soma das durações deve corresponder à receita.",
+                "As etapas referenciam as atividades e são aplicadas na ordem, até completar o tempo disponível da sessão.",
               )}
               {collection("activities")}
             </>

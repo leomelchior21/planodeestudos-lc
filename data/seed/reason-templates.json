@@ -23,5 +23,10 @@
     "id": "WEEKLY_RESOURCE",
     "code": "WEEKLY_RESOURCE",
     "text": "Este material faz parte das atividades semanais recomendadas pela escola."
+  },
+  {
+    "id": "LONGER_SESSION",
+    "code": "LONGER_SESSION",
+    "text": "Blocos mais longos aproveitam melhor o tempo disponível."
   }
 ]

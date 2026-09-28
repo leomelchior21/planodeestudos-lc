@@ -94,5 +94,13 @@
     "value": 5,
     "description": "Desconto para materiais de prioridade secundária.",
     "active": true
+  },
+  {
+    "id": "longer_session_bonus",
+    "code": "longer_session_bonus",
+    "name": "Bloco de estudo mais longo",
+    "value": 8,
+    "description": "Bônus para sessões de 60 minutos ou mais quando há tempo disponível.",
+    "active": true
   }
 ]

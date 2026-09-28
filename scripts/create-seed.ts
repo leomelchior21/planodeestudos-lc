@@ -133,20 +133,28 @@ const recoverySteps: Record<string, string[]> = {
     "Realizar exercícios relacionados aos temas estudados no site https://www.profedeele.es/.",
   ],
 };
-const distribute = (total: number, count: number) => {
-  const base = Math.floor(total / count),
-    rest = total % count;
-  return Array.from({ length: count }, (_, i) => base + (i < rest ? 1 : 0));
+const recoveryStepMinutes: Record<string, number[]> = {
+  math: [30, 30, 30],
+  portuguese: [30, 30, 10, 15],
+  science: [30, 30, 10, 30, 15],
+  biology: [30, 30, 10, 15],
+  physics: [30, 30, 10, 15],
+  geography: [30, 30, 10, 15],
+  history: [30, 30, 10, 15],
+  english: [30, 15, 30],
+  spanish: [30, 15, 30],
 };
 const activities: SchoolData["activities"] = [];
 const recipes: SchoolData["recipes"] = [];
 for (const [subjectId, resourceId] of mappings)
-  for (const activityType of ["practice", "review", "preparation"])
-    for (const duration of [30, 60]) {
+  for (const activityType of ["practice", "review", "preparation"]) {
+    const instructions = recoverySteps[subjectId];
+    const durations = recoveryStepMinutes[subjectId];
+    const sessionLengths =
+      durations.length >= 4 ? [30, 60, 90] : [30, 60];
+    for (const duration of sessionLengths) {
       const prefix = `${subjectId}-${resourceId}-${activityType}-${duration}`;
       const resource = resources.find((r) => r.id === resourceId)!;
-      const instructions = recoverySteps[subjectId];
-      const durations = distribute(duration, instructions.length);
       const steps = instructions.map((instruction, i) => {
         const id = `${prefix}-${i}`;
         activities.push({
@@ -179,6 +187,7 @@ for (const [subjectId, resourceId] of mappings)
         active: true,
       });
     }
+  }
 const rules = [
   [
     "priority_subject_bonus",
@@ -251,6 +260,12 @@ const rules = [
     "Preferência de material",
     5,
     "Desconto para materiais de prioridade secundária.",
+  ],
+  [
+    "longer_session_bonus",
+    "Bloco de estudo mais longo",
+    8,
+    "Bônus para sessões de 60 minutos ou mais quando há tempo disponível.",
   ],
 ].map(([code, name, value, description]) => ({
   id: String(code),
@@ -413,6 +428,10 @@ const data: SchoolData = {
     [
       "WEEKLY_RESOURCE",
       "Este material faz parte das atividades semanais recomendadas pela escola.",
+    ],
+    [
+      "LONGER_SESSION",
+      "Blocos mais longos aproveitam melhor o tempo disponível.",
     ],
   ].map(([code, text]) => ({ id: code, code, text })),
 };

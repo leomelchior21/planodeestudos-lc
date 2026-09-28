@@ -1006,20 +1006,46 @@ textarea {
   padding: 22px 26px;
 }
 .session-detail h4 {
-  font-size: 14px;
+  font-size: 16.8px;
+}
+.steps-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.steps-total {
+  font-size: 12px;
+  font-weight: 650;
+  color: #7a5f97;
+  background: #f3ecfd;
+  border: 1px solid #e3d4f7;
+  border-radius: 999px;
+  padding: 4px 11px;
 }
 .recipe-step {
-  margin-top: 13px;
-  gap: 13px;
-  align-items: flex-start;
+  margin-top: 10px;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 15px;
+  background: #faf7ff;
+  border: 1px solid #eee5fa;
+  border-radius: 14px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
-.recipe-step > span {
-  font-size: 11px;
+.recipe-step:hover {
+  border-color: #d9c7f3;
+  box-shadow: 0 10px 22px -18px #6d3fc4;
+}
+.recipe-step > .recipe-step-index {
+  font-size: 13.2px;
   font-weight: 700;
-  width: 26px;
-  height: 26px;
-  min-width: 26px;
-  margin-top: 2px;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
   padding: 0;
   border-radius: 50%;
   background: #7040c8;
@@ -1030,9 +1056,58 @@ textarea {
   box-shadow: 0 6px 14px -8px #4d229e;
 }
 .recipe-step p {
-  font-size: 13px;
+  flex: 1;
+  font-size: 15.6px;
   color: #241631;
-  line-height: 1.8;
+  line-height: 1.6;
+}
+.recipe-step > .recipe-step-time {
+  font-size: 13.2px;
+  font-weight: 650;
+  color: #5b3a86;
+  background: #f1e9fd;
+  border: 1px solid #e3d4f7;
+  border-radius: 999px;
+  padding: 5px 12px;
+  min-width: 0;
+  white-space: nowrap;
+  text-align: center;
+}
+.recipe-optional {
+  margin-top: 16px;
+  padding: 12px 13px 13px;
+  border: 1px dashed #e2d5f4;
+  border-radius: 14px;
+  background: #fdfbff;
+}
+.recipe-optional-label {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 650;
+  color: #a18dbb;
+}
+.recipe-optional .recipe-step {
+  background: #fdfbff;
+  border-color: #f1eafa;
+}
+.recipe-optional .recipe-step:hover {
+  border-color: #e6d9f7;
+  box-shadow: none;
+}
+.recipe-optional .recipe-step-index {
+  background: #e4d7f6;
+  color: #7a5f97;
+  box-shadow: none;
+}
+.recipe-optional .recipe-step p {
+  color: #8d7da0;
+}
+.recipe-optional .recipe-step-time {
+  background: #f7f2fd;
+  border-color: #ece1f8;
+  color: #8d7da0;
 }
 .session-reasons {
   padding: 17px;

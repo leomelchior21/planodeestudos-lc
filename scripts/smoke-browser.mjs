@@ -97,7 +97,7 @@ try {
   );
   assert.equal(
     await page
-      .locator(".session-card .recipe-step > span")
+      .locator(".session-card .recipe-step-index")
       .first()
       .evaluate((el) => getComputedStyle(el).backgroundColor),
     "rgb(112, 64, 200)",
@@ -117,13 +117,24 @@ try {
   const stepNumbers = await page
     .locator(".session-card")
     .first()
-    .locator(".recipe-step > span")
+    .locator(".recipe-step-index")
     .allInnerTexts();
   assert.ok(stepNumbers.length > 0, "passo a passo vazio");
   assert.ok(
     stepNumbers.every((v) => /^\d+$/.test(v.trim())),
     `passos deveriam ser numéricos: ${stepNumbers.join(",")}`,
   );
+  const stepTimes = await page
+    .locator(".session-card")
+    .first()
+    .locator(".recipe-step-time")
+    .allInnerTexts();
+  assert.ok(stepTimes.length > 0, "tempos estimados ausentes");
+  assert.ok(
+    stepTimes.every((v) => /^\d+ min$/.test(v.trim())),
+    `tempos inesperados: ${stepTimes.join(",")}`,
+  );
+  assert.equal(stepNumbers.length, stepTimes.length);
   const downloadPromise = page.waitForEvent("download");
   await page.getByRole("button", { name: "Baixar PDF", exact: true }).click();
   const download = await downloadPromise;
@@ -298,6 +309,8 @@ try {
           "PDF download",
           "full plan view only",
           "numbered recovery steps",
+          "steps fit session time",
+          "step time chips",
           "black steps + purple badges",
           "top download button",
           "purple radar card",

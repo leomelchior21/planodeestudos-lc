@@ -72,12 +72,13 @@ export function parseSchoolData(input: unknown): SchoolData {
     ref(d.subjects, x.subjectId, "Receita");
     ref(d.resources, x.resourceId, "Receita");
     x.steps.forEach((s) => ref(d.activities, s.activityId, "Etapa"));
+    const stepTotal = x.steps.reduce((sum, s) => sum + s.durationMinutes, 0);
     if (
-      x.steps.reduce((sum, s) => sum + s.durationMinutes, 0) !==
-      x.durationMinutes
+      stepTotal < x.durationMinutes &&
+      x.durationMinutes - stepTotal >= d.settings.minimumStudyMinutes
     )
       errors.push(
-        `Receita ${x.name}: a soma das etapas deve corresponder à duração`,
+        `Receita ${x.name}: as etapas devem cobrir a duração da receita`,
       );
   });
   d.phases.forEach((x) => {

@@ -14,6 +14,7 @@ import {
   type StudySession,
   type PlanWarning,
 } from "../types";
+import { buildSessionSteps } from "./sessions";
 
 export function relevantEvents(data: SchoolData, classId: string) {
   const c = data.classes.find((c) => c.id === classId);
@@ -118,6 +119,10 @@ export function generateStudyPlan(data: SchoolData, raw: PlanInput): StudyPlan {
           ),
       ),
   );
+  const maxBlocksPerSession = Math.max(
+    1,
+    ...recipes.map((r) => Math.ceil(r.durationMinutes / min)),
+  );
   const plan: StudyPlan = {
     ...input,
     id: "",
@@ -193,10 +198,11 @@ export function generateStudyPlan(data: SchoolData, raw: PlanInput): StudyPlan {
           const remainingSlots = days
             .filter((d) => d.date >= day.date)
             .reduce((n, d) => n + Math.floor(d.quota / min), 0);
-          const requiredSlots = unmet.reduce(
-            (n, r) => n + r.weeklyMinimum - resourceCount(r.id),
-            0,
-          );
+          const requiredSlots =
+            unmet.reduce(
+              (n, r) => n + r.weeklyMinimum - resourceCount(r.id),
+              0,
+            ) * maxBlocksPerSession;
           const candidates: {
             subjectId: string;
             resourceId?: string;
@@ -334,6 +340,11 @@ export function generateStudyPlan(data: SchoolData, raw: PlanInput): StudyPlan {
                       ? rule("preferred_day_bonus")
                       : 0),
                 );
+              add(
+                "LONGER_SESSION",
+                Math.floor(recipe.durationMinutes / min - 1) *
+                  rule("longer_session_bonus"),
+              );
               const preference =
                 data.subjectResources.find(
                   (sr) =>
@@ -357,16 +368,23 @@ export function generateStudyPlan(data: SchoolData, raw: PlanInput): StudyPlan {
                 forced: needsResource && remainingSlots <= requiredSlots,
               });
             }
-          candidates.sort(
-            (a, b) =>
-              Number(b.forced) - Number(a.forced) ||
+          candidates.sort((a, b) => {
+            if (a.forced !== b.forced)
+              return Number(b.forced) - Number(a.forced);
+            if (
+              a.forced &&
+              a.recipe.durationMinutes !== b.recipe.durationMinutes
+            )
+              return a.recipe.durationMinutes - b.recipe.durationMinutes;
+            return (
               b.score - a.score ||
               a.rank - b.rank ||
               a.proximity - b.proximity ||
               a.last.localeCompare(b.last) ||
               a.subjectId.localeCompare(b.subjectId) ||
-              a.recipe.id.localeCompare(b.recipe.id),
-          );
+              a.recipe.id.localeCompare(b.recipe.id)
+            );
+          });
           const best = candidates[0];
           if (!best) break;
           const reasonCodes = best.breakdown
@@ -390,13 +408,11 @@ export function generateStudyPlan(data: SchoolData, raw: PlanInput): StudyPlan {
                   data.reasonTemplates.find((t) => t.code === code)?.text,
               )
               .filter((v): v is string => !!v),
-            steps: [...best.recipe.steps]
-              .sort((a, b) => a.order - b.order)
-              .map((s) => ({
-                instruction: data.activities.find((a) => a.id === s.activityId)!
-                  .instruction,
-                minutes: s.durationMinutes,
-              })),
+            steps: buildSessionSteps(
+              data,
+              best.recipe.id,
+              best.recipe.durationMinutes,
+            ),
           });
           cursor += best.recipe.durationMinutes;
           day.quota -= best.recipe.durationMinutes;

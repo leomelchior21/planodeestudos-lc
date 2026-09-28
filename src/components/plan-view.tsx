@@ -17,6 +17,11 @@ import {
 import type { SavedPlan, StudySession } from "@/domain/types";
 import { formatDate, minutes } from "@/domain/dates";
 import { relevantEvents } from "@/domain/study-plan/engine";
+import {
+  buildOptionalSessionSteps,
+  buildSessionSteps,
+  mergeConsecutiveSessions,
+} from "@/domain/study-plan/sessions";
 import { Shell, Progress } from "./shell";
 import { SubjectIcon } from "./icons";
 import { PlanCelebration } from "./student-hero";
@@ -54,6 +59,12 @@ export function PlanView({
   function sessionCard(s: StudySession) {
     const subject = school.subjects.find((v) => v.id === s.subjectId)!;
     const resource = school.resources.find((v) => v.id === s.resourceId);
+    const sessionMinutes = minutes(s.endTime) - minutes(s.startTime);
+    const steps = buildSessionSteps(school, s.recipeId, sessionMinutes);
+    const optional =
+      sessionMinutes >= 60
+        ? buildOptionalSessionSteps(school, s.recipeId, sessionMinutes)
+        : [];
     return (
       <details key={s.id} className="session-card">
         <summary>
@@ -82,13 +93,34 @@ export function PlanView({
           <ChevronDown size={17} />
         </summary>
         <div className="session-detail">
-          <h4>Seu passo a passo</h4>
-          {s.steps.map((step, i) => (
+          <div className="steps-heading">
+            <h4>Seu passo a passo</h4>
+            <span className="steps-total">
+              {steps.length} {steps.length === 1 ? "etapa" : "etapas"} ·{" "}
+              {sessionMinutes} min
+            </span>
+          </div>
+          {steps.map((step, i) => (
             <div className="recipe-step" key={i}>
-              <span>{i + 1}</span>
+              <span className="recipe-step-index">{i + 1}</span>
               <p>{step.instruction}</p>
+              <span className="recipe-step-time">{step.minutes} min</span>
             </div>
           ))}
+          {optional.length > 0 && (
+            <div className="recipe-optional">
+              <span className="recipe-optional-label">Se der tempo</span>
+              {optional.map((step, i) => (
+                <div className="recipe-step" key={i}>
+                  <span className="recipe-step-index">
+                    {steps.length + i + 1}
+                  </span>
+                  <p>{step.instruction}</p>
+                  <span className="recipe-step-time">{step.minutes} min</span>
+                </div>
+              ))}
+            </div>
+          )}
           {resource?.url && (
             <a
               className="text-link"
@@ -216,7 +248,7 @@ export function PlanView({
                 </h3>
                 <div className="session-list">
                   {week.sessions.length ? (
-                    week.sessions.map(sessionCard)
+                    mergeConsecutiveSessions(week.sessions).map(sessionCard)
                   ) : (
                     <div className="empty-state">
                       <Clock3 size={30} />
