@@ -2834,3 +2834,173 @@ textarea {
     max-width: 64px;
   }
 }
+
+/* Transição de geração do plano */
+.plan-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 22%, #9a6bff 0%, transparent 42%),
+    radial-gradient(circle at 82% 78%, #c77dff 0%, transparent 38%),
+    linear-gradient(150deg, #341064 0%, #5b2fa8 55%, #7a44cf 100%);
+  animation: transition-in 0.5s ease both;
+}
+.plan-transition::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#ffffff26 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
+  opacity: 0.5;
+}
+.transition-orb {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+.transition-orb-a {
+  width: 170px;
+  height: 170px;
+  top: 12%;
+  left: 8%;
+  background: radial-gradient(circle at 35% 35%, #ffda73, #f0a933);
+  animation: transition-float 5s ease-in-out infinite;
+}
+.transition-orb-b {
+  width: 90px;
+  height: 90px;
+  bottom: 16%;
+  right: 12%;
+  background: radial-gradient(circle at 35% 35%, #ffffff66, #ffffff11);
+  animation: transition-float 6.5s ease-in-out infinite reverse;
+}
+.transition-orb-c {
+  width: 46px;
+  height: 46px;
+  top: 24%;
+  right: 24%;
+  background: #ffda73;
+  animation: transition-float 4.2s ease-in-out infinite;
+}
+.transition-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 32px;
+  text-align: center;
+  animation: transition-pop 0.7s cubic-bezier(0.2, 0.9, 0.3, 1.15) both 0.1s;
+}
+.transition-badge {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #5b2fa8;
+  background: #fff;
+  box-shadow: 0 24px 50px -24px #1e0942;
+}
+.transition-badge svg {
+  animation: transition-tilt 2.2s ease-in-out infinite;
+}
+.transition-ring {
+  position: absolute;
+  inset: -14px;
+  border-radius: 50%;
+  border: 2px solid #ffffff73;
+  animation: transition-ring 1.8s ease-out infinite;
+}
+.transition-ring:nth-of-type(2) {
+  animation-delay: 0.9s;
+}
+.transition-content h2 {
+  font-size: 30px;
+  letter-spacing: -0.6px;
+  color: #fff;
+  margin-top: 18px;
+}
+.transition-content p {
+  font-size: 13px;
+  color: #e4d7fb;
+  max-width: 380px;
+  line-height: 1.7;
+}
+.transition-bar {
+  width: min(340px, 72vw);
+  height: 7px;
+  border-radius: 999px;
+  background: #ffffff2b;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.transition-bar span {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ffda73, #ffb347);
+  box-shadow: 0 0 18px #ffda7388;
+  animation: transition-fill 3s ease forwards;
+}
+@keyframes transition-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes transition-pop {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes transition-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -22px, 0) scale(1.06);
+  }
+}
+@keyframes transition-ring {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+@keyframes transition-tilt {
+  0%,
+  100% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(8deg) scale(1.08);
+  }
+}
+@keyframes transition-fill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

@@ -47,6 +47,7 @@ export function StudentWizard({
     addDays(today(), school.settings.planDefaultWeeks * 7 - 1),
   );
   const [busy, setBusy] = useState(false);
+  const [transition, setTransition] = useState(false);
   const [error, setError] = useState("");
   const bannerMessages = [
     "Organize sua rotina de estudos.",
@@ -85,6 +86,13 @@ export function StudentWizard({
     [list[index], list[index + delta]] = [list[index + delta], list[index]];
     setPriorities(list);
   };
+  function startTransition(planId: string) {
+    setTransition(true);
+    window.setTimeout(
+      () => router.push(`/plan/${planId}${simulator ? "?debug=true" : ""}`),
+      3000,
+    );
+  }
   async function generate() {
     setError("");
     setBusy(true);
@@ -111,7 +119,7 @@ export function StudentWizard({
       if (!response.ok || !result.saved)
         throw new Error(result.error ?? "Não foi possível gerar o plano.");
       saveBrowserPlan(result.saved);
-      router.push(`/plan/${result.saved.plan.id}${simulator ? "?debug=true" : ""}`);
+      startTransition(result.saved.plan.id);
     } catch (e) {
       setError(
         e instanceof Error ? e.message : "Não foi possível gerar o plano.",
@@ -383,12 +391,39 @@ export function StudentWizard({
             )}
             <button
               className="button primary"
-              disabled={
-                busy ||
-                (step === 0 && (!classId || !studentName.trim())) ||
-                (step === 2 && !slots.length)
-              }
-              onClick={() => (step < 2 ? setStep(step + 1) : generate())}
+              disabled={busy}
+              onClick={() => {
+                if (step === 0) {
+                  if (!studentName.trim() || !classId) {
+                    setError(
+                      "Informe seu nome completo e escolha seu ano e sua turma para continuar.",
+                    );
+                    return;
+                  }
+                  setError("");
+                  setStep(1);
+                  return;
+                }
+                if (step === 1) {
+                  if (!priorities.length) {
+                    setError(
+                      "Escolha pelo menos uma disciplina para continuar.",
+                    );
+                    return;
+                  }
+                  setError("");
+                  setStep(2);
+                  return;
+                }
+                if (!slots.length) {
+                  setError(
+                    "Escolha pelo menos um horário para gerar o seu plano.",
+                  );
+                  return;
+                }
+                setError("");
+                void generate();
+              }}
             >
               {busy ? (
                 <>
@@ -465,6 +500,28 @@ export function StudentWizard({
         <span>✦</span> Você não precisa estudar mais. Precisa encontrar o seu
         jeito.
       </div>
+      {transition && (
+        <div className="plan-transition" role="status" aria-live="polite">
+          <span className="transition-orb transition-orb-a" />
+          <span className="transition-orb transition-orb-b" />
+          <span className="transition-orb transition-orb-c" />
+          <div className="transition-content">
+            <div className="transition-badge">
+              <span className="transition-ring" />
+              <span className="transition-ring" />
+              <GraduationCap size={36} />
+            </div>
+            <h2>Preparando seu plano…</h2>
+            <p>
+              Distribuindo suas matérias e horários na medida certa. Já já ele
+              aparece.
+            </p>
+            <div className="transition-bar">
+              <span />
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   );
   return simulator ? (

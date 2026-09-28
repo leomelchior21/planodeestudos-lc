@@ -1,12 +1,15 @@
 import { chromium } from '@playwright/test';
 import ExcelJS from 'exceljs';
+import { readFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
 const browser=await chromium.launch({headless:true});
+const adminPassword=(await readFile('.env.local','utf8').catch(()=>'')).match(/^ADMIN_PASSWORD=(.*)$/m)?.[1]?.trim()??'';
 try {
  const page=await browser.newPage();
  page.setDefaultTimeout(120000);
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('http://localhost:3000/admin',{waitUntil:'networkidle'});
+ if(adminPassword){await page.getByLabel('Senha administrativa',{exact:true}).fill(adminPassword);await page.getByRole('button',{name:'Entrar',exact:true}).click();}
  await page.getByRole('button',{name:'Importar dados',exact:true}).click();
  const book=new ExcelJS.Workbook();const sheet=book.addWorksheet('Calendário');
  sheet.addRow(['date','event_type','title','grade','class','subject']);
@@ -23,8 +26,9 @@ try {
  await page.goto('http://localhost:3000/student',{waitUntil:'networkidle'});
  await page.getByRole('button',{name:/7º ano/}).click();
  await page.getByRole('button',{name:'Turma A',exact:true}).click();
- await page.getByLabel('Seu nome',{exact:true}).fill('Aluno de demonstração');
+ await page.getByLabel('Nome completo',{exact:true}).fill('Aluno de demonstração');
  await page.getByRole('button',{name:'Continuar',exact:true}).click();
+ await page.getByRole('button',{name:'MAT Matemática',exact:true}).click();
  await page.getByRole('button',{name:'Definir horários',exact:true}).click();
  const first=page.getByRole('button',{name:'Seg 15:00 às 15:30',exact:true});
  const last=page.getByRole('button',{name:'Seg 16:00 às 16:30',exact:true});

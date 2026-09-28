@@ -38,6 +38,10 @@ try {
   );
   await page.screenshot({ path: ".local/student-desktop.png", fullPage: true });
   await page.getByRole("button", { name: "Continuar", exact: true }).click();
+  await page
+    .getByRole("button", { name: "Definir horários", exact: true })
+    .click();
+  await page.getByText("Escolha pelo menos uma disciplina").waitFor();
   for (const name of [
     "GEO Geografia",
     "MAT Matemática",
@@ -49,6 +53,8 @@ try {
   await page
     .getByRole("button", { name: "Definir horários", exact: true })
     .click();
+  await page.getByRole("button", { name: "Gerar meu plano" }).click();
+  await page.getByText("Escolha pelo menos um horário").waitFor();
   for (const day of ["Seg", "Ter", "Qua", "Qui", "Sex"])
     for (const time of [
       "15:00 às 15:30",
@@ -70,6 +76,7 @@ try {
   await page.getByLabel("Início", { exact: true }).fill("2026-09-23");
   await page.getByLabel("Fim", { exact: true }).fill("2026-10-20");
   await page.getByRole("button", { name: "Gerar meu plano" }).click();
+  await page.locator(".plan-transition").waitFor();
   await page.waitForURL(/\/plan\//, { timeout: 120000 });
   await page.getByRole("heading", { name: "Seu plano está pronto!" }).waitFor();
   await page.reload({ waitUntil: "networkidle" });
@@ -251,6 +258,9 @@ try {
   });
   await mobile.getByRole("button", { name: "Continuar", exact: true }).click();
   await mobile
+    .getByRole("button", { name: "MAT Matemática", exact: true })
+    .click();
+  await mobile
     .getByRole("button", { name: "Definir horários", exact: true })
     .click();
   await mobile
@@ -280,8 +290,10 @@ try {
           "full name",
           "rotating banner",
           "BIO/FIS subjects",
+          "subject and slot validations",
           "availability",
           "purple period box",
+          "3s transition screen",
           "persistent plan",
           "PDF download",
           "full plan view only",
