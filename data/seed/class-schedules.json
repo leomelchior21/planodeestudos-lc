@@ -5,7 +5,7 @@
     "weekday": 1,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "science"
   },
   {
@@ -13,8 +13,8 @@
     "classId": "class-6a",
     "weekday": 1,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "biology"
   },
   {
@@ -22,8 +22,8 @@
     "classId": "class-6a",
     "weekday": 1,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "physics"
   },
   {
@@ -31,8 +31,8 @@
     "classId": "class-6a",
     "weekday": 1,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "geography"
   },
   {
@@ -40,9 +40,27 @@
     "classId": "class-6a",
     "weekday": 1,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "history"
+  },
+  {
+    "id": "class-6a-1-5",
+    "classId": "class-6a",
+    "weekday": 1,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6a-1-6",
+    "classId": "class-6a",
+    "weekday": 1,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "spanish"
   },
   {
     "id": "class-6a-2-0",
@@ -50,7 +68,7 @@
     "weekday": 2,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "physics"
   },
   {
@@ -58,8 +76,8 @@
     "classId": "class-6a",
     "weekday": 2,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "geography"
   },
   {
@@ -67,8 +85,8 @@
     "classId": "class-6a",
     "weekday": 2,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "history"
   },
   {
@@ -76,8 +94,8 @@
     "classId": "class-6a",
     "weekday": 2,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "english"
   },
   {
@@ -85,9 +103,27 @@
     "classId": "class-6a",
     "weekday": 2,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "spanish"
+  },
+  {
+    "id": "class-6a-2-5",
+    "classId": "class-6a",
+    "weekday": 2,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6a-2-6",
+    "classId": "class-6a",
+    "weekday": 2,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "portuguese"
   },
   {
     "id": "class-6a-3-0",
@@ -95,7 +131,7 @@
     "weekday": 3,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "history"
   },
   {
@@ -103,8 +139,8 @@
     "classId": "class-6a",
     "weekday": 3,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "english"
   },
   {
@@ -112,8 +148,8 @@
     "classId": "class-6a",
     "weekday": 3,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "spanish"
   },
   {
@@ -121,8 +157,8 @@
     "classId": "class-6a",
     "weekday": 3,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "math"
   },
   {
@@ -130,9 +166,27 @@
     "classId": "class-6a",
     "weekday": 3,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6a-3-5",
+    "classId": "class-6a",
+    "weekday": 3,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6a-3-6",
+    "classId": "class-6a",
+    "weekday": 3,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "biology"
   },
   {
     "id": "class-6a-4-0",
@@ -140,7 +194,7 @@
     "weekday": 4,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "spanish"
   },
   {
@@ -148,8 +202,8 @@
     "classId": "class-6a",
     "weekday": 4,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "math"
   },
   {
@@ -157,8 +211,8 @@
     "classId": "class-6a",
     "weekday": 4,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "portuguese"
   },
   {
@@ -166,8 +220,8 @@
     "classId": "class-6a",
     "weekday": 4,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "science"
   },
   {
@@ -175,9 +229,27 @@
     "classId": "class-6a",
     "weekday": 4,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "biology"
+  },
+  {
+    "id": "class-6a-4-5",
+    "classId": "class-6a",
+    "weekday": 4,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "physics"
+  },
+  {
+    "id": "class-6a-4-6",
+    "classId": "class-6a",
+    "weekday": 4,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "geography"
   },
   {
     "id": "class-6a-5-0",
@@ -185,7 +257,7 @@
     "weekday": 5,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "portuguese"
   },
   {
@@ -193,8 +265,8 @@
     "classId": "class-6a",
     "weekday": 5,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "science"
   },
   {
@@ -202,8 +274,8 @@
     "classId": "class-6a",
     "weekday": 5,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "biology"
   },
   {
@@ -211,8 +283,8 @@
     "classId": "class-6a",
     "weekday": 5,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "physics"
   },
   {
@@ -220,9 +292,27 @@
     "classId": "class-6a",
     "weekday": 5,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "geography"
+  },
+  {
+    "id": "class-6a-5-5",
+    "classId": "class-6a",
+    "weekday": 5,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6a-5-6",
+    "classId": "class-6a",
+    "weekday": 5,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "english"
   },
   {
     "id": "class-6b-1-0",
@@ -230,7 +320,7 @@
     "weekday": 1,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "biology"
   },
   {
@@ -238,8 +328,8 @@
     "classId": "class-6b",
     "weekday": 1,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "physics"
   },
   {
@@ -247,8 +337,8 @@
     "classId": "class-6b",
     "weekday": 1,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "geography"
   },
   {
@@ -256,8 +346,8 @@
     "classId": "class-6b",
     "weekday": 1,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "history"
   },
   {
@@ -265,9 +355,27 @@
     "classId": "class-6b",
     "weekday": 1,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "english"
+  },
+  {
+    "id": "class-6b-1-5",
+    "classId": "class-6b",
+    "weekday": 1,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6b-1-6",
+    "classId": "class-6b",
+    "weekday": 1,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "math"
   },
   {
     "id": "class-6b-2-0",
@@ -275,7 +383,7 @@
     "weekday": 2,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "geography"
   },
   {
@@ -283,8 +391,8 @@
     "classId": "class-6b",
     "weekday": 2,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "history"
   },
   {
@@ -292,8 +400,8 @@
     "classId": "class-6b",
     "weekday": 2,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "english"
   },
   {
@@ -301,8 +409,8 @@
     "classId": "class-6b",
     "weekday": 2,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "spanish"
   },
   {
@@ -310,9 +418,27 @@
     "classId": "class-6b",
     "weekday": 2,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "math"
+  },
+  {
+    "id": "class-6b-2-5",
+    "classId": "class-6b",
+    "weekday": 2,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6b-2-6",
+    "classId": "class-6b",
+    "weekday": 2,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "science"
   },
   {
     "id": "class-6b-3-0",
@@ -320,7 +446,7 @@
     "weekday": 3,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "english"
   },
   {
@@ -328,8 +454,8 @@
     "classId": "class-6b",
     "weekday": 3,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "spanish"
   },
   {
@@ -337,8 +463,8 @@
     "classId": "class-6b",
     "weekday": 3,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "math"
   },
   {
@@ -346,8 +472,8 @@
     "classId": "class-6b",
     "weekday": 3,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "portuguese"
   },
   {
@@ -355,9 +481,27 @@
     "classId": "class-6b",
     "weekday": 3,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "science"
+  },
+  {
+    "id": "class-6b-3-5",
+    "classId": "class-6b",
+    "weekday": 3,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-6b-3-6",
+    "classId": "class-6b",
+    "weekday": 3,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "physics"
   },
   {
     "id": "class-6b-4-0",
@@ -365,7 +509,7 @@
     "weekday": 4,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "math"
   },
   {
@@ -373,8 +517,8 @@
     "classId": "class-6b",
     "weekday": 4,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "portuguese"
   },
   {
@@ -382,8 +526,8 @@
     "classId": "class-6b",
     "weekday": 4,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "science"
   },
   {
@@ -391,8 +535,8 @@
     "classId": "class-6b",
     "weekday": 4,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "biology"
   },
   {
@@ -400,9 +544,27 @@
     "classId": "class-6b",
     "weekday": 4,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "physics"
+  },
+  {
+    "id": "class-6b-4-5",
+    "classId": "class-6b",
+    "weekday": 4,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6b-4-6",
+    "classId": "class-6b",
+    "weekday": 4,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "history"
   },
   {
     "id": "class-6b-5-0",
@@ -410,7 +572,7 @@
     "weekday": 5,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "science"
   },
   {
@@ -418,8 +580,8 @@
     "classId": "class-6b",
     "weekday": 5,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "biology"
   },
   {
@@ -427,8 +589,8 @@
     "classId": "class-6b",
     "weekday": 5,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "physics"
   },
   {
@@ -436,8 +598,8 @@
     "classId": "class-6b",
     "weekday": 5,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "geography"
   },
   {
@@ -445,9 +607,27 @@
     "classId": "class-6b",
     "weekday": 5,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "history"
+  },
+  {
+    "id": "class-6b-5-5",
+    "classId": "class-6b",
+    "weekday": 5,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6b-5-6",
+    "classId": "class-6b",
+    "weekday": 5,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "spanish"
   },
   {
     "id": "class-6c-1-0",
@@ -455,7 +635,7 @@
     "weekday": 1,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "physics"
   },
   {
@@ -463,8 +643,8 @@
     "classId": "class-6c",
     "weekday": 1,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "geography"
   },
   {
@@ -472,8 +652,8 @@
     "classId": "class-6c",
     "weekday": 1,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "history"
   },
   {
@@ -481,8 +661,8 @@
     "classId": "class-6c",
     "weekday": 1,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "english"
   },
   {
@@ -490,9 +670,27 @@
     "classId": "class-6c",
     "weekday": 1,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "spanish"
+  },
+  {
+    "id": "class-6c-1-5",
+    "classId": "class-6c",
+    "weekday": 1,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6c-1-6",
+    "classId": "class-6c",
+    "weekday": 1,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "portuguese"
   },
   {
     "id": "class-6c-2-0",
@@ -500,7 +698,7 @@
     "weekday": 2,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "history"
   },
   {
@@ -508,8 +706,8 @@
     "classId": "class-6c",
     "weekday": 2,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "english"
   },
   {
@@ -517,8 +715,8 @@
     "classId": "class-6c",
     "weekday": 2,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "spanish"
   },
   {
@@ -526,8 +724,8 @@
     "classId": "class-6c",
     "weekday": 2,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "math"
   },
   {
@@ -535,9 +733,27 @@
     "classId": "class-6c",
     "weekday": 2,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6c-2-5",
+    "classId": "class-6c",
+    "weekday": 2,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-6c-2-6",
+    "classId": "class-6c",
+    "weekday": 2,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "biology"
   },
   {
     "id": "class-6c-3-0",
@@ -545,7 +761,7 @@
     "weekday": 3,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "spanish"
   },
   {
@@ -553,8 +769,8 @@
     "classId": "class-6c",
     "weekday": 3,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "math"
   },
   {
@@ -562,8 +778,8 @@
     "classId": "class-6c",
     "weekday": 3,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "portuguese"
   },
   {
@@ -571,8 +787,8 @@
     "classId": "class-6c",
     "weekday": 3,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "science"
   },
   {
@@ -580,9 +796,27 @@
     "classId": "class-6c",
     "weekday": 3,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "biology"
+  },
+  {
+    "id": "class-6c-3-5",
+    "classId": "class-6c",
+    "weekday": 3,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "physics"
+  },
+  {
+    "id": "class-6c-3-6",
+    "classId": "class-6c",
+    "weekday": 3,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "geography"
   },
   {
     "id": "class-6c-4-0",
@@ -590,7 +824,7 @@
     "weekday": 4,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "portuguese"
   },
   {
@@ -598,8 +832,8 @@
     "classId": "class-6c",
     "weekday": 4,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "science"
   },
   {
@@ -607,8 +841,8 @@
     "classId": "class-6c",
     "weekday": 4,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "biology"
   },
   {
@@ -616,8 +850,8 @@
     "classId": "class-6c",
     "weekday": 4,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "physics"
   },
   {
@@ -625,9 +859,27 @@
     "classId": "class-6c",
     "weekday": 4,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "geography"
+  },
+  {
+    "id": "class-6c-4-5",
+    "classId": "class-6c",
+    "weekday": 4,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-6c-4-6",
+    "classId": "class-6c",
+    "weekday": 4,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "english"
   },
   {
     "id": "class-6c-5-0",
@@ -635,7 +887,7 @@
     "weekday": 5,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "biology"
   },
   {
@@ -643,8 +895,8 @@
     "classId": "class-6c",
     "weekday": 5,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "physics"
   },
   {
@@ -652,8 +904,8 @@
     "classId": "class-6c",
     "weekday": 5,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "geography"
   },
   {
@@ -661,8 +913,8 @@
     "classId": "class-6c",
     "weekday": 5,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "history"
   },
   {
@@ -670,9 +922,27 @@
     "classId": "class-6c",
     "weekday": 5,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "english"
+  },
+  {
+    "id": "class-6c-5-5",
+    "classId": "class-6c",
+    "weekday": 5,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-6c-5-6",
+    "classId": "class-6c",
+    "weekday": 5,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "math"
   },
   {
     "id": "class-6d-1-0",
@@ -680,7 +950,7 @@
     "weekday": 1,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "geography"
   },
   {
@@ -688,8 +958,8 @@
     "classId": "class-6d",
     "weekday": 1,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "history"
   },
   {
@@ -697,8 +967,8 @@
     "classId": "class-6d",
     "weekday": 1,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "english"
   },
   {
@@ -706,8 +976,8 @@
     "classId": "class-6d",
     "weekday": 1,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "spanish"
   },
   {
@@ -715,9 +985,27 @@
     "classId": "class-6d",
     "weekday": 1,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "math"
+  },
+  {
+    "id": "class-6d-1-5",
+    "classId": "class-6d",
+    "weekday": 1,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-6d-1-6",
+    "classId": "class-6d",
+    "weekday": 1,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "science"
   },
   {
     "id": "class-6d-2-0",
@@ -725,7 +1013,7 @@
     "weekday": 2,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "english"
   },
   {
@@ -733,8 +1021,8 @@
     "classId": "class-6d",
     "weekday": 2,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "spanish"
   },
   {
@@ -742,8 +1030,8 @@
     "classId": "class-6d",
     "weekday": 2,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "math"
   },
   {
@@ -751,8 +1039,8 @@
     "classId": "class-6d",
     "weekday": 2,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "portuguese"
   },
   {
@@ -760,9 +1048,27 @@
     "classId": "class-6d",
     "weekday": 2,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "science"
+  },
+  {
+    "id": "class-6d-2-5",
+    "classId": "class-6d",
+    "weekday": 2,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-6d-2-6",
+    "classId": "class-6d",
+    "weekday": 2,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "physics"
   },
   {
     "id": "class-6d-3-0",
@@ -770,7 +1076,7 @@
     "weekday": 3,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "math"
   },
   {
@@ -778,8 +1084,8 @@
     "classId": "class-6d",
     "weekday": 3,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "portuguese"
   },
   {
@@ -787,8 +1093,8 @@
     "classId": "class-6d",
     "weekday": 3,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "science"
   },
   {
@@ -796,8 +1102,8 @@
     "classId": "class-6d",
     "weekday": 3,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "biology"
   },
   {
@@ -805,9 +1111,27 @@
     "classId": "class-6d",
     "weekday": 3,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "physics"
+  },
+  {
+    "id": "class-6d-3-5",
+    "classId": "class-6d",
+    "weekday": 3,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-6d-3-6",
+    "classId": "class-6d",
+    "weekday": 3,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "history"
   },
   {
     "id": "class-6d-4-0",
@@ -815,7 +1139,7 @@
     "weekday": 4,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "science"
   },
   {
@@ -823,8 +1147,8 @@
     "classId": "class-6d",
     "weekday": 4,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "biology"
   },
   {
@@ -832,8 +1156,8 @@
     "classId": "class-6d",
     "weekday": 4,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "physics"
   },
   {
@@ -841,8 +1165,8 @@
     "classId": "class-6d",
     "weekday": 4,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "geography"
   },
   {
@@ -850,9 +1174,27 @@
     "classId": "class-6d",
     "weekday": 4,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "history"
+  },
+  {
+    "id": "class-6d-4-5",
+    "classId": "class-6d",
+    "weekday": 4,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-6d-4-6",
+    "classId": "class-6d",
+    "weekday": 4,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "spanish"
   },
   {
     "id": "class-6d-5-0",
@@ -860,7 +1202,7 @@
     "weekday": 5,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "physics"
   },
   {
@@ -868,8 +1210,8 @@
     "classId": "class-6d",
     "weekday": 5,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "geography"
   },
   {
@@ -877,8 +1219,8 @@
     "classId": "class-6d",
     "weekday": 5,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "history"
   },
   {
@@ -886,8 +1228,8 @@
     "classId": "class-6d",
     "weekday": 5,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "english"
   },
   {
@@ -895,9 +1237,27 @@
     "classId": "class-6d",
     "weekday": 5,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "spanish"
+  },
+  {
+    "id": "class-6d-5-5",
+    "classId": "class-6d",
+    "weekday": 5,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-6d-5-6",
+    "classId": "class-6d",
+    "weekday": 5,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "portuguese"
   },
   {
     "id": "class-7a-1-0",
@@ -905,7 +1265,7 @@
     "weekday": 1,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "geography"
   },
   {
@@ -913,8 +1273,8 @@
     "classId": "class-7a",
     "weekday": 1,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "history"
   },
   {
@@ -922,8 +1282,8 @@
     "classId": "class-7a",
     "weekday": 1,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "english"
   },
   {
@@ -931,8 +1291,8 @@
     "classId": "class-7a",
     "weekday": 1,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "spanish"
   },
   {
@@ -940,9 +1300,27 @@
     "classId": "class-7a",
     "weekday": 1,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "math"
+  },
+  {
+    "id": "class-7a-1-5",
+    "classId": "class-7a",
+    "weekday": 1,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7a-1-6",
+    "classId": "class-7a",
+    "weekday": 1,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "science"
   },
   {
     "id": "class-7a-2-0",
@@ -950,7 +1328,7 @@
     "weekday": 2,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "english"
   },
   {
@@ -958,8 +1336,8 @@
     "classId": "class-7a",
     "weekday": 2,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "spanish"
   },
   {
@@ -967,8 +1345,8 @@
     "classId": "class-7a",
     "weekday": 2,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "math"
   },
   {
@@ -976,8 +1354,8 @@
     "classId": "class-7a",
     "weekday": 2,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "portuguese"
   },
   {
@@ -985,9 +1363,27 @@
     "classId": "class-7a",
     "weekday": 2,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "science"
+  },
+  {
+    "id": "class-7a-2-5",
+    "classId": "class-7a",
+    "weekday": 2,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-7a-2-6",
+    "classId": "class-7a",
+    "weekday": 2,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "physics"
   },
   {
     "id": "class-7a-3-0",
@@ -995,7 +1391,7 @@
     "weekday": 3,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "math"
   },
   {
@@ -1003,8 +1399,8 @@
     "classId": "class-7a",
     "weekday": 3,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "portuguese"
   },
   {
@@ -1012,8 +1408,8 @@
     "classId": "class-7a",
     "weekday": 3,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "science"
   },
   {
@@ -1021,8 +1417,8 @@
     "classId": "class-7a",
     "weekday": 3,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "biology"
   },
   {
@@ -1030,9 +1426,27 @@
     "classId": "class-7a",
     "weekday": 3,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "physics"
+  },
+  {
+    "id": "class-7a-3-5",
+    "classId": "class-7a",
+    "weekday": 3,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7a-3-6",
+    "classId": "class-7a",
+    "weekday": 3,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "history"
   },
   {
     "id": "class-7a-4-0",
@@ -1040,7 +1454,7 @@
     "weekday": 4,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "science"
   },
   {
@@ -1048,8 +1462,8 @@
     "classId": "class-7a",
     "weekday": 4,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "biology"
   },
   {
@@ -1057,8 +1471,8 @@
     "classId": "class-7a",
     "weekday": 4,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "physics"
   },
   {
@@ -1066,8 +1480,8 @@
     "classId": "class-7a",
     "weekday": 4,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "geography"
   },
   {
@@ -1075,9 +1489,27 @@
     "classId": "class-7a",
     "weekday": 4,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "history"
+  },
+  {
+    "id": "class-7a-4-5",
+    "classId": "class-7a",
+    "weekday": 4,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-7a-4-6",
+    "classId": "class-7a",
+    "weekday": 4,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "spanish"
   },
   {
     "id": "class-7a-5-0",
@@ -1085,7 +1517,7 @@
     "weekday": 5,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "physics"
   },
   {
@@ -1093,8 +1525,8 @@
     "classId": "class-7a",
     "weekday": 5,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "geography"
   },
   {
@@ -1102,8 +1534,8 @@
     "classId": "class-7a",
     "weekday": 5,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "history"
   },
   {
@@ -1111,8 +1543,8 @@
     "classId": "class-7a",
     "weekday": 5,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "english"
   },
   {
@@ -1120,9 +1552,27 @@
     "classId": "class-7a",
     "weekday": 5,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "spanish"
+  },
+  {
+    "id": "class-7a-5-5",
+    "classId": "class-7a",
+    "weekday": 5,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7a-5-6",
+    "classId": "class-7a",
+    "weekday": 5,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "portuguese"
   },
   {
     "id": "class-7b-1-0",
@@ -1130,7 +1580,7 @@
     "weekday": 1,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "history"
   },
   {
@@ -1138,8 +1588,8 @@
     "classId": "class-7b",
     "weekday": 1,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "english"
   },
   {
@@ -1147,8 +1597,8 @@
     "classId": "class-7b",
     "weekday": 1,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "spanish"
   },
   {
@@ -1156,8 +1606,8 @@
     "classId": "class-7b",
     "weekday": 1,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "math"
   },
   {
@@ -1165,9 +1615,27 @@
     "classId": "class-7b",
     "weekday": 1,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7b-1-5",
+    "classId": "class-7b",
+    "weekday": 1,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7b-1-6",
+    "classId": "class-7b",
+    "weekday": 1,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "biology"
   },
   {
     "id": "class-7b-2-0",
@@ -1175,7 +1643,7 @@
     "weekday": 2,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "spanish"
   },
   {
@@ -1183,8 +1651,8 @@
     "classId": "class-7b",
     "weekday": 2,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "math"
   },
   {
@@ -1192,8 +1660,8 @@
     "classId": "class-7b",
     "weekday": 2,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "portuguese"
   },
   {
@@ -1201,8 +1669,8 @@
     "classId": "class-7b",
     "weekday": 2,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "science"
   },
   {
@@ -1210,9 +1678,27 @@
     "classId": "class-7b",
     "weekday": 2,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "biology"
+  },
+  {
+    "id": "class-7b-2-5",
+    "classId": "class-7b",
+    "weekday": 2,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "physics"
+  },
+  {
+    "id": "class-7b-2-6",
+    "classId": "class-7b",
+    "weekday": 2,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "geography"
   },
   {
     "id": "class-7b-3-0",
@@ -1220,7 +1706,7 @@
     "weekday": 3,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "portuguese"
   },
   {
@@ -1228,8 +1714,8 @@
     "classId": "class-7b",
     "weekday": 3,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "science"
   },
   {
@@ -1237,8 +1723,8 @@
     "classId": "class-7b",
     "weekday": 3,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "biology"
   },
   {
@@ -1246,8 +1732,8 @@
     "classId": "class-7b",
     "weekday": 3,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "physics"
   },
   {
@@ -1255,9 +1741,27 @@
     "classId": "class-7b",
     "weekday": 3,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "geography"
+  },
+  {
+    "id": "class-7b-3-5",
+    "classId": "class-7b",
+    "weekday": 3,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-7b-3-6",
+    "classId": "class-7b",
+    "weekday": 3,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "english"
   },
   {
     "id": "class-7b-4-0",
@@ -1265,7 +1769,7 @@
     "weekday": 4,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "biology"
   },
   {
@@ -1273,8 +1777,8 @@
     "classId": "class-7b",
     "weekday": 4,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "physics"
   },
   {
@@ -1282,8 +1786,8 @@
     "classId": "class-7b",
     "weekday": 4,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "geography"
   },
   {
@@ -1291,8 +1795,8 @@
     "classId": "class-7b",
     "weekday": 4,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "history"
   },
   {
@@ -1300,9 +1804,27 @@
     "classId": "class-7b",
     "weekday": 4,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "english"
+  },
+  {
+    "id": "class-7b-4-5",
+    "classId": "class-7b",
+    "weekday": 4,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-7b-4-6",
+    "classId": "class-7b",
+    "weekday": 4,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "math"
   },
   {
     "id": "class-7b-5-0",
@@ -1310,7 +1832,7 @@
     "weekday": 5,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "geography"
   },
   {
@@ -1318,8 +1840,8 @@
     "classId": "class-7b",
     "weekday": 5,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "history"
   },
   {
@@ -1327,8 +1849,8 @@
     "classId": "class-7b",
     "weekday": 5,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "english"
   },
   {
@@ -1336,8 +1858,8 @@
     "classId": "class-7b",
     "weekday": 5,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "spanish"
   },
   {
@@ -1345,9 +1867,27 @@
     "classId": "class-7b",
     "weekday": 5,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "math"
+  },
+  {
+    "id": "class-7b-5-5",
+    "classId": "class-7b",
+    "weekday": 5,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7b-5-6",
+    "classId": "class-7b",
+    "weekday": 5,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "science"
   },
   {
     "id": "class-7c-1-0",
@@ -1355,7 +1895,7 @@
     "weekday": 1,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "english"
   },
   {
@@ -1363,8 +1903,8 @@
     "classId": "class-7c",
     "weekday": 1,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "spanish"
   },
   {
@@ -1372,8 +1912,8 @@
     "classId": "class-7c",
     "weekday": 1,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "math"
   },
   {
@@ -1381,8 +1921,8 @@
     "classId": "class-7c",
     "weekday": 1,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "portuguese"
   },
   {
@@ -1390,9 +1930,27 @@
     "classId": "class-7c",
     "weekday": 1,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "science"
+  },
+  {
+    "id": "class-7c-1-5",
+    "classId": "class-7c",
+    "weekday": 1,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-7c-1-6",
+    "classId": "class-7c",
+    "weekday": 1,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "physics"
   },
   {
     "id": "class-7c-2-0",
@@ -1400,7 +1958,7 @@
     "weekday": 2,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "math"
   },
   {
@@ -1408,8 +1966,8 @@
     "classId": "class-7c",
     "weekday": 2,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "portuguese"
   },
   {
@@ -1417,8 +1975,8 @@
     "classId": "class-7c",
     "weekday": 2,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "science"
   },
   {
@@ -1426,8 +1984,8 @@
     "classId": "class-7c",
     "weekday": 2,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "biology"
   },
   {
@@ -1435,9 +1993,27 @@
     "classId": "class-7c",
     "weekday": 2,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "physics"
+  },
+  {
+    "id": "class-7c-2-5",
+    "classId": "class-7c",
+    "weekday": 2,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-7c-2-6",
+    "classId": "class-7c",
+    "weekday": 2,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "history"
   },
   {
     "id": "class-7c-3-0",
@@ -1445,7 +2021,7 @@
     "weekday": 3,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "science"
   },
   {
@@ -1453,8 +2029,8 @@
     "classId": "class-7c",
     "weekday": 3,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "biology"
   },
   {
@@ -1462,8 +2038,8 @@
     "classId": "class-7c",
     "weekday": 3,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "physics"
   },
   {
@@ -1471,8 +2047,8 @@
     "classId": "class-7c",
     "weekday": 3,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "geography"
   },
   {
@@ -1480,9 +2056,27 @@
     "classId": "class-7c",
     "weekday": 3,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "history"
+  },
+  {
+    "id": "class-7c-3-5",
+    "classId": "class-7c",
+    "weekday": 3,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-7c-3-6",
+    "classId": "class-7c",
+    "weekday": 3,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "spanish"
   },
   {
     "id": "class-7c-4-0",
@@ -1490,7 +2084,7 @@
     "weekday": 4,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "physics"
   },
   {
@@ -1498,8 +2092,8 @@
     "classId": "class-7c",
     "weekday": 4,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "geography"
   },
   {
@@ -1507,8 +2101,8 @@
     "classId": "class-7c",
     "weekday": 4,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "history"
   },
   {
@@ -1516,8 +2110,8 @@
     "classId": "class-7c",
     "weekday": 4,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "english"
   },
   {
@@ -1525,9 +2119,27 @@
     "classId": "class-7c",
     "weekday": 4,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "spanish"
+  },
+  {
+    "id": "class-7c-4-5",
+    "classId": "class-7c",
+    "weekday": 4,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-7c-4-6",
+    "classId": "class-7c",
+    "weekday": 4,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "portuguese"
   },
   {
     "id": "class-7c-5-0",
@@ -1535,7 +2147,7 @@
     "weekday": 5,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "history"
   },
   {
@@ -1543,8 +2155,8 @@
     "classId": "class-7c",
     "weekday": 5,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "english"
   },
   {
@@ -1552,8 +2164,8 @@
     "classId": "class-7c",
     "weekday": 5,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "spanish"
   },
   {
@@ -1561,8 +2173,8 @@
     "classId": "class-7c",
     "weekday": 5,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "math"
   },
   {
@@ -1570,9 +2182,27 @@
     "classId": "class-7c",
     "weekday": 5,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "portuguese"
+  },
+  {
+    "id": "class-7c-5-5",
+    "classId": "class-7c",
+    "weekday": 5,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-7c-5-6",
+    "classId": "class-7c",
+    "weekday": 5,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "biology"
   },
   {
     "id": "class-8a-1-0",
@@ -1580,7 +2210,7 @@
     "weekday": 1,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "spanish"
   },
   {
@@ -1588,8 +2218,8 @@
     "classId": "class-8a",
     "weekday": 1,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "math"
   },
   {
@@ -1597,8 +2227,8 @@
     "classId": "class-8a",
     "weekday": 1,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "portuguese"
   },
   {
@@ -1606,8 +2236,8 @@
     "classId": "class-8a",
     "weekday": 1,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "science"
   },
   {
@@ -1615,9 +2245,27 @@
     "classId": "class-8a",
     "weekday": 1,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "biology"
+  },
+  {
+    "id": "class-8a-1-5",
+    "classId": "class-8a",
+    "weekday": 1,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "physics"
+  },
+  {
+    "id": "class-8a-1-6",
+    "classId": "class-8a",
+    "weekday": 1,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "geography"
   },
   {
     "id": "class-8a-2-0",
@@ -1625,7 +2273,7 @@
     "weekday": 2,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "portuguese"
   },
   {
@@ -1633,8 +2281,8 @@
     "classId": "class-8a",
     "weekday": 2,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "science"
   },
   {
@@ -1642,8 +2290,8 @@
     "classId": "class-8a",
     "weekday": 2,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "biology"
   },
   {
@@ -1651,8 +2299,8 @@
     "classId": "class-8a",
     "weekday": 2,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "physics"
   },
   {
@@ -1660,9 +2308,27 @@
     "classId": "class-8a",
     "weekday": 2,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "geography"
+  },
+  {
+    "id": "class-8a-2-5",
+    "classId": "class-8a",
+    "weekday": 2,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8a-2-6",
+    "classId": "class-8a",
+    "weekday": 2,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "english"
   },
   {
     "id": "class-8a-3-0",
@@ -1670,7 +2336,7 @@
     "weekday": 3,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "biology"
   },
   {
@@ -1678,8 +2344,8 @@
     "classId": "class-8a",
     "weekday": 3,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "physics"
   },
   {
@@ -1687,8 +2353,8 @@
     "classId": "class-8a",
     "weekday": 3,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "geography"
   },
   {
@@ -1696,8 +2362,8 @@
     "classId": "class-8a",
     "weekday": 3,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "history"
   },
   {
@@ -1705,9 +2371,27 @@
     "classId": "class-8a",
     "weekday": 3,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "english"
+  },
+  {
+    "id": "class-8a-3-5",
+    "classId": "class-8a",
+    "weekday": 3,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8a-3-6",
+    "classId": "class-8a",
+    "weekday": 3,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "math"
   },
   {
     "id": "class-8a-4-0",
@@ -1715,7 +2399,7 @@
     "weekday": 4,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "geography"
   },
   {
@@ -1723,8 +2407,8 @@
     "classId": "class-8a",
     "weekday": 4,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "history"
   },
   {
@@ -1732,8 +2416,8 @@
     "classId": "class-8a",
     "weekday": 4,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "english"
   },
   {
@@ -1741,8 +2425,8 @@
     "classId": "class-8a",
     "weekday": 4,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "spanish"
   },
   {
@@ -1750,9 +2434,27 @@
     "classId": "class-8a",
     "weekday": 4,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "math"
+  },
+  {
+    "id": "class-8a-4-5",
+    "classId": "class-8a",
+    "weekday": 4,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8a-4-6",
+    "classId": "class-8a",
+    "weekday": 4,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "science"
   },
   {
     "id": "class-8a-5-0",
@@ -1760,7 +2462,7 @@
     "weekday": 5,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "english"
   },
   {
@@ -1768,8 +2470,8 @@
     "classId": "class-8a",
     "weekday": 5,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "spanish"
   },
   {
@@ -1777,8 +2479,8 @@
     "classId": "class-8a",
     "weekday": 5,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "math"
   },
   {
@@ -1786,8 +2488,8 @@
     "classId": "class-8a",
     "weekday": 5,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "portuguese"
   },
   {
@@ -1795,9 +2497,27 @@
     "classId": "class-8a",
     "weekday": 5,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "science"
+  },
+  {
+    "id": "class-8a-5-5",
+    "classId": "class-8a",
+    "weekday": 5,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-8a-5-6",
+    "classId": "class-8a",
+    "weekday": 5,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "physics"
   },
   {
     "id": "class-8b-1-0",
@@ -1805,7 +2525,7 @@
     "weekday": 1,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "math"
   },
   {
@@ -1813,8 +2533,8 @@
     "classId": "class-8b",
     "weekday": 1,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "portuguese"
   },
   {
@@ -1822,8 +2542,8 @@
     "classId": "class-8b",
     "weekday": 1,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "science"
   },
   {
@@ -1831,8 +2551,8 @@
     "classId": "class-8b",
     "weekday": 1,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "biology"
   },
   {
@@ -1840,9 +2560,27 @@
     "classId": "class-8b",
     "weekday": 1,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "physics"
+  },
+  {
+    "id": "class-8b-1-5",
+    "classId": "class-8b",
+    "weekday": 1,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8b-1-6",
+    "classId": "class-8b",
+    "weekday": 1,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "history"
   },
   {
     "id": "class-8b-2-0",
@@ -1850,7 +2588,7 @@
     "weekday": 2,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "science"
   },
   {
@@ -1858,8 +2596,8 @@
     "classId": "class-8b",
     "weekday": 2,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "biology"
   },
   {
@@ -1867,8 +2605,8 @@
     "classId": "class-8b",
     "weekday": 2,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "physics"
   },
   {
@@ -1876,8 +2614,8 @@
     "classId": "class-8b",
     "weekday": 2,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "geography"
   },
   {
@@ -1885,9 +2623,27 @@
     "classId": "class-8b",
     "weekday": 2,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "history"
+  },
+  {
+    "id": "class-8b-2-5",
+    "classId": "class-8b",
+    "weekday": 2,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "english"
+  },
+  {
+    "id": "class-8b-2-6",
+    "classId": "class-8b",
+    "weekday": 2,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "spanish"
   },
   {
     "id": "class-8b-3-0",
@@ -1895,7 +2651,7 @@
     "weekday": 3,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "physics"
   },
   {
@@ -1903,8 +2659,8 @@
     "classId": "class-8b",
     "weekday": 3,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "geography"
   },
   {
@@ -1912,8 +2668,8 @@
     "classId": "class-8b",
     "weekday": 3,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "history"
   },
   {
@@ -1921,8 +2677,8 @@
     "classId": "class-8b",
     "weekday": 3,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "english"
   },
   {
@@ -1930,9 +2686,27 @@
     "classId": "class-8b",
     "weekday": 3,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "spanish"
+  },
+  {
+    "id": "class-8b-3-5",
+    "classId": "class-8b",
+    "weekday": 3,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "math"
+  },
+  {
+    "id": "class-8b-3-6",
+    "classId": "class-8b",
+    "weekday": 3,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "portuguese"
   },
   {
     "id": "class-8b-4-0",
@@ -1940,7 +2714,7 @@
     "weekday": 4,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "history"
   },
   {
@@ -1948,8 +2722,8 @@
     "classId": "class-8b",
     "weekday": 4,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "english"
   },
   {
@@ -1957,8 +2731,8 @@
     "classId": "class-8b",
     "weekday": 4,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "spanish"
   },
   {
@@ -1966,8 +2740,8 @@
     "classId": "class-8b",
     "weekday": 4,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "math"
   },
   {
@@ -1975,9 +2749,27 @@
     "classId": "class-8b",
     "weekday": 4,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8b-4-5",
+    "classId": "class-8b",
+    "weekday": 4,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "science"
+  },
+  {
+    "id": "class-8b-4-6",
+    "classId": "class-8b",
+    "weekday": 4,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "biology"
   },
   {
     "id": "class-8b-5-0",
@@ -1985,7 +2777,7 @@
     "weekday": 5,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "spanish"
   },
   {
@@ -1993,8 +2785,8 @@
     "classId": "class-8b",
     "weekday": 5,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "math"
   },
   {
@@ -2002,8 +2794,8 @@
     "classId": "class-8b",
     "weekday": 5,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "portuguese"
   },
   {
@@ -2011,8 +2803,8 @@
     "classId": "class-8b",
     "weekday": 5,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "science"
   },
   {
@@ -2020,9 +2812,27 @@
     "classId": "class-8b",
     "weekday": 5,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "biology"
+  },
+  {
+    "id": "class-8b-5-5",
+    "classId": "class-8b",
+    "weekday": 5,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "physics"
+  },
+  {
+    "id": "class-8b-5-6",
+    "classId": "class-8b",
+    "weekday": 5,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "geography"
   },
   {
     "id": "class-8c-1-0",
@@ -2030,7 +2840,7 @@
     "weekday": 1,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "portuguese"
   },
   {
@@ -2038,8 +2848,8 @@
     "classId": "class-8c",
     "weekday": 1,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "science"
   },
   {
@@ -2047,8 +2857,8 @@
     "classId": "class-8c",
     "weekday": 1,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "biology"
   },
   {
@@ -2056,8 +2866,8 @@
     "classId": "class-8c",
     "weekday": 1,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "physics"
   },
   {
@@ -2065,9 +2875,27 @@
     "classId": "class-8c",
     "weekday": 1,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "geography"
+  },
+  {
+    "id": "class-8c-1-5",
+    "classId": "class-8c",
+    "weekday": 1,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "history"
+  },
+  {
+    "id": "class-8c-1-6",
+    "classId": "class-8c",
+    "weekday": 1,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "english"
   },
   {
     "id": "class-8c-2-0",
@@ -2075,7 +2903,7 @@
     "weekday": 2,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "biology"
   },
   {
@@ -2083,8 +2911,8 @@
     "classId": "class-8c",
     "weekday": 2,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "physics"
   },
   {
@@ -2092,8 +2920,8 @@
     "classId": "class-8c",
     "weekday": 2,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "geography"
   },
   {
@@ -2101,8 +2929,8 @@
     "classId": "class-8c",
     "weekday": 2,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "history"
   },
   {
@@ -2110,9 +2938,27 @@
     "classId": "class-8c",
     "weekday": 2,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "english"
+  },
+  {
+    "id": "class-8c-2-5",
+    "classId": "class-8c",
+    "weekday": 2,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "spanish"
+  },
+  {
+    "id": "class-8c-2-6",
+    "classId": "class-8c",
+    "weekday": 2,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "math"
   },
   {
     "id": "class-8c-3-0",
@@ -2120,7 +2966,7 @@
     "weekday": 3,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "geography"
   },
   {
@@ -2128,8 +2974,8 @@
     "classId": "class-8c",
     "weekday": 3,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "history"
   },
   {
@@ -2137,8 +2983,8 @@
     "classId": "class-8c",
     "weekday": 3,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "english"
   },
   {
@@ -2146,8 +2992,8 @@
     "classId": "class-8c",
     "weekday": 3,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "spanish"
   },
   {
@@ -2155,9 +3001,27 @@
     "classId": "class-8c",
     "weekday": 3,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "math"
+  },
+  {
+    "id": "class-8c-3-5",
+    "classId": "class-8c",
+    "weekday": 3,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "portuguese"
+  },
+  {
+    "id": "class-8c-3-6",
+    "classId": "class-8c",
+    "weekday": 3,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "science"
   },
   {
     "id": "class-8c-4-0",
@@ -2165,7 +3029,7 @@
     "weekday": 4,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "english"
   },
   {
@@ -2173,8 +3037,8 @@
     "classId": "class-8c",
     "weekday": 4,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "spanish"
   },
   {
@@ -2182,8 +3046,8 @@
     "classId": "class-8c",
     "weekday": 4,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "math"
   },
   {
@@ -2191,8 +3055,8 @@
     "classId": "class-8c",
     "weekday": 4,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "portuguese"
   },
   {
@@ -2200,9 +3064,27 @@
     "classId": "class-8c",
     "weekday": 4,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "science"
+  },
+  {
+    "id": "class-8c-4-5",
+    "classId": "class-8c",
+    "weekday": 4,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-8c-4-6",
+    "classId": "class-8c",
+    "weekday": 4,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "physics"
   },
   {
     "id": "class-8c-5-0",
@@ -2210,7 +3092,7 @@
     "weekday": 5,
     "periodNumber": 1,
     "startTime": "07:30",
-    "endTime": "08:20",
+    "endTime": "08:15",
     "subjectId": "math"
   },
   {
@@ -2218,8 +3100,8 @@
     "classId": "class-8c",
     "weekday": 5,
     "periodNumber": 2,
-    "startTime": "08:20",
-    "endTime": "09:10",
+    "startTime": "08:15",
+    "endTime": "09:00",
     "subjectId": "portuguese"
   },
   {
@@ -2227,8 +3109,8 @@
     "classId": "class-8c",
     "weekday": 5,
     "periodNumber": 3,
-    "startTime": "09:10",
-    "endTime": "10:00",
+    "startTime": "09:00",
+    "endTime": "09:45",
     "subjectId": "science"
   },
   {
@@ -2236,8 +3118,8 @@
     "classId": "class-8c",
     "weekday": 5,
     "periodNumber": 4,
-    "startTime": "10:00",
-    "endTime": "10:50",
+    "startTime": "10:15",
+    "endTime": "11:00",
     "subjectId": "biology"
   },
   {
@@ -2245,8 +3127,26 @@
     "classId": "class-8c",
     "weekday": 5,
     "periodNumber": 5,
-    "startTime": "10:50",
-    "endTime": "11:40",
+    "startTime": "11:00",
+    "endTime": "11:45",
     "subjectId": "physics"
+  },
+  {
+    "id": "class-8c-5-5",
+    "classId": "class-8c",
+    "weekday": 5,
+    "periodNumber": 6,
+    "startTime": "11:45",
+    "endTime": "12:30",
+    "subjectId": "geography"
+  },
+  {
+    "id": "class-8c-5-6",
+    "classId": "class-8c",
+    "weekday": 5,
+    "periodNumber": 7,
+    "startTime": "12:30",
+    "endTime": "13:15",
+    "subjectId": "history"
   }
 ]

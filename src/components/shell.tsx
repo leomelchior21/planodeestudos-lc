@@ -110,8 +110,7 @@ export function Shell({
             </ul>
             <p className="muted small">
               O plano usa regras pedagógicas configuradas pela escola, sem
-              inteligência artificial. Os dados iniciais são exemplos para
-              demonstração.
+              inteligência artificial.
             </p>
             <button className="button primary" onClick={() => setHelp(false)}>
               Vamos começar

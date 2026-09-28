@@ -839,10 +839,6 @@ export function AdminPanel({
                   ))}
                 </div>
               </div>
-              <p className="alert">
-                Os dados iniciais são fictícios. Importe e valide o calendário
-                oficial antes de disponibilizar os planos aos alunos.
-              </p>
             </>
           )}
           {section === "radar" && (
@@ -1310,7 +1306,6 @@ export function AdminPanel({
                                       (y) => y.id === e.schoolYearId,
                                     )?.name
                                   : "Toda a escola"}
-                              {e.metadata.sample ? " · Exemplo" : ""}
                             </p>
                           </div>
                           <button

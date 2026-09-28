@@ -2,7 +2,7 @@
   {
     "id": "event-0",
     "title": "AP de Matemática",
-    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "description": "",
     "eventTypeId": "assessment",
     "startDate": "2026-09-28",
     "endDate": "2026-09-28",
@@ -11,14 +11,12 @@
     "subjectId": "math",
     "importance": 3,
     "affectsStudyPlan": true,
-    "metadata": {
-      "sample": true
-    }
+    "metadata": {}
   },
   {
     "id": "event-1",
     "title": "Entrega de projeto de Geografia",
-    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "description": "",
     "eventTypeId": "project",
     "startDate": "2026-10-02",
     "endDate": "2026-10-02",
@@ -27,14 +25,12 @@
     "subjectId": "geography",
     "importance": 3,
     "affectsStudyPlan": true,
-    "metadata": {
-      "sample": true
-    }
+    "metadata": {}
   },
   {
     "id": "event-2",
     "title": "Avaliação de Ciências",
-    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "description": "",
     "eventTypeId": "assessment",
     "startDate": "2026-10-08",
     "endDate": "2026-10-08",
@@ -43,14 +39,12 @@
     "subjectId": "science",
     "importance": 3,
     "affectsStudyPlan": true,
-    "metadata": {
-      "sample": true
-    }
+    "metadata": {}
   },
   {
     "id": "event-3",
     "title": "Nossa Senhora Aparecida",
-    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "description": "",
     "eventTypeId": "holiday",
     "startDate": "2026-10-12",
     "endDate": "2026-10-12",
@@ -59,14 +53,12 @@
     "subjectId": null,
     "importance": 3,
     "affectsStudyPlan": true,
-    "metadata": {
-      "sample": true
-    }
+    "metadata": {}
   },
   {
     "id": "event-4",
     "title": "Roteiro de Língua Portuguesa",
-    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "description": "",
     "eventTypeId": "study_guide",
     "startDate": "2026-10-15",
     "endDate": "2026-10-15",
@@ -75,14 +67,12 @@
     "subjectId": "portuguese",
     "importance": 3,
     "affectsStudyPlan": true,
-    "metadata": {
-      "sample": true
-    }
+    "metadata": {}
   },
   {
     "id": "event-5",
     "title": "AP de Geografia",
-    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "description": "",
     "eventTypeId": "assessment",
     "startDate": "2026-10-20",
     "endDate": "2026-10-20",
@@ -91,14 +81,12 @@
     "subjectId": "geography",
     "importance": 3,
     "affectsStudyPlan": true,
-    "metadata": {
-      "sample": true
-    }
+    "metadata": {}
   },
   {
     "id": "event-6",
     "title": "Finados",
-    "description": "Dado de demonstração. Substitua pelo calendário validado da escola.",
+    "description": "",
     "eventTypeId": "holiday",
     "startDate": "2026-11-02",
     "endDate": "2026-11-02",
@@ -107,8 +95,132 @@
     "subjectId": null,
     "importance": 3,
     "affectsStudyPlan": true,
-    "metadata": {
-      "sample": true
-    }
+    "metadata": {}
+  },
+  {
+    "id": "event-recovery-0-0",
+    "title": "Recuperação · Geografia",
+    "description": "Prova de recuperação, a partir das 14h15.",
+    "eventTypeId": "recovery",
+    "startDate": "2026-10-05",
+    "endDate": "2026-10-05",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "geography",
+    "importance": 4,
+    "affectsStudyPlan": true,
+    "metadata": {}
+  },
+  {
+    "id": "event-recovery-0-1",
+    "title": "Recuperação · Língua Portuguesa",
+    "description": "Prova de recuperação, a partir das 14h15.",
+    "eventTypeId": "recovery",
+    "startDate": "2026-10-05",
+    "endDate": "2026-10-05",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "portuguese",
+    "importance": 4,
+    "affectsStudyPlan": true,
+    "metadata": {}
+  },
+  {
+    "id": "event-recovery-1-0",
+    "title": "Recuperação · História",
+    "description": "Prova de recuperação, a partir das 14h15.",
+    "eventTypeId": "recovery",
+    "startDate": "2026-10-06",
+    "endDate": "2026-10-06",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "history",
+    "importance": 4,
+    "affectsStudyPlan": true,
+    "metadata": {}
+  },
+  {
+    "id": "event-recovery-1-1",
+    "title": "Recuperação · Inglês",
+    "description": "Prova de recuperação, a partir das 14h15.",
+    "eventTypeId": "recovery",
+    "startDate": "2026-10-06",
+    "endDate": "2026-10-06",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "english",
+    "importance": 4,
+    "affectsStudyPlan": true,
+    "metadata": {}
+  },
+  {
+    "id": "event-recovery-2-0",
+    "title": "Recuperação · Matemática",
+    "description": "Prova de recuperação, a partir das 14h15.",
+    "eventTypeId": "recovery",
+    "startDate": "2026-10-07",
+    "endDate": "2026-10-07",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "math",
+    "importance": 4,
+    "affectsStudyPlan": true,
+    "metadata": {}
+  },
+  {
+    "id": "event-recovery-2-1",
+    "title": "Recuperação · Espanhol",
+    "description": "Prova de recuperação, a partir das 14h15.",
+    "eventTypeId": "recovery",
+    "startDate": "2026-10-07",
+    "endDate": "2026-10-07",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "spanish",
+    "importance": 4,
+    "affectsStudyPlan": true,
+    "metadata": {}
+  },
+  {
+    "id": "event-recovery-3-0",
+    "title": "Recuperação · Ciências",
+    "description": "Prova de recuperação, a partir das 14h15.",
+    "eventTypeId": "recovery",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-08",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "science",
+    "importance": 4,
+    "affectsStudyPlan": true,
+    "metadata": {}
+  },
+  {
+    "id": "event-recovery-3-1",
+    "title": "Recuperação · Biologia",
+    "description": "Prova de recuperação, a partir das 14h15.",
+    "eventTypeId": "recovery",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-08",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "biology",
+    "importance": 4,
+    "affectsStudyPlan": true,
+    "metadata": {}
+  },
+  {
+    "id": "event-recovery-3-2",
+    "title": "Recuperação · Física",
+    "description": "Prova de recuperação, a partir das 14h15.",
+    "eventTypeId": "recovery",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-08",
+    "schoolYearId": null,
+    "classId": null,
+    "subjectId": "physics",
+    "importance": 4,
+    "affectsStudyPlan": true,
+    "metadata": {}
   }
 ]

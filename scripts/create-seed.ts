@@ -277,7 +277,16 @@ const eventTypes = [
   icon: "CalendarDays",
   blocksStudy: Boolean(blocksStudy),
 }));
-const events = [
+const classPeriods = [
+  ["07:30", "08:15"],
+  ["08:15", "09:00"],
+  ["09:00", "09:45"],
+  ["10:15", "11:00"],
+  ["11:00", "11:45"],
+  ["11:45", "12:30"],
+  ["12:30", "13:15"],
+] as const;
+const academicEvents = [
   ["2026-09-28", "AP de Matemática", "assessment", "math"],
   ["2026-10-02", "Entrega de projeto de Geografia", "project", "geography"],
   ["2026-10-08", "Avaliação de Ciências", "assessment", "science"],
@@ -288,8 +297,7 @@ const events = [
 ].map(([date, title, eventTypeId, subjectId], i) => ({
   id: `event-${i}`,
   title: title!,
-  description:
-    "Dado de demonstração. Substitua pelo calendário validado da escola.",
+  description: "",
   eventTypeId: eventTypeId!,
   startDate: date!,
   endDate: date!,
@@ -298,8 +306,32 @@ const events = [
   subjectId,
   importance: 3,
   affectsStudyPlan: true,
-  metadata: { sample: true },
+  metadata: {},
 }));
+const recoveryExams: { date: string; subjectIds: string[] }[] = [
+  { date: "2026-10-05", subjectIds: ["geography", "portuguese"] },
+  { date: "2026-10-06", subjectIds: ["history", "english"] },
+  { date: "2026-10-07", subjectIds: ["math", "spanish"] },
+  { date: "2026-10-08", subjectIds: ["science", "biology", "physics"] },
+];
+const recoveryEvents: SchoolData["events"] = recoveryExams.flatMap(
+  ({ date, subjectIds }, group) =>
+    subjectIds.map((subjectId, index) => ({
+      id: `event-recovery-${group}-${index}`,
+      title: `Recuperação · ${subjects.find((s) => s.id === subjectId)?.name ?? subjectId}`,
+      description: "Prova de recuperação, a partir das 14h15.",
+      eventTypeId: "recovery",
+      startDate: date,
+      endDate: date,
+      schoolYearId: null,
+      classId: null,
+      subjectId,
+      importance: 4,
+      affectsStudyPlan: true,
+      metadata: {},
+    })),
+);
+const events: SchoolData["events"] = [...academicEvents, ...recoveryEvents];
 const data: SchoolData = {
   version: 1,
   settings: {
@@ -327,13 +359,13 @@ const data: SchoolData = {
   ),
   schedules: classes.flatMap((c) =>
     [1, 2, 3, 4, 5].flatMap((day) =>
-      Array.from({ length: 5 }, (_, period) => ({
+      classPeriods.map(([startTime, endTime], period) => ({
         id: `${c.id}-${day}-${period}`,
         classId: c.id,
         weekday: day,
         periodNumber: period + 1,
-        startTime: `${String(7 + Math.floor((30 + period * 50) / 60)).padStart(2, "0")}:${String((30 + period * 50) % 60).padStart(2, "0")}`,
-        endTime: `${String(7 + Math.floor((80 + period * 50) / 60)).padStart(2, "0")}:${String((80 + period * 50) % 60).padStart(2, "0")}`,
+        startTime,
+        endTime,
         subjectId:
           subjects[
             (day * 2 + period + (Number(c.code[0]) - 6) * 3 + c.order) %
