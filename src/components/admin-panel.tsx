@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDialogFocus } from "./use-dialog-focus";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -7,6 +7,7 @@ import {
   ArrowDown,
   ArrowLeft,
   ArrowUp,
+  ArrowUpRight,
   BookOpen,
   CalendarDays,
   Check,
@@ -20,6 +21,8 @@ import {
   LogOut,
   Pencil,
   Plus,
+  Radar,
+  RefreshCw,
   Save,
   Settings2,
   ShieldCheck,
@@ -28,7 +31,7 @@ import {
   Upload,
   X,
 } from "lucide-react";
-import type { SchoolData } from "@/domain/types";
+import type { PlanSummary, SchoolData } from "@/domain/types";
 import { parseSchoolData } from "@/domain/school-validation";
 import { addDays, dayNames, formatDate, today, weekday } from "@/domain/dates";
 import { Brand } from "./shell";
@@ -52,6 +55,7 @@ import {
 
 const sections = [
   ["overview", "Visão geral", LayoutDashboard],
+  ["radar", "No seu radar", Radar],
   ["years", "Anos e turmas", GraduationCap],
   ["subjects", "Disciplinas", BookOpen],
   ["schedule", "Grade horária", Table2],
@@ -62,6 +66,14 @@ const sections = [
   ["import", "Importar dados", Upload],
   ["simulate", "Simular plano", FlaskConical],
 ] as const;
+const yearFilterSections: string[] = [
+  "years",
+  "subjects",
+  "schedule",
+  "calendar",
+  "resources",
+  "activities",
+];
 export function AdminLogin() {
   const [password, setPassword] = useState(""),
     [error, setError] = useState(""),
@@ -142,7 +154,35 @@ export function AdminPanel({
     [preview, setPreview] = useState<SchoolData | null>(null),
     [previewFile, setPreviewFile] = useState("");
   const [filter, setFilter] = useState("");
+  const [yearFilter, setYearFilter] = useState("");
+  const [radar, setRadar] = useState({
+    title: "",
+    date: today(),
+    eventTypeId: initial.eventTypes[0]?.id ?? "",
+    schoolYearId: "",
+    classId: "",
+    subjectId: "",
+    importance: 3,
+  });
+  const [plans, setPlans] = useState<PlanSummary[]>([]);
+  const [plansBusy, setPlansBusy] = useState(false);
   const router = useRouter();
+  async function loadPlans() {
+    setPlansBusy(true);
+    try {
+      const response = await fetch("/api/plans");
+      const body = await response.json();
+      if (!response.ok) throw new Error(body.error);
+      setPlans(body.plans as PlanSummary[]);
+    } catch {
+      setError("Não foi possível carregar os planos gerados.");
+    } finally {
+      setPlansBusy(false);
+    }
+  }
+  useEffect(() => {
+    void loadPlans();
+  }, []);
   function update(next: SchoolData) {
     setData(next);
     setDirty(true);
@@ -209,21 +249,78 @@ export function AdminPanel({
     [rows[index], rows[index + delta]] = [rows[index + delta], rows[index]];
     update({ ...data, [collection]: rows.map((r, i) => ({ ...r, order: i })) });
   }
+  function matchesYearFilter(key: Collection, row: Row) {
+    if (!yearFilter) return true;
+    const classId = typeof row.classId === "string" ? row.classId : "";
+    if (classId)
+      return (
+        data.classes.find((c) => c.id === classId)?.schoolYearId === yearFilter
+      );
+    const schoolYearId =
+      typeof row.schoolYearId === "string" ? row.schoolYearId : "";
+    if (schoolYearId) return schoolYearId === yearFilter;
+    const subjectId = typeof row.subjectId === "string" ? row.subjectId : "";
+    if (subjectId)
+      return data.classSubjects.some(
+        (cs) =>
+          cs.subjectId === subjectId &&
+          data.classes.find((c) => c.id === cs.classId)?.schoolYearId ===
+            yearFilter,
+      );
+    return true;
+  }
+  function selectYearFilter(id: string) {
+    setYearFilter(id);
+    if (
+      id &&
+      !data.classes.some((c) => c.id === classId && c.schoolYearId === id)
+    )
+      setClassId(data.classes.find((c) => c.schoolYearId === id)?.id ?? classId);
+  }
+  function addCommitment() {
+    const title = radar.title.trim();
+    if (!title || !radar.date || !radar.eventTypeId) {
+      setError("Informe título, data e tipo do compromisso.");
+      return;
+    }    const event = {
+      ...defaultRow("events", data),
+      title,
+      startDate: radar.date,
+      endDate: radar.date,
+      eventTypeId: radar.eventTypeId,
+      schoolYearId: radar.schoolYearId || null,
+      classId: radar.classId || null,
+      subjectId: radar.subjectId || null,
+      importance: Number(radar.importance),
+      metadata: {},
+    };
+    update(parseSchoolData({ ...data, events: [...data.events, event] }));
+    setMessage(
+      "Compromisso adicionado. Clique em “Salvar alterações” para confirmar.",
+    );
+    setRadar({ ...radar, title: "", subjectId: "" });
+  }
   function collection(key: Collection, description?: string) {
     const rows = data[key] as Row[];
     const visible = rows.filter(
       (r) =>
-        !filter ||
-        JSON.stringify(r)
-          .toLocaleLowerCase()
-          .includes(filter.toLocaleLowerCase()),
+        matchesYearFilter(key, r) &&
+        (!filter ||
+          JSON.stringify(r)
+            .toLocaleLowerCase()
+            .includes(filter.toLocaleLowerCase())),
     );
     return (
       <section className="admin-card" key={key}>
         <div className="section-title">
           <div>
             <h2>
-              {names[key]} <span className="count">{rows.length}</span>
+              {names[key]}{" "}
+              <span className="count">
+                {visible.length === rows.length
+                  ? rows.length
+                  : `${visible.length} / ${rows.length}`}
+              </span>
             </h2>
             {description && <p className="muted small">{description}</p>}
           </div>
@@ -411,12 +508,15 @@ export function AdminPanel({
   const monthEvents = data.events
     .filter((e) => e.startDate <= `${month}-31` && e.endDate >= `${month}-01`)
     .sort((a, b) => a.startDate.localeCompare(b.startDate));
+  const upcomingEvents = data.events
+    .filter((e) => e.endDate >= today())
+    .sort((a, b) => a.startDate.localeCompare(b.startDate));
   const first = `${month}-01`;
   const monthStart = addDays(first, -((weekday(first) + 6) % 7));
   return (
     <div className="admin-layout">
       <aside className="admin-sidebar">
-        <Brand name={data.settings.schoolName} />
+        <Brand name={data.settings.schoolName} variant="white" />
         <div className="admin-label">GESTÃO PEDAGÓGICA</div>
         <nav aria-label="Administração">
           {sections.map(([id, label, Icon]) => (
@@ -426,6 +526,7 @@ export function AdminPanel({
               onClick={() => {
                 setSection(id);
                 setFilter("");
+                setYearFilter("");
               }}
             >
               <Icon size={18} />
@@ -479,7 +580,7 @@ export function AdminPanel({
                 Dados organizados. Planos que acompanham a escola.
               </p>
             </div>
-            {!["overview", "import", "simulate", "schedule"].includes(
+            {!["overview", "import", "simulate", "schedule", "radar"].includes(
               section,
             ) && (
               <input
@@ -491,6 +592,35 @@ export function AdminPanel({
               />
             )}
           </div>
+          {yearFilterSections.includes(section) && (
+            <div
+              className="year-filter"
+              role="group"
+              aria-label="Filtrar registros por ano escolar"
+            >
+              <span className="year-filter-label">
+                <GraduationCap size={14} /> Filtrar por ano
+              </span>
+              <button
+                className={yearFilter === "" ? "active" : ""}
+                onClick={() => selectYearFilter("")}
+              >
+                Todos
+              </button>
+              {data.schoolYears
+                .filter((y) => y.active)
+                .sort((a, b) => a.order - b.order)
+                .map((y) => (
+                  <button
+                    key={y.id}
+                    className={yearFilter === y.id ? "active" : ""}
+                    onClick={() => selectYearFilter(y.id)}
+                  >
+                    {y.name}
+                  </button>
+                ))}
+            </div>
+          )}
           {message && (
             <p role="status" className="alert success">
               <Check size={16} />
@@ -550,6 +680,123 @@ export function AdminPanel({
               </section>
               <div className="admin-card">
                 <div className="section-title">
+                  <div>
+                    <h2>
+                      Planos gerados{" "}
+                      <span className="count">{plans.length}</span>
+                    </h2>
+                    <p className="muted small">
+                      Registro dos planos criados pelos alunos, com matérias,
+                      prioridades e horários escolhidos.
+                    </p>
+                  </div>
+                  <button
+                    className="button secondary small-button"
+                    onClick={loadPlans}
+                    disabled={plansBusy}
+                  >
+                    <RefreshCw size={15} />
+                    {plansBusy ? "Atualizando…" : "Atualizar"}
+                  </button>
+                </div>
+                {plans.length ? (
+                  <div className="admin-table-scroll">
+                    <table className="admin-table registry-table">
+                      <thead>
+                        <tr>
+                          <th>Aluno</th>
+                          <th>Ano · turma</th>
+                          <th>Gerado em</th>
+                          <th>Matérias e prioridade</th>
+                          <th>Horários escolhidos</th>
+                          <th>
+                            <span className="sr-only">Ações</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {plans.map((p) => (
+                          <tr key={p.id}>
+                            <td>
+                              <strong>{p.studentName || "Estudante"}</strong>
+                              <small>
+                                {formatDate(p.startDate)} —{" "}
+                                {formatDate(p.endDate)} · {p.sessionCount}{" "}
+                                sessões · {Math.floor(p.durationMinutes / 60)}h
+                                {p.durationMinutes % 60
+                                  ? `${p.durationMinutes % 60}min`
+                                  : ""}
+                              </small>
+                            </td>
+                            <td>
+                              <strong>
+                                {p.yearName || "—"} · {p.className || "—"}
+                              </strong>
+                              <small>{p.classCode}</small>
+                            </td>
+                            <td>
+                              <strong>{formatDate(p.createdAt.slice(0, 10))}</strong>
+                              <small>{p.createdAt.slice(11, 16)} UTC</small>
+                            </td>
+                            <td>
+                              {p.subjects.length ? (
+                                <span className="priority-chips">
+                                  {p.subjects.map((s) => (
+                                    <span key={s.rank} className="priority-chip">
+                                      <b>{s.rank}</b>
+                                      {s.code}
+                                      {s.name ? ` · ${s.name}` : ""}
+                                    </span>
+                                  ))}
+                                </span>
+                              ) : (
+                                <span className="muted">
+                                  Plano equilibrado, sem prioridades
+                                </span>
+                              )}
+                            </td>
+                            <td>
+                              {p.availability.length ? (
+                                <span className="availability-chips">
+                                  {p.availability.map((slot, index) => (
+                                    <span
+                                      key={`${slot.weekday}-${index}`}
+                                      className="availability-chip"
+                                    >
+                                      {dayNames[slot.weekday]}{" "}
+                                      {slot.startTime}–{slot.endTime}
+                                    </span>
+                                  ))}
+                                </span>
+                              ) : (
+                                <span className="muted">—</span>
+                              )}
+                            </td>
+                            <td>
+                              <Link
+                                href={`/plan/${p.id}`}
+                                className="icon-button"
+                                aria-label={`Abrir plano de ${p.studentName}`}
+                                target="_blank"
+                              >
+                                <ArrowUpRight size={15} />
+                              </Link>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                ) : (
+                  <p className="empty-state">
+                    {plansBusy
+                      ? "Carregando planos…"
+                      : "Nenhum plano gerado até agora."}
+                  </p>
+                )}
+              </div>
+              <div className="admin-card">
+                <div className="section-title">
                   <h2>Configurações da escola</h2>
                   <button
                     className="button secondary small-button"
@@ -598,6 +845,233 @@ export function AdminPanel({
               </p>
             </>
           )}
+          {section === "radar" && (
+            <>
+              <section className="admin-card">
+                <div className="section-title">
+                  <div>
+                    <h2>Novo compromisso</h2>
+                    <p className="muted small">
+                      Cadastre provas, trabalhos e eventos para o plano
+                      acompanhar. Ano, turma e disciplina são opcionais.
+                    </p>
+                  </div>
+                </div>
+                <form
+                  className="radar-form"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    addCommitment();
+                  }}
+                >
+                  <label className="radar-title-field">
+                    Título
+                    <input
+                      value={radar.title}
+                      onChange={(e) =>
+                        setRadar({ ...radar, title: e.target.value })
+                      }
+                      placeholder="Ex.: AP de Matemática"
+                      maxLength={120}
+                    />
+                  </label>
+                  <label>
+                    Data
+                    <input
+                      type="date"
+                      value={radar.date}
+                      onChange={(e) =>
+                        setRadar({ ...radar, date: e.target.value })
+                      }
+                    />
+                  </label>
+                  <label>
+                    Tipo
+                    <select
+                      value={radar.eventTypeId}
+                      onChange={(e) =>
+                        setRadar({ ...radar, eventTypeId: e.target.value })
+                      }
+                    >
+                      {data.eventTypes.map((t) => (
+                        <option key={t.id} value={t.id}>
+                          {t.name}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  <label>
+                    Ano
+                    <select
+                      value={radar.schoolYearId}
+                      onChange={(e) =>
+                        setRadar({
+                          ...radar,
+                          schoolYearId: e.target.value,
+                          classId: "",
+                        })
+                      }
+                    >
+                      <option value="">Todos os anos</option>
+                      {data.schoolYears
+                        .filter((y) => y.active)
+                        .sort((a, b) => a.order - b.order)
+                        .map((y) => (
+                          <option key={y.id} value={y.id}>
+                            {y.name}
+                          </option>
+                        ))}
+                    </select>
+                  </label>
+                  <label>
+                    Turma
+                    <select
+                      value={radar.classId}
+                      onChange={(e) =>
+                        setRadar({ ...radar, classId: e.target.value })
+                      }
+                    >
+                      <option value="">Todas as turmas</option>
+                      {(radar.schoolYearId
+                        ? data.classes.filter(
+                            (c) => c.schoolYearId === radar.schoolYearId,
+                          )
+                        : data.classes
+                      ).map((c) => (
+                        <option key={c.id} value={c.id}>
+                          {c.code} · {c.name}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  <label>
+                    Disciplina
+                    <select
+                      value={radar.subjectId}
+                      onChange={(e) =>
+                        setRadar({ ...radar, subjectId: e.target.value })
+                      }
+                    >
+                      <option value="">Todas as disciplinas</option>
+                      {data.subjects
+                        .filter((s) => s.active)
+                        .map((s) => (
+                          <option key={s.id} value={s.id}>
+                            {s.code} · {s.name}
+                          </option>
+                        ))}
+                    </select>
+                  </label>
+                  <label>
+                    Importância (0–5)
+                    <input
+                      type="number"
+                      min={0}
+                      max={5}
+                      value={radar.importance}
+                      onChange={(e) =>
+                        setRadar({
+                          ...radar,
+                          importance: Number(e.target.value),
+                        })
+                      }
+                    />
+                  </label>
+                  <button className="button primary radar-submit">
+                    <Plus size={16} /> Adicionar compromisso
+                  </button>
+                </form>
+              </section>
+              <section className="admin-card">
+                <div className="section-title">
+                  <div>
+                    <h2>
+                      Próximos compromissos{" "}
+                      <span className="count">{upcomingEvents.length}</span>
+                    </h2>
+                    <p className="muted small">
+                      Compromissos a partir de hoje. Ajuste os detalhes no
+                      editor completo se precisar.
+                    </p>
+                  </div>
+                  <button
+                    className="button secondary small-button"
+                    onClick={() =>
+                      setEditing({
+                        collection: "events",
+                        row: defaultRow("events", data),
+                        isNew: true,
+                      })
+                    }
+                  >
+                    <Plus size={15} /> Editor completo
+                  </button>
+                </div>
+                {upcomingEvents.length ? (
+                  upcomingEvents.map((e) => (
+                    <div className="calendar-row" key={e.id}>
+                      <div className="event-date">
+                        <strong>
+                          {formatDate(e.startDate, { day: "2-digit" })}
+                        </strong>
+                        <span>
+                          {formatDate(e.startDate, { month: "short" }).replace(
+                            ".",
+                            "",
+                          )}
+                        </span>
+                      </div>
+                      <div>
+                        <strong>{e.title}</strong>
+                        <p className="muted small">
+                          {
+                            data.eventTypes.find((t) => t.id === e.eventTypeId)
+                              ?.name
+                          }{" "}
+                          ·{" "}
+                          {e.classId
+                            ? data.classes.find((c) => c.id === e.classId)?.code
+                            : e.schoolYearId
+                              ? data.schoolYears.find(
+                                  (y) => y.id === e.schoolYearId,
+                                )?.name
+                              : "Toda a escola"}
+                          {e.subjectId
+                            ? ` · ${data.subjects.find((s) => s.id === e.subjectId)?.code ?? ""}`
+                            : ""}
+                          {e.importance >= 4 ? " · Alta prioridade" : ""}
+                        </p>
+                      </div>
+                      <button
+                        className="icon-button"
+                        aria-label={`Editar ${e.title}`}
+                        onClick={() =>
+                          setEditing({
+                            collection: "events",
+                            row: { ...e },
+                            isNew: false,
+                          })
+                        }
+                      >
+                        <Pencil size={16} />
+                      </button>
+                      <button
+                        className="icon-button danger"
+                        aria-label={`Excluir ${e.title}`}
+                        onClick={() => remove("events", e.id)}
+                      >
+                        <Trash2 size={16} />
+                      </button>
+                    </div>
+                  ))
+                ) : (
+                  <p className="empty-state">
+                    Nenhum compromisso futuro cadastrado.
+                  </p>
+                )}
+              </section>
+            </>
+          )}
           {section === "years" && (
             <>
               {collection("schoolYears")}
@@ -623,11 +1097,13 @@ export function AdminPanel({
                     value={classId}
                     onChange={(e) => setClassId(e.target.value)}
                   >
-                    {data.classes.map((c) => (
-                      <option key={c.id} value={c.id}>
-                        {c.code} · {c.name}
-                      </option>
-                    ))}
+                    {data.classes
+                      .filter((c) => !yearFilter || c.schoolYearId === yearFilter)
+                      .map((c) => (
+                        <option key={c.id} value={c.id}>
+                          {c.code} · {c.name}
+                        </option>
+                      ))}
                   </select>
                 </div>
                 <div className="admin-table-scroll">

@@ -2,6 +2,10 @@ import { chromium } from "@playwright/test";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import assert from "node:assert/strict";
 const base = "http://127.0.0.1:3000";
+const adminPassword =
+  (await readFile(".env.local", "utf8").catch(() => "")).match(
+    /^ADMIN_PASSWORD=(.*)$/m,
+  )?.[1]?.trim() ?? "";
 await mkdir(".local", { recursive: true });
 const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext({
@@ -20,10 +24,27 @@ try {
   });
   await page.getByRole("button", { name: /7º ano/ }).click();
   await page.getByRole("button", { name: "Turma A", exact: true }).click();
-  await page.getByLabel("Seu nome", { exact: true }).fill("Aluno de demonstração");
+  await page
+    .getByLabel("Nome completo", { exact: true })
+    .fill("Aluno de demonstração");
+  const rotating = await page.locator(".inspiration-message").innerText();
+  assert.ok(
+    [
+      "Organize sua rotina de estudos.",
+      "Estude com lápis e papel na mão!",
+      "Sempre faça registros dos seus estudos.",
+    ].includes(rotating.trim()),
+    `banner inesperado: ${rotating}`,
+  );
   await page.screenshot({ path: ".local/student-desktop.png", fullPage: true });
   await page.getByRole("button", { name: "Continuar", exact: true }).click();
-  for (const name of ["GEO Geografia", "MAT Matemática", "CIE Ciências"])
+  for (const name of [
+    "GEO Geografia",
+    "MAT Matemática",
+    "CIE Ciências",
+    "BIO Biologia",
+    "FIS Física",
+  ])
     await page.getByRole("button", { name, exact: true }).click();
   await page
     .getByRole("button", { name: "Definir horários", exact: true })
@@ -39,6 +60,13 @@ try {
         .getByRole("button", { name: `${day} ${time}`, exact: true })
         .click();
   await page.getByText("Personalizar período").click();
+  assert.ok((await page.locator(".period-options-icon svg").count()) > 0);
+  assert.equal(
+    await page
+      .locator(".period-options")
+      .evaluate((el) => getComputedStyle(el).borderTopColor),
+    "rgb(201, 168, 242)",
+  );
   await page.getByLabel("Início", { exact: true }).fill("2026-09-23");
   await page.getByLabel("Fim", { exact: true }).fill("2026-10-20");
   await page.getByRole("button", { name: "Gerar meu plano" }).click();
@@ -47,11 +75,48 @@ try {
   await page.reload({ waitUntil: "networkidle" });
   await page.getByRole("heading", { name: "Seu plano está pronto!" }).waitFor();
   assert.ok((await page.locator(".session-card").count()) > 0);
+  assert.equal(await page.locator(".week-tabs").count(), 0);
+  assert.ok((await page.locator(".plan-week").count()) >= 4);
+  assert.ok(
+    await page
+      .getByRole("heading", { name: "Como estudar para recuperação" })
+      .count(),
+  );
+  assert.ok(
+    await page
+      .locator(".section-title")
+      .getByRole("button", { name: "Baixar meu plano" })
+      .count(),
+  );
+  assert.equal(
+    await page
+      .locator(".session-card .recipe-step > span")
+      .first()
+      .evaluate((el) => getComputedStyle(el).backgroundColor),
+    "rgb(112, 64, 200)",
+  );
+  assert.ok(
+    (
+      await page
+        .locator(".events-card")
+        .evaluate((el) => getComputedStyle(el).backgroundImage)
+    ).includes("gradient"),
+  );
   await page.locator(".session-card summary").first().click();
   await page
     .getByText("Por que isso está aqui?", { exact: true })
     .first()
     .waitFor();
+  const stepNumbers = await page
+    .locator(".session-card")
+    .first()
+    .locator(".recipe-step > span")
+    .allInnerTexts();
+  assert.ok(stepNumbers.length > 0, "passo a passo vazio");
+  assert.ok(
+    stepNumbers.every((v) => /^\d+$/.test(v.trim())),
+    `passos deveriam ser numéricos: ${stepNumbers.join(",")}`,
+  );
   const downloadPromise = page.waitForEvent("download");
   await page.getByRole("button", { name: "Baixar PDF", exact: true }).click();
   const download = await downloadPromise;
@@ -59,15 +124,54 @@ try {
   const pdf = await readFile(".local/plano-demonstracao.pdf");
   assert.equal(pdf.subarray(0, 5).toString(), "%PDF-");
   assert.ok(pdf.length > 5000);
-  await page
-    .getByRole("button", { name: "Ver plano completo", exact: true })
-    .click();
   assert.ok((await page.locator(".plan-week").count()) >= 4);
   await page.screenshot({ path: ".local/plan-desktop.png", fullPage: true });
   const planUrl = page.url();
   await page.reload({ waitUntil: "networkidle" });
   assert.ok((await page.locator(".session-card").count()) > 0);
   await page.goto(`${base}/admin`, { waitUntil: "networkidle" });
+  if (adminPassword) {
+    await page
+      .getByLabel("Senha administrativa", { exact: true })
+      .fill(adminPassword);
+    await page.getByRole("button", { name: "Entrar", exact: true }).click();
+  }
+  assert.ok(
+    (
+      await page
+        .locator(".admin-sidebar")
+        .evaluate((el) => getComputedStyle(el).backgroundImage)
+    ).includes("gradient"),
+  );
+  assert.equal(
+    await page
+      .locator(".admin-sidebar")
+      .evaluate((el) => getComputedStyle(el).overflowY),
+    "auto",
+  );
+  await page
+    .getByText("Aluno de demonstração", { exact: true })
+    .first()
+    .waitFor();
+  assert.ok((await page.locator(".registry-table tbody tr").count()) > 0);
+  await page.getByRole("button", { name: "No seu radar", exact: true }).click();
+  await page.getByLabel("Título", { exact: true }).fill("Teste radar");
+  await page.getByLabel("Data", { exact: true }).fill("2027-03-10");
+  await page
+    .getByRole("button", { name: "Adicionar compromisso" })
+    .click();
+  await page.getByText("Teste radar", { exact: true }).waitFor();
+  await page
+    .getByRole("button", { name: "Excluir Teste radar", exact: true })
+    .click();
+  assert.equal(await page.getByText("Teste radar", { exact: true }).count(), 0);
+  await page
+    .getByRole("button", { name: "Anos e turmas", exact: true })
+    .click();
+  await page.getByRole("button", { name: "6º ano", exact: true }).click();
+  assert.ok((await page.getByText("6D", { exact: true }).count()) > 0);
+  assert.equal(await page.getByText("7A", { exact: true }).count(), 0);
+  await page.getByRole("button", { name: "Todos", exact: true }).click();
   await page.getByRole("button", { name: "Regras", exact: true }).click();
   await page
     .getByRole("button", { name: "Editar Aula no mesmo dia", exact: true })
@@ -133,7 +237,9 @@ try {
   await mobile.goto(`${base}/student`, { waitUntil: "networkidle" });
   await mobile.getByRole("button", { name: /7º ano/ }).click();
   await mobile.getByRole("button", { name: "Turma A", exact: true }).click();
-  await mobile.getByLabel("Seu nome", { exact: true }).fill("Aluno de demonstração");
+  await mobile
+    .getByLabel("Nome completo", { exact: true })
+    .fill("Aluno de demonstração");
   assert.ok(
     await mobile.evaluate(
       () => document.documentElement.scrollWidth <= window.innerWidth,
@@ -171,11 +277,24 @@ try {
         errors,
         checks: [
           "student flow",
-          "priority selection",
+          "full name",
+          "rotating banner",
+          "BIO/FIS subjects",
           "availability",
+          "purple period box",
           "persistent plan",
           "PDF download",
-          "all weeks",
+          "full plan view only",
+          "numbered recovery steps",
+          "black steps + purple badges",
+          "top download button",
+          "purple radar card",
+          "recovery guidance card",
+          "admin password login",
+          "purple admin sidebar + scroll",
+          "year filters",
+          "radar commitments",
+          "plan registry",
           "admin rule persistence",
           "CSV preview/import",
           "calendar",

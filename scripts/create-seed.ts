@@ -22,6 +22,8 @@ const subjects = [
   ["math", "MAT", "Matemática", "Calculator", "#7755CC"],
   ["portuguese", "LP", "Língua Portuguesa", "BookOpen", "#CA6E87"],
   ["science", "CIE", "Ciências", "FlaskConical", "#4D9B8D"],
+  ["biology", "BIO", "Biologia", "Dna", "#5C9E6D"],
+  ["physics", "FIS", "Física", "Atom", "#C05656"],
   ["geography", "GEO", "Geografia", "Globe2", "#5693BD"],
   ["history", "HIS", "História", "Landmark", "#B9854F"],
   ["english", "ING", "Inglês", "MessageCircle", "#9770B8"],
@@ -69,12 +71,73 @@ const mappings = [
   ["math", "les"],
   ["portuguese", "plurall"],
   ["science", "plurall"],
+  ["biology", "plurall"],
+  ["physics", "plurall"],
   ["geography", "plurall"],
   ["history", "plurall"],
   ["english", "ngl"],
   ["spanish", "profedeele"],
   ["science", "evo"],
 ];
+const recoverySteps: Record<string, string[]> = {
+  math: [
+    "Revisar as provas parciais e provas bimestrais e refazer as questões que errou.",
+    "Revisar as LES e refazer os exercícios que julgar mais difíceis.",
+    "Realizar os exercícios extras que são encaminhados pela plataforma EVO Trilha.",
+  ],
+  portuguese: [
+    "Revisar as provas parciais e provas bimestrais e refazer as questões que errou.",
+    "Na plataforma Plurall, elaborar uma lista de exercícios com, ao menos, 5 questões discursivas sobre os temas que serão avaliados.",
+    "Realizar a “Revisão interativa”, disponível para cada capítulo do livro didático, na plataforma Plurall.",
+    "Revisar cadernos e outros materiais de estudos que foram disponibilizados pelos professores ao longo do bimestre.",
+  ],
+  science: [
+    "Revisar as provas parciais e provas bimestrais e refazer as questões que errou.",
+    "Na plataforma Plurall, elaborar uma lista de exercícios com, ao menos, 5 questões discursivas sobre os temas que serão avaliados.",
+    "Realizar a “Revisão interativa”, disponível para cada capítulo do livro didático, na plataforma Plurall.",
+    "Realizar os exercícios extras que são encaminhados pela plataforma EVO Trilha.",
+    "Revisar cadernos e outros materiais de estudos que foram disponibilizados pelos professores ao longo do bimestre.",
+  ],
+  biology: [
+    "Revisar as provas parciais e provas bimestrais e refazer as questões que errou.",
+    "Na plataforma Plurall, elaborar uma lista de exercícios com, ao menos, 5 questões discursivas sobre os temas que serão avaliados.",
+    "Realizar a “Revisão interativa”, disponível para cada capítulo do livro didático, na plataforma Plurall.",
+    "Revisar cadernos e outros materiais de estudos que foram disponibilizados pelos professores ao longo do bimestre.",
+  ],
+  physics: [
+    "Revisar as provas parciais e provas bimestrais e refazer as questões que errou.",
+    "Na plataforma Plurall, elaborar uma lista de exercícios com, ao menos, 5 questões discursivas sobre os temas que serão avaliados.",
+    "Realizar a “Revisão interativa”, disponível para cada capítulo do livro didático, na plataforma Plurall.",
+    "Revisar cadernos e outros materiais de estudos que foram disponibilizados pelos professores ao longo do bimestre.",
+  ],
+  geography: [
+    "Revisar as provas parciais e provas bimestrais e refazer as questões que errou.",
+    "Na plataforma Plurall, elaborar uma lista de exercícios com, ao menos, 5 questões discursivas sobre os temas que serão avaliados.",
+    "Realizar a “Revisão interativa”, disponível para cada capítulo do livro didático, na plataforma Plurall.",
+    "Revisar cadernos e outros materiais de estudos que foram disponibilizados pelos professores ao longo do bimestre.",
+  ],
+  history: [
+    "Revisar as provas parciais e provas bimestrais e refazer as questões que errou.",
+    "Na plataforma Plurall, elaborar uma lista de exercícios com, ao menos, 5 questões discursivas sobre os temas que serão avaliados.",
+    "Realizar a “Revisão interativa”, disponível para cada capítulo do livro didático, na plataforma Plurall.",
+    "Revisar cadernos e outros materiais de estudos que foram disponibilizados pelos professores ao longo do bimestre.",
+  ],
+  english: [
+    "Revisar as provas parciais e provas bimestrais e refazer as questões que errou.",
+    "Revisar cadernos e outros materiais de estudos que foram disponibilizados pelos professores ao longo do bimestre.",
+    "Realizar exercícios relacionados aos temas estudados na plataforma National Geographic Learning: https://learn.eltngl.com/ (caso tenha problemas com o acesso à plataforma, procure sua orientação educacional).",
+  ],
+  spanish: [
+    "Revisar as provas parciais e provas bimestrais e refazer as questões que errou.",
+    "Revisar cadernos e outros materiais de estudos que foram disponibilizados pelos professores ao longo do bimestre.",
+    "Realizar exercícios relacionados aos temas estudados no site https://www.profedeele.es/.",
+  ],
+};
+const distribute = (total: number, count: number) => {
+  const base = Math.floor(total / count),
+    rest = total % count;
+  return Array.from({ length: count }, (_, i) => base + (i < rest ? 1 : 0));
+};
 const activities: SchoolData["activities"] = [];
 const recipes: SchoolData["recipes"] = [];
 for (const [subjectId, resourceId] of mappings)
@@ -82,25 +145,8 @@ for (const [subjectId, resourceId] of mappings)
     for (const duration of [30, 60]) {
       const prefix = `${subjectId}-${resourceId}-${activityType}-${duration}`;
       const resource = resources.find((r) => r.id === resourceId)!;
-      const instructions =
-        activityType === "review"
-          ? [
-              "Releia os registros da aula e destaque as dúvidas.",
-              `Revise as questões já resolvidas em ${resource.name}, com atenção aos erros.`,
-              "Anote o que precisa perguntar na próxima aula.",
-            ]
-          : activityType === "preparation"
-            ? [
-                "Leia o roteiro e identifique os conteúdos que precisam de atenção.",
-                `Retome exemplos de ${resource.name} e resolva três questões de aquecimento.`,
-                "Marque os tópicos que precisam de mais prática.",
-              ]
-            : [
-                "Revise suas anotações e os exemplos trabalhados em aula.",
-                `Resolva pelo menos cinco exercícios em ${resource.name}.`,
-                "Confira as respostas, refaça os erros e registre suas dúvidas.",
-              ];
-      const durations = duration === 30 ? [5, 20, 5] : [10, 40, 10];
+      const instructions = recoverySteps[subjectId];
+      const durations = distribute(duration, instructions.length);
       const steps = instructions.map((instruction, i) => {
         const id = `${prefix}-${i}`;
         activities.push({

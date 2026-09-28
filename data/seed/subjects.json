@@ -24,6 +24,22 @@
     "active": true
   },
   {
+    "id": "biology",
+    "code": "BIO",
+    "name": "Biologia",
+    "icon": "Dna",
+    "color": "#5C9E6D",
+    "active": true
+  },
+  {
+    "id": "physics",
+    "code": "FIS",
+    "name": "Física",
+    "icon": "Atom",
+    "color": "#C05656",
+    "active": true
+  },
+  {
     "id": "geography",
     "code": "GEO",
     "name": "Geografia",

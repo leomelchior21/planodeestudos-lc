@@ -10,19 +10,19 @@
       {
         "id": "step-math-les-practice-30-0",
         "activityId": "math-les-practice-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 0
       },
       {
         "id": "step-math-les-practice-30-1",
         "activityId": "math-les-practice-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 10,
         "order": 1
       },
       {
         "id": "step-math-les-practice-30-2",
         "activityId": "math-les-practice-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 2
       }
     ],
@@ -39,19 +39,19 @@
       {
         "id": "step-math-les-practice-60-0",
         "activityId": "math-les-practice-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 0
       },
       {
         "id": "step-math-les-practice-60-1",
         "activityId": "math-les-practice-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 20,
         "order": 1
       },
       {
         "id": "step-math-les-practice-60-2",
         "activityId": "math-les-practice-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 2
       }
     ],
@@ -68,19 +68,19 @@
       {
         "id": "step-math-les-review-30-0",
         "activityId": "math-les-review-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 0
       },
       {
         "id": "step-math-les-review-30-1",
         "activityId": "math-les-review-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 10,
         "order": 1
       },
       {
         "id": "step-math-les-review-30-2",
         "activityId": "math-les-review-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 2
       }
     ],
@@ -97,19 +97,19 @@
       {
         "id": "step-math-les-review-60-0",
         "activityId": "math-les-review-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 0
       },
       {
         "id": "step-math-les-review-60-1",
         "activityId": "math-les-review-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 20,
         "order": 1
       },
       {
         "id": "step-math-les-review-60-2",
         "activityId": "math-les-review-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 2
       }
     ],
@@ -126,19 +126,19 @@
       {
         "id": "step-math-les-preparation-30-0",
         "activityId": "math-les-preparation-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 0
       },
       {
         "id": "step-math-les-preparation-30-1",
         "activityId": "math-les-preparation-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 10,
         "order": 1
       },
       {
         "id": "step-math-les-preparation-30-2",
         "activityId": "math-les-preparation-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 2
       }
     ],
@@ -155,19 +155,19 @@
       {
         "id": "step-math-les-preparation-60-0",
         "activityId": "math-les-preparation-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 0
       },
       {
         "id": "step-math-les-preparation-60-1",
         "activityId": "math-les-preparation-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 20,
         "order": 1
       },
       {
         "id": "step-math-les-preparation-60-2",
         "activityId": "math-les-preparation-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 2
       }
     ],
@@ -184,20 +184,26 @@
       {
         "id": "step-portuguese-plurall-practice-30-0",
         "activityId": "portuguese-plurall-practice-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 8,
         "order": 0
       },
       {
         "id": "step-portuguese-plurall-practice-30-1",
         "activityId": "portuguese-plurall-practice-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 8,
         "order": 1
       },
       {
         "id": "step-portuguese-plurall-practice-30-2",
         "activityId": "portuguese-plurall-practice-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 7,
         "order": 2
+      },
+      {
+        "id": "step-portuguese-plurall-practice-30-3",
+        "activityId": "portuguese-plurall-practice-30-3",
+        "durationMinutes": 7,
+        "order": 3
       }
     ],
     "active": true
@@ -213,20 +219,26 @@
       {
         "id": "step-portuguese-plurall-practice-60-0",
         "activityId": "portuguese-plurall-practice-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 0
       },
       {
         "id": "step-portuguese-plurall-practice-60-1",
         "activityId": "portuguese-plurall-practice-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 15,
         "order": 1
       },
       {
         "id": "step-portuguese-plurall-practice-60-2",
         "activityId": "portuguese-plurall-practice-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 2
+      },
+      {
+        "id": "step-portuguese-plurall-practice-60-3",
+        "activityId": "portuguese-plurall-practice-60-3",
+        "durationMinutes": 15,
+        "order": 3
       }
     ],
     "active": true
@@ -242,20 +254,26 @@
       {
         "id": "step-portuguese-plurall-review-30-0",
         "activityId": "portuguese-plurall-review-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 8,
         "order": 0
       },
       {
         "id": "step-portuguese-plurall-review-30-1",
         "activityId": "portuguese-plurall-review-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 8,
         "order": 1
       },
       {
         "id": "step-portuguese-plurall-review-30-2",
         "activityId": "portuguese-plurall-review-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 7,
         "order": 2
+      },
+      {
+        "id": "step-portuguese-plurall-review-30-3",
+        "activityId": "portuguese-plurall-review-30-3",
+        "durationMinutes": 7,
+        "order": 3
       }
     ],
     "active": true
@@ -271,20 +289,26 @@
       {
         "id": "step-portuguese-plurall-review-60-0",
         "activityId": "portuguese-plurall-review-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 0
       },
       {
         "id": "step-portuguese-plurall-review-60-1",
         "activityId": "portuguese-plurall-review-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 15,
         "order": 1
       },
       {
         "id": "step-portuguese-plurall-review-60-2",
         "activityId": "portuguese-plurall-review-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 2
+      },
+      {
+        "id": "step-portuguese-plurall-review-60-3",
+        "activityId": "portuguese-plurall-review-60-3",
+        "durationMinutes": 15,
+        "order": 3
       }
     ],
     "active": true
@@ -300,20 +324,26 @@
       {
         "id": "step-portuguese-plurall-preparation-30-0",
         "activityId": "portuguese-plurall-preparation-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 8,
         "order": 0
       },
       {
         "id": "step-portuguese-plurall-preparation-30-1",
         "activityId": "portuguese-plurall-preparation-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 8,
         "order": 1
       },
       {
         "id": "step-portuguese-plurall-preparation-30-2",
         "activityId": "portuguese-plurall-preparation-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 7,
         "order": 2
+      },
+      {
+        "id": "step-portuguese-plurall-preparation-30-3",
+        "activityId": "portuguese-plurall-preparation-30-3",
+        "durationMinutes": 7,
+        "order": 3
       }
     ],
     "active": true
@@ -329,20 +359,26 @@
       {
         "id": "step-portuguese-plurall-preparation-60-0",
         "activityId": "portuguese-plurall-preparation-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 0
       },
       {
         "id": "step-portuguese-plurall-preparation-60-1",
         "activityId": "portuguese-plurall-preparation-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 15,
         "order": 1
       },
       {
         "id": "step-portuguese-plurall-preparation-60-2",
         "activityId": "portuguese-plurall-preparation-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 2
+      },
+      {
+        "id": "step-portuguese-plurall-preparation-60-3",
+        "activityId": "portuguese-plurall-preparation-60-3",
+        "durationMinutes": 15,
+        "order": 3
       }
     ],
     "active": true
@@ -358,20 +394,32 @@
       {
         "id": "step-science-plurall-practice-30-0",
         "activityId": "science-plurall-practice-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 6,
         "order": 0
       },
       {
         "id": "step-science-plurall-practice-30-1",
         "activityId": "science-plurall-practice-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 6,
         "order": 1
       },
       {
         "id": "step-science-plurall-practice-30-2",
         "activityId": "science-plurall-practice-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 6,
         "order": 2
+      },
+      {
+        "id": "step-science-plurall-practice-30-3",
+        "activityId": "science-plurall-practice-30-3",
+        "durationMinutes": 6,
+        "order": 3
+      },
+      {
+        "id": "step-science-plurall-practice-30-4",
+        "activityId": "science-plurall-practice-30-4",
+        "durationMinutes": 6,
+        "order": 4
       }
     ],
     "active": true
@@ -387,20 +435,32 @@
       {
         "id": "step-science-plurall-practice-60-0",
         "activityId": "science-plurall-practice-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 12,
         "order": 0
       },
       {
         "id": "step-science-plurall-practice-60-1",
         "activityId": "science-plurall-practice-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 12,
         "order": 1
       },
       {
         "id": "step-science-plurall-practice-60-2",
         "activityId": "science-plurall-practice-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 12,
         "order": 2
+      },
+      {
+        "id": "step-science-plurall-practice-60-3",
+        "activityId": "science-plurall-practice-60-3",
+        "durationMinutes": 12,
+        "order": 3
+      },
+      {
+        "id": "step-science-plurall-practice-60-4",
+        "activityId": "science-plurall-practice-60-4",
+        "durationMinutes": 12,
+        "order": 4
       }
     ],
     "active": true
@@ -416,20 +476,32 @@
       {
         "id": "step-science-plurall-review-30-0",
         "activityId": "science-plurall-review-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 6,
         "order": 0
       },
       {
         "id": "step-science-plurall-review-30-1",
         "activityId": "science-plurall-review-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 6,
         "order": 1
       },
       {
         "id": "step-science-plurall-review-30-2",
         "activityId": "science-plurall-review-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 6,
         "order": 2
+      },
+      {
+        "id": "step-science-plurall-review-30-3",
+        "activityId": "science-plurall-review-30-3",
+        "durationMinutes": 6,
+        "order": 3
+      },
+      {
+        "id": "step-science-plurall-review-30-4",
+        "activityId": "science-plurall-review-30-4",
+        "durationMinutes": 6,
+        "order": 4
       }
     ],
     "active": true
@@ -445,20 +517,32 @@
       {
         "id": "step-science-plurall-review-60-0",
         "activityId": "science-plurall-review-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 12,
         "order": 0
       },
       {
         "id": "step-science-plurall-review-60-1",
         "activityId": "science-plurall-review-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 12,
         "order": 1
       },
       {
         "id": "step-science-plurall-review-60-2",
         "activityId": "science-plurall-review-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 12,
         "order": 2
+      },
+      {
+        "id": "step-science-plurall-review-60-3",
+        "activityId": "science-plurall-review-60-3",
+        "durationMinutes": 12,
+        "order": 3
+      },
+      {
+        "id": "step-science-plurall-review-60-4",
+        "activityId": "science-plurall-review-60-4",
+        "durationMinutes": 12,
+        "order": 4
       }
     ],
     "active": true
@@ -474,20 +558,32 @@
       {
         "id": "step-science-plurall-preparation-30-0",
         "activityId": "science-plurall-preparation-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 6,
         "order": 0
       },
       {
         "id": "step-science-plurall-preparation-30-1",
         "activityId": "science-plurall-preparation-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 6,
         "order": 1
       },
       {
         "id": "step-science-plurall-preparation-30-2",
         "activityId": "science-plurall-preparation-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 6,
         "order": 2
+      },
+      {
+        "id": "step-science-plurall-preparation-30-3",
+        "activityId": "science-plurall-preparation-30-3",
+        "durationMinutes": 6,
+        "order": 3
+      },
+      {
+        "id": "step-science-plurall-preparation-30-4",
+        "activityId": "science-plurall-preparation-30-4",
+        "durationMinutes": 6,
+        "order": 4
       }
     ],
     "active": true
@@ -503,20 +599,452 @@
       {
         "id": "step-science-plurall-preparation-60-0",
         "activityId": "science-plurall-preparation-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 12,
         "order": 0
       },
       {
         "id": "step-science-plurall-preparation-60-1",
         "activityId": "science-plurall-preparation-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 12,
         "order": 1
       },
       {
         "id": "step-science-plurall-preparation-60-2",
         "activityId": "science-plurall-preparation-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 12,
         "order": 2
+      },
+      {
+        "id": "step-science-plurall-preparation-60-3",
+        "activityId": "science-plurall-preparation-60-3",
+        "durationMinutes": 12,
+        "order": 3
+      },
+      {
+        "id": "step-science-plurall-preparation-60-4",
+        "activityId": "science-plurall-preparation-60-4",
+        "durationMinutes": 12,
+        "order": 4
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "biology-plurall-practice-30",
+    "name": "Plurall · Prática · 30 min",
+    "subjectId": "biology",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-biology-plurall-practice-30-0",
+        "activityId": "biology-plurall-practice-30-0",
+        "durationMinutes": 8,
+        "order": 0
+      },
+      {
+        "id": "step-biology-plurall-practice-30-1",
+        "activityId": "biology-plurall-practice-30-1",
+        "durationMinutes": 8,
+        "order": 1
+      },
+      {
+        "id": "step-biology-plurall-practice-30-2",
+        "activityId": "biology-plurall-practice-30-2",
+        "durationMinutes": 7,
+        "order": 2
+      },
+      {
+        "id": "step-biology-plurall-practice-30-3",
+        "activityId": "biology-plurall-practice-30-3",
+        "durationMinutes": 7,
+        "order": 3
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "biology-plurall-practice-60",
+    "name": "Plurall · Prática · 60 min",
+    "subjectId": "biology",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-biology-plurall-practice-60-0",
+        "activityId": "biology-plurall-practice-60-0",
+        "durationMinutes": 15,
+        "order": 0
+      },
+      {
+        "id": "step-biology-plurall-practice-60-1",
+        "activityId": "biology-plurall-practice-60-1",
+        "durationMinutes": 15,
+        "order": 1
+      },
+      {
+        "id": "step-biology-plurall-practice-60-2",
+        "activityId": "biology-plurall-practice-60-2",
+        "durationMinutes": 15,
+        "order": 2
+      },
+      {
+        "id": "step-biology-plurall-practice-60-3",
+        "activityId": "biology-plurall-practice-60-3",
+        "durationMinutes": 15,
+        "order": 3
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "biology-plurall-review-30",
+    "name": "Plurall · Revisão · 30 min",
+    "subjectId": "biology",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-biology-plurall-review-30-0",
+        "activityId": "biology-plurall-review-30-0",
+        "durationMinutes": 8,
+        "order": 0
+      },
+      {
+        "id": "step-biology-plurall-review-30-1",
+        "activityId": "biology-plurall-review-30-1",
+        "durationMinutes": 8,
+        "order": 1
+      },
+      {
+        "id": "step-biology-plurall-review-30-2",
+        "activityId": "biology-plurall-review-30-2",
+        "durationMinutes": 7,
+        "order": 2
+      },
+      {
+        "id": "step-biology-plurall-review-30-3",
+        "activityId": "biology-plurall-review-30-3",
+        "durationMinutes": 7,
+        "order": 3
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "biology-plurall-review-60",
+    "name": "Plurall · Revisão · 60 min",
+    "subjectId": "biology",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-biology-plurall-review-60-0",
+        "activityId": "biology-plurall-review-60-0",
+        "durationMinutes": 15,
+        "order": 0
+      },
+      {
+        "id": "step-biology-plurall-review-60-1",
+        "activityId": "biology-plurall-review-60-1",
+        "durationMinutes": 15,
+        "order": 1
+      },
+      {
+        "id": "step-biology-plurall-review-60-2",
+        "activityId": "biology-plurall-review-60-2",
+        "durationMinutes": 15,
+        "order": 2
+      },
+      {
+        "id": "step-biology-plurall-review-60-3",
+        "activityId": "biology-plurall-review-60-3",
+        "durationMinutes": 15,
+        "order": 3
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "biology-plurall-preparation-30",
+    "name": "Plurall · Preparação · 30 min",
+    "subjectId": "biology",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-biology-plurall-preparation-30-0",
+        "activityId": "biology-plurall-preparation-30-0",
+        "durationMinutes": 8,
+        "order": 0
+      },
+      {
+        "id": "step-biology-plurall-preparation-30-1",
+        "activityId": "biology-plurall-preparation-30-1",
+        "durationMinutes": 8,
+        "order": 1
+      },
+      {
+        "id": "step-biology-plurall-preparation-30-2",
+        "activityId": "biology-plurall-preparation-30-2",
+        "durationMinutes": 7,
+        "order": 2
+      },
+      {
+        "id": "step-biology-plurall-preparation-30-3",
+        "activityId": "biology-plurall-preparation-30-3",
+        "durationMinutes": 7,
+        "order": 3
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "biology-plurall-preparation-60",
+    "name": "Plurall · Preparação · 60 min",
+    "subjectId": "biology",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-biology-plurall-preparation-60-0",
+        "activityId": "biology-plurall-preparation-60-0",
+        "durationMinutes": 15,
+        "order": 0
+      },
+      {
+        "id": "step-biology-plurall-preparation-60-1",
+        "activityId": "biology-plurall-preparation-60-1",
+        "durationMinutes": 15,
+        "order": 1
+      },
+      {
+        "id": "step-biology-plurall-preparation-60-2",
+        "activityId": "biology-plurall-preparation-60-2",
+        "durationMinutes": 15,
+        "order": 2
+      },
+      {
+        "id": "step-biology-plurall-preparation-60-3",
+        "activityId": "biology-plurall-preparation-60-3",
+        "durationMinutes": 15,
+        "order": 3
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "physics-plurall-practice-30",
+    "name": "Plurall · Prática · 30 min",
+    "subjectId": "physics",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-physics-plurall-practice-30-0",
+        "activityId": "physics-plurall-practice-30-0",
+        "durationMinutes": 8,
+        "order": 0
+      },
+      {
+        "id": "step-physics-plurall-practice-30-1",
+        "activityId": "physics-plurall-practice-30-1",
+        "durationMinutes": 8,
+        "order": 1
+      },
+      {
+        "id": "step-physics-plurall-practice-30-2",
+        "activityId": "physics-plurall-practice-30-2",
+        "durationMinutes": 7,
+        "order": 2
+      },
+      {
+        "id": "step-physics-plurall-practice-30-3",
+        "activityId": "physics-plurall-practice-30-3",
+        "durationMinutes": 7,
+        "order": 3
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "physics-plurall-practice-60",
+    "name": "Plurall · Prática · 60 min",
+    "subjectId": "physics",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "practice",
+    "steps": [
+      {
+        "id": "step-physics-plurall-practice-60-0",
+        "activityId": "physics-plurall-practice-60-0",
+        "durationMinutes": 15,
+        "order": 0
+      },
+      {
+        "id": "step-physics-plurall-practice-60-1",
+        "activityId": "physics-plurall-practice-60-1",
+        "durationMinutes": 15,
+        "order": 1
+      },
+      {
+        "id": "step-physics-plurall-practice-60-2",
+        "activityId": "physics-plurall-practice-60-2",
+        "durationMinutes": 15,
+        "order": 2
+      },
+      {
+        "id": "step-physics-plurall-practice-60-3",
+        "activityId": "physics-plurall-practice-60-3",
+        "durationMinutes": 15,
+        "order": 3
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "physics-plurall-review-30",
+    "name": "Plurall · Revisão · 30 min",
+    "subjectId": "physics",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-physics-plurall-review-30-0",
+        "activityId": "physics-plurall-review-30-0",
+        "durationMinutes": 8,
+        "order": 0
+      },
+      {
+        "id": "step-physics-plurall-review-30-1",
+        "activityId": "physics-plurall-review-30-1",
+        "durationMinutes": 8,
+        "order": 1
+      },
+      {
+        "id": "step-physics-plurall-review-30-2",
+        "activityId": "physics-plurall-review-30-2",
+        "durationMinutes": 7,
+        "order": 2
+      },
+      {
+        "id": "step-physics-plurall-review-30-3",
+        "activityId": "physics-plurall-review-30-3",
+        "durationMinutes": 7,
+        "order": 3
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "physics-plurall-review-60",
+    "name": "Plurall · Revisão · 60 min",
+    "subjectId": "physics",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "review",
+    "steps": [
+      {
+        "id": "step-physics-plurall-review-60-0",
+        "activityId": "physics-plurall-review-60-0",
+        "durationMinutes": 15,
+        "order": 0
+      },
+      {
+        "id": "step-physics-plurall-review-60-1",
+        "activityId": "physics-plurall-review-60-1",
+        "durationMinutes": 15,
+        "order": 1
+      },
+      {
+        "id": "step-physics-plurall-review-60-2",
+        "activityId": "physics-plurall-review-60-2",
+        "durationMinutes": 15,
+        "order": 2
+      },
+      {
+        "id": "step-physics-plurall-review-60-3",
+        "activityId": "physics-plurall-review-60-3",
+        "durationMinutes": 15,
+        "order": 3
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "physics-plurall-preparation-30",
+    "name": "Plurall · Preparação · 30 min",
+    "subjectId": "physics",
+    "resourceId": "plurall",
+    "durationMinutes": 30,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-physics-plurall-preparation-30-0",
+        "activityId": "physics-plurall-preparation-30-0",
+        "durationMinutes": 8,
+        "order": 0
+      },
+      {
+        "id": "step-physics-plurall-preparation-30-1",
+        "activityId": "physics-plurall-preparation-30-1",
+        "durationMinutes": 8,
+        "order": 1
+      },
+      {
+        "id": "step-physics-plurall-preparation-30-2",
+        "activityId": "physics-plurall-preparation-30-2",
+        "durationMinutes": 7,
+        "order": 2
+      },
+      {
+        "id": "step-physics-plurall-preparation-30-3",
+        "activityId": "physics-plurall-preparation-30-3",
+        "durationMinutes": 7,
+        "order": 3
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": "physics-plurall-preparation-60",
+    "name": "Plurall · Preparação · 60 min",
+    "subjectId": "physics",
+    "resourceId": "plurall",
+    "durationMinutes": 60,
+    "activityType": "preparation",
+    "steps": [
+      {
+        "id": "step-physics-plurall-preparation-60-0",
+        "activityId": "physics-plurall-preparation-60-0",
+        "durationMinutes": 15,
+        "order": 0
+      },
+      {
+        "id": "step-physics-plurall-preparation-60-1",
+        "activityId": "physics-plurall-preparation-60-1",
+        "durationMinutes": 15,
+        "order": 1
+      },
+      {
+        "id": "step-physics-plurall-preparation-60-2",
+        "activityId": "physics-plurall-preparation-60-2",
+        "durationMinutes": 15,
+        "order": 2
+      },
+      {
+        "id": "step-physics-plurall-preparation-60-3",
+        "activityId": "physics-plurall-preparation-60-3",
+        "durationMinutes": 15,
+        "order": 3
       }
     ],
     "active": true
@@ -532,20 +1060,26 @@
       {
         "id": "step-geography-plurall-practice-30-0",
         "activityId": "geography-plurall-practice-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 8,
         "order": 0
       },
       {
         "id": "step-geography-plurall-practice-30-1",
         "activityId": "geography-plurall-practice-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 8,
         "order": 1
       },
       {
         "id": "step-geography-plurall-practice-30-2",
         "activityId": "geography-plurall-practice-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 7,
         "order": 2
+      },
+      {
+        "id": "step-geography-plurall-practice-30-3",
+        "activityId": "geography-plurall-practice-30-3",
+        "durationMinutes": 7,
+        "order": 3
       }
     ],
     "active": true
@@ -561,20 +1095,26 @@
       {
         "id": "step-geography-plurall-practice-60-0",
         "activityId": "geography-plurall-practice-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 0
       },
       {
         "id": "step-geography-plurall-practice-60-1",
         "activityId": "geography-plurall-practice-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 15,
         "order": 1
       },
       {
         "id": "step-geography-plurall-practice-60-2",
         "activityId": "geography-plurall-practice-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 2
+      },
+      {
+        "id": "step-geography-plurall-practice-60-3",
+        "activityId": "geography-plurall-practice-60-3",
+        "durationMinutes": 15,
+        "order": 3
       }
     ],
     "active": true
@@ -590,20 +1130,26 @@
       {
         "id": "step-geography-plurall-review-30-0",
         "activityId": "geography-plurall-review-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 8,
         "order": 0
       },
       {
         "id": "step-geography-plurall-review-30-1",
         "activityId": "geography-plurall-review-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 8,
         "order": 1
       },
       {
         "id": "step-geography-plurall-review-30-2",
         "activityId": "geography-plurall-review-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 7,
         "order": 2
+      },
+      {
+        "id": "step-geography-plurall-review-30-3",
+        "activityId": "geography-plurall-review-30-3",
+        "durationMinutes": 7,
+        "order": 3
       }
     ],
     "active": true
@@ -619,20 +1165,26 @@
       {
         "id": "step-geography-plurall-review-60-0",
         "activityId": "geography-plurall-review-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 0
       },
       {
         "id": "step-geography-plurall-review-60-1",
         "activityId": "geography-plurall-review-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 15,
         "order": 1
       },
       {
         "id": "step-geography-plurall-review-60-2",
         "activityId": "geography-plurall-review-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 2
+      },
+      {
+        "id": "step-geography-plurall-review-60-3",
+        "activityId": "geography-plurall-review-60-3",
+        "durationMinutes": 15,
+        "order": 3
       }
     ],
     "active": true
@@ -648,20 +1200,26 @@
       {
         "id": "step-geography-plurall-preparation-30-0",
         "activityId": "geography-plurall-preparation-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 8,
         "order": 0
       },
       {
         "id": "step-geography-plurall-preparation-30-1",
         "activityId": "geography-plurall-preparation-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 8,
         "order": 1
       },
       {
         "id": "step-geography-plurall-preparation-30-2",
         "activityId": "geography-plurall-preparation-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 7,
         "order": 2
+      },
+      {
+        "id": "step-geography-plurall-preparation-30-3",
+        "activityId": "geography-plurall-preparation-30-3",
+        "durationMinutes": 7,
+        "order": 3
       }
     ],
     "active": true
@@ -677,20 +1235,26 @@
       {
         "id": "step-geography-plurall-preparation-60-0",
         "activityId": "geography-plurall-preparation-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 0
       },
       {
         "id": "step-geography-plurall-preparation-60-1",
         "activityId": "geography-plurall-preparation-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 15,
         "order": 1
       },
       {
         "id": "step-geography-plurall-preparation-60-2",
         "activityId": "geography-plurall-preparation-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 2
+      },
+      {
+        "id": "step-geography-plurall-preparation-60-3",
+        "activityId": "geography-plurall-preparation-60-3",
+        "durationMinutes": 15,
+        "order": 3
       }
     ],
     "active": true
@@ -706,20 +1270,26 @@
       {
         "id": "step-history-plurall-practice-30-0",
         "activityId": "history-plurall-practice-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 8,
         "order": 0
       },
       {
         "id": "step-history-plurall-practice-30-1",
         "activityId": "history-plurall-practice-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 8,
         "order": 1
       },
       {
         "id": "step-history-plurall-practice-30-2",
         "activityId": "history-plurall-practice-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 7,
         "order": 2
+      },
+      {
+        "id": "step-history-plurall-practice-30-3",
+        "activityId": "history-plurall-practice-30-3",
+        "durationMinutes": 7,
+        "order": 3
       }
     ],
     "active": true
@@ -735,20 +1305,26 @@
       {
         "id": "step-history-plurall-practice-60-0",
         "activityId": "history-plurall-practice-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 0
       },
       {
         "id": "step-history-plurall-practice-60-1",
         "activityId": "history-plurall-practice-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 15,
         "order": 1
       },
       {
         "id": "step-history-plurall-practice-60-2",
         "activityId": "history-plurall-practice-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 2
+      },
+      {
+        "id": "step-history-plurall-practice-60-3",
+        "activityId": "history-plurall-practice-60-3",
+        "durationMinutes": 15,
+        "order": 3
       }
     ],
     "active": true
@@ -764,20 +1340,26 @@
       {
         "id": "step-history-plurall-review-30-0",
         "activityId": "history-plurall-review-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 8,
         "order": 0
       },
       {
         "id": "step-history-plurall-review-30-1",
         "activityId": "history-plurall-review-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 8,
         "order": 1
       },
       {
         "id": "step-history-plurall-review-30-2",
         "activityId": "history-plurall-review-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 7,
         "order": 2
+      },
+      {
+        "id": "step-history-plurall-review-30-3",
+        "activityId": "history-plurall-review-30-3",
+        "durationMinutes": 7,
+        "order": 3
       }
     ],
     "active": true
@@ -793,20 +1375,26 @@
       {
         "id": "step-history-plurall-review-60-0",
         "activityId": "history-plurall-review-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 0
       },
       {
         "id": "step-history-plurall-review-60-1",
         "activityId": "history-plurall-review-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 15,
         "order": 1
       },
       {
         "id": "step-history-plurall-review-60-2",
         "activityId": "history-plurall-review-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 2
+      },
+      {
+        "id": "step-history-plurall-review-60-3",
+        "activityId": "history-plurall-review-60-3",
+        "durationMinutes": 15,
+        "order": 3
       }
     ],
     "active": true
@@ -822,20 +1410,26 @@
       {
         "id": "step-history-plurall-preparation-30-0",
         "activityId": "history-plurall-preparation-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 8,
         "order": 0
       },
       {
         "id": "step-history-plurall-preparation-30-1",
         "activityId": "history-plurall-preparation-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 8,
         "order": 1
       },
       {
         "id": "step-history-plurall-preparation-30-2",
         "activityId": "history-plurall-preparation-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 7,
         "order": 2
+      },
+      {
+        "id": "step-history-plurall-preparation-30-3",
+        "activityId": "history-plurall-preparation-30-3",
+        "durationMinutes": 7,
+        "order": 3
       }
     ],
     "active": true
@@ -851,20 +1445,26 @@
       {
         "id": "step-history-plurall-preparation-60-0",
         "activityId": "history-plurall-preparation-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 0
       },
       {
         "id": "step-history-plurall-preparation-60-1",
         "activityId": "history-plurall-preparation-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 15,
         "order": 1
       },
       {
         "id": "step-history-plurall-preparation-60-2",
         "activityId": "history-plurall-preparation-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 15,
         "order": 2
+      },
+      {
+        "id": "step-history-plurall-preparation-60-3",
+        "activityId": "history-plurall-preparation-60-3",
+        "durationMinutes": 15,
+        "order": 3
       }
     ],
     "active": true
@@ -880,19 +1480,19 @@
       {
         "id": "step-english-ngl-practice-30-0",
         "activityId": "english-ngl-practice-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 0
       },
       {
         "id": "step-english-ngl-practice-30-1",
         "activityId": "english-ngl-practice-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 10,
         "order": 1
       },
       {
         "id": "step-english-ngl-practice-30-2",
         "activityId": "english-ngl-practice-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 2
       }
     ],
@@ -909,19 +1509,19 @@
       {
         "id": "step-english-ngl-practice-60-0",
         "activityId": "english-ngl-practice-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 0
       },
       {
         "id": "step-english-ngl-practice-60-1",
         "activityId": "english-ngl-practice-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 20,
         "order": 1
       },
       {
         "id": "step-english-ngl-practice-60-2",
         "activityId": "english-ngl-practice-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 2
       }
     ],
@@ -938,19 +1538,19 @@
       {
         "id": "step-english-ngl-review-30-0",
         "activityId": "english-ngl-review-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 0
       },
       {
         "id": "step-english-ngl-review-30-1",
         "activityId": "english-ngl-review-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 10,
         "order": 1
       },
       {
         "id": "step-english-ngl-review-30-2",
         "activityId": "english-ngl-review-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 2
       }
     ],
@@ -967,19 +1567,19 @@
       {
         "id": "step-english-ngl-review-60-0",
         "activityId": "english-ngl-review-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 0
       },
       {
         "id": "step-english-ngl-review-60-1",
         "activityId": "english-ngl-review-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 20,
         "order": 1
       },
       {
         "id": "step-english-ngl-review-60-2",
         "activityId": "english-ngl-review-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 2
       }
     ],
@@ -996,19 +1596,19 @@
       {
         "id": "step-english-ngl-preparation-30-0",
         "activityId": "english-ngl-preparation-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 0
       },
       {
         "id": "step-english-ngl-preparation-30-1",
         "activityId": "english-ngl-preparation-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 10,
         "order": 1
       },
       {
         "id": "step-english-ngl-preparation-30-2",
         "activityId": "english-ngl-preparation-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 2
       }
     ],
@@ -1025,19 +1625,19 @@
       {
         "id": "step-english-ngl-preparation-60-0",
         "activityId": "english-ngl-preparation-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 0
       },
       {
         "id": "step-english-ngl-preparation-60-1",
         "activityId": "english-ngl-preparation-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 20,
         "order": 1
       },
       {
         "id": "step-english-ngl-preparation-60-2",
         "activityId": "english-ngl-preparation-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 2
       }
     ],
@@ -1054,19 +1654,19 @@
       {
         "id": "step-spanish-profedeele-practice-30-0",
         "activityId": "spanish-profedeele-practice-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 0
       },
       {
         "id": "step-spanish-profedeele-practice-30-1",
         "activityId": "spanish-profedeele-practice-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 10,
         "order": 1
       },
       {
         "id": "step-spanish-profedeele-practice-30-2",
         "activityId": "spanish-profedeele-practice-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 2
       }
     ],
@@ -1083,19 +1683,19 @@
       {
         "id": "step-spanish-profedeele-practice-60-0",
         "activityId": "spanish-profedeele-practice-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 0
       },
       {
         "id": "step-spanish-profedeele-practice-60-1",
         "activityId": "spanish-profedeele-practice-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 20,
         "order": 1
       },
       {
         "id": "step-spanish-profedeele-practice-60-2",
         "activityId": "spanish-profedeele-practice-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 2
       }
     ],
@@ -1112,19 +1712,19 @@
       {
         "id": "step-spanish-profedeele-review-30-0",
         "activityId": "spanish-profedeele-review-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 0
       },
       {
         "id": "step-spanish-profedeele-review-30-1",
         "activityId": "spanish-profedeele-review-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 10,
         "order": 1
       },
       {
         "id": "step-spanish-profedeele-review-30-2",
         "activityId": "spanish-profedeele-review-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 2
       }
     ],
@@ -1141,19 +1741,19 @@
       {
         "id": "step-spanish-profedeele-review-60-0",
         "activityId": "spanish-profedeele-review-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 0
       },
       {
         "id": "step-spanish-profedeele-review-60-1",
         "activityId": "spanish-profedeele-review-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 20,
         "order": 1
       },
       {
         "id": "step-spanish-profedeele-review-60-2",
         "activityId": "spanish-profedeele-review-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 2
       }
     ],
@@ -1170,19 +1770,19 @@
       {
         "id": "step-spanish-profedeele-preparation-30-0",
         "activityId": "spanish-profedeele-preparation-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 0
       },
       {
         "id": "step-spanish-profedeele-preparation-30-1",
         "activityId": "spanish-profedeele-preparation-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 10,
         "order": 1
       },
       {
         "id": "step-spanish-profedeele-preparation-30-2",
         "activityId": "spanish-profedeele-preparation-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 10,
         "order": 2
       }
     ],
@@ -1199,19 +1799,19 @@
       {
         "id": "step-spanish-profedeele-preparation-60-0",
         "activityId": "spanish-profedeele-preparation-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 0
       },
       {
         "id": "step-spanish-profedeele-preparation-60-1",
         "activityId": "spanish-profedeele-preparation-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 20,
         "order": 1
       },
       {
         "id": "step-spanish-profedeele-preparation-60-2",
         "activityId": "spanish-profedeele-preparation-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 20,
         "order": 2
       }
     ],
@@ -1228,20 +1828,32 @@
       {
         "id": "step-science-evo-practice-30-0",
         "activityId": "science-evo-practice-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 6,
         "order": 0
       },
       {
         "id": "step-science-evo-practice-30-1",
         "activityId": "science-evo-practice-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 6,
         "order": 1
       },
       {
         "id": "step-science-evo-practice-30-2",
         "activityId": "science-evo-practice-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 6,
         "order": 2
+      },
+      {
+        "id": "step-science-evo-practice-30-3",
+        "activityId": "science-evo-practice-30-3",
+        "durationMinutes": 6,
+        "order": 3
+      },
+      {
+        "id": "step-science-evo-practice-30-4",
+        "activityId": "science-evo-practice-30-4",
+        "durationMinutes": 6,
+        "order": 4
       }
     ],
     "active": true
@@ -1257,20 +1869,32 @@
       {
         "id": "step-science-evo-practice-60-0",
         "activityId": "science-evo-practice-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 12,
         "order": 0
       },
       {
         "id": "step-science-evo-practice-60-1",
         "activityId": "science-evo-practice-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 12,
         "order": 1
       },
       {
         "id": "step-science-evo-practice-60-2",
         "activityId": "science-evo-practice-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 12,
         "order": 2
+      },
+      {
+        "id": "step-science-evo-practice-60-3",
+        "activityId": "science-evo-practice-60-3",
+        "durationMinutes": 12,
+        "order": 3
+      },
+      {
+        "id": "step-science-evo-practice-60-4",
+        "activityId": "science-evo-practice-60-4",
+        "durationMinutes": 12,
+        "order": 4
       }
     ],
     "active": true
@@ -1286,20 +1910,32 @@
       {
         "id": "step-science-evo-review-30-0",
         "activityId": "science-evo-review-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 6,
         "order": 0
       },
       {
         "id": "step-science-evo-review-30-1",
         "activityId": "science-evo-review-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 6,
         "order": 1
       },
       {
         "id": "step-science-evo-review-30-2",
         "activityId": "science-evo-review-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 6,
         "order": 2
+      },
+      {
+        "id": "step-science-evo-review-30-3",
+        "activityId": "science-evo-review-30-3",
+        "durationMinutes": 6,
+        "order": 3
+      },
+      {
+        "id": "step-science-evo-review-30-4",
+        "activityId": "science-evo-review-30-4",
+        "durationMinutes": 6,
+        "order": 4
       }
     ],
     "active": true
@@ -1315,20 +1951,32 @@
       {
         "id": "step-science-evo-review-60-0",
         "activityId": "science-evo-review-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 12,
         "order": 0
       },
       {
         "id": "step-science-evo-review-60-1",
         "activityId": "science-evo-review-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 12,
         "order": 1
       },
       {
         "id": "step-science-evo-review-60-2",
         "activityId": "science-evo-review-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 12,
         "order": 2
+      },
+      {
+        "id": "step-science-evo-review-60-3",
+        "activityId": "science-evo-review-60-3",
+        "durationMinutes": 12,
+        "order": 3
+      },
+      {
+        "id": "step-science-evo-review-60-4",
+        "activityId": "science-evo-review-60-4",
+        "durationMinutes": 12,
+        "order": 4
       }
     ],
     "active": true
@@ -1344,20 +1992,32 @@
       {
         "id": "step-science-evo-preparation-30-0",
         "activityId": "science-evo-preparation-30-0",
-        "durationMinutes": 5,
+        "durationMinutes": 6,
         "order": 0
       },
       {
         "id": "step-science-evo-preparation-30-1",
         "activityId": "science-evo-preparation-30-1",
-        "durationMinutes": 20,
+        "durationMinutes": 6,
         "order": 1
       },
       {
         "id": "step-science-evo-preparation-30-2",
         "activityId": "science-evo-preparation-30-2",
-        "durationMinutes": 5,
+        "durationMinutes": 6,
         "order": 2
+      },
+      {
+        "id": "step-science-evo-preparation-30-3",
+        "activityId": "science-evo-preparation-30-3",
+        "durationMinutes": 6,
+        "order": 3
+      },
+      {
+        "id": "step-science-evo-preparation-30-4",
+        "activityId": "science-evo-preparation-30-4",
+        "durationMinutes": 6,
+        "order": 4
       }
     ],
     "active": true
@@ -1373,20 +2033,32 @@
       {
         "id": "step-science-evo-preparation-60-0",
         "activityId": "science-evo-preparation-60-0",
-        "durationMinutes": 10,
+        "durationMinutes": 12,
         "order": 0
       },
       {
         "id": "step-science-evo-preparation-60-1",
         "activityId": "science-evo-preparation-60-1",
-        "durationMinutes": 40,
+        "durationMinutes": 12,
         "order": 1
       },
       {
         "id": "step-science-evo-preparation-60-2",
         "activityId": "science-evo-preparation-60-2",
-        "durationMinutes": 10,
+        "durationMinutes": 12,
         "order": 2
+      },
+      {
+        "id": "step-science-evo-preparation-60-3",
+        "activityId": "science-evo-preparation-60-3",
+        "durationMinutes": 12,
+        "order": 3
+      },
+      {
+        "id": "step-science-evo-preparation-60-4",
+        "activityId": "science-evo-preparation-60-4",
+        "durationMinutes": 12,
+        "order": 4
       }
     ],
     "active": true

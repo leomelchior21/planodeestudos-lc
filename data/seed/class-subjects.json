@@ -15,6 +15,16 @@
     "subjectId": "science"
   },
   {
+    "id": "class-6a-biology",
+    "classId": "class-6a",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-6a-physics",
+    "classId": "class-6a",
+    "subjectId": "physics"
+  },
+  {
     "id": "class-6a-geography",
     "classId": "class-6a",
     "subjectId": "geography"
@@ -48,6 +58,16 @@
     "id": "class-6b-science",
     "classId": "class-6b",
     "subjectId": "science"
+  },
+  {
+    "id": "class-6b-biology",
+    "classId": "class-6b",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-6b-physics",
+    "classId": "class-6b",
+    "subjectId": "physics"
   },
   {
     "id": "class-6b-geography",
@@ -85,6 +105,16 @@
     "subjectId": "science"
   },
   {
+    "id": "class-6c-biology",
+    "classId": "class-6c",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-6c-physics",
+    "classId": "class-6c",
+    "subjectId": "physics"
+  },
+  {
     "id": "class-6c-geography",
     "classId": "class-6c",
     "subjectId": "geography"
@@ -118,6 +148,16 @@
     "id": "class-6d-science",
     "classId": "class-6d",
     "subjectId": "science"
+  },
+  {
+    "id": "class-6d-biology",
+    "classId": "class-6d",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-6d-physics",
+    "classId": "class-6d",
+    "subjectId": "physics"
   },
   {
     "id": "class-6d-geography",
@@ -155,6 +195,16 @@
     "subjectId": "science"
   },
   {
+    "id": "class-7a-biology",
+    "classId": "class-7a",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-7a-physics",
+    "classId": "class-7a",
+    "subjectId": "physics"
+  },
+  {
     "id": "class-7a-geography",
     "classId": "class-7a",
     "subjectId": "geography"
@@ -188,6 +238,16 @@
     "id": "class-7b-science",
     "classId": "class-7b",
     "subjectId": "science"
+  },
+  {
+    "id": "class-7b-biology",
+    "classId": "class-7b",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-7b-physics",
+    "classId": "class-7b",
+    "subjectId": "physics"
   },
   {
     "id": "class-7b-geography",
@@ -225,6 +285,16 @@
     "subjectId": "science"
   },
   {
+    "id": "class-7c-biology",
+    "classId": "class-7c",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-7c-physics",
+    "classId": "class-7c",
+    "subjectId": "physics"
+  },
+  {
     "id": "class-7c-geography",
     "classId": "class-7c",
     "subjectId": "geography"
@@ -258,6 +328,16 @@
     "id": "class-8a-science",
     "classId": "class-8a",
     "subjectId": "science"
+  },
+  {
+    "id": "class-8a-biology",
+    "classId": "class-8a",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-8a-physics",
+    "classId": "class-8a",
+    "subjectId": "physics"
   },
   {
     "id": "class-8a-geography",
@@ -295,6 +375,16 @@
     "subjectId": "science"
   },
   {
+    "id": "class-8b-biology",
+    "classId": "class-8b",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-8b-physics",
+    "classId": "class-8b",
+    "subjectId": "physics"
+  },
+  {
     "id": "class-8b-geography",
     "classId": "class-8b",
     "subjectId": "geography"
@@ -328,6 +418,16 @@
     "id": "class-8c-science",
     "classId": "class-8c",
     "subjectId": "science"
+  },
+  {
+    "id": "class-8c-biology",
+    "classId": "class-8c",
+    "subjectId": "biology"
+  },
+  {
+    "id": "class-8c-physics",
+    "classId": "class-8c",
+    "subjectId": "physics"
   },
   {
     "id": "class-8c-geography",

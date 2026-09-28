@@ -1,7 +1,31 @@
 import { NextResponse } from "next/server";
-import { schoolRepository } from "@/repositories/school-repository";
+import {
+  planRepository,
+  schoolRepository,
+} from "@/repositories/school-repository";
 import { generateStudyPlan } from "@/domain/study-plan/engine";
-import { checkOrigin } from "@/lib/admin-auth";
+import { summarizePlan } from "@/domain/study-plan/summary";
+import { checkOrigin, isAdmin } from "@/lib/admin-auth";
+
+export async function GET() {
+  if (!(await isAdmin()))
+    return NextResponse.json({ error: "Não autorizado." }, { status: 401 });
+  try {
+    const plans = await planRepository.list();
+    return NextResponse.json({
+      plans: plans
+        .sort((a, b) => b.plan.createdAt.localeCompare(a.plan.createdAt))
+        .map(summarizePlan),
+    });
+  } catch (error) {
+    console.error("Could not list plans", error);
+    return NextResponse.json(
+      { error: "Não foi possível carregar os planos gerados." },
+      { status: 503 },
+    );
+  }
+}
+
 export async function POST(request: Request) {
   if (!checkOrigin(request))
     return NextResponse.json(
@@ -33,5 +57,11 @@ export async function POST(request: Request) {
   }
   plan.id = crypto.randomUUID();
   plan.createdAt = new Date().toISOString();
-  return NextResponse.json({ saved: { plan, school } });
+  const saved = { plan, school };
+  try {
+    await planRepository.save(saved);
+  } catch (error) {
+    console.error("Could not persist generated plan", error);
+  }
+  return NextResponse.json({ saved });
 }

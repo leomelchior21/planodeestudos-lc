@@ -19,30 +19,42 @@
   },
   {
     "id": "mapping-3",
-    "subjectId": "geography",
+    "subjectId": "biology",
     "resourceId": "plurall",
     "priority": 1
   },
   {
     "id": "mapping-4",
-    "subjectId": "history",
+    "subjectId": "physics",
     "resourceId": "plurall",
     "priority": 1
   },
   {
     "id": "mapping-5",
+    "subjectId": "geography",
+    "resourceId": "plurall",
+    "priority": 1
+  },
+  {
+    "id": "mapping-6",
+    "subjectId": "history",
+    "resourceId": "plurall",
+    "priority": 1
+  },
+  {
+    "id": "mapping-7",
     "subjectId": "english",
     "resourceId": "ngl",
     "priority": 1
   },
   {
-    "id": "mapping-6",
+    "id": "mapping-8",
     "subjectId": "spanish",
     "resourceId": "profedeele",
     "priority": 1
   },
   {
-    "id": "mapping-7",
+    "id": "mapping-9",
     "subjectId": "science",
     "resourceId": "evo",
     "priority": 2

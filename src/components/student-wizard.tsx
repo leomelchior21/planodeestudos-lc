@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import {
   ArrowDown,
@@ -7,6 +7,7 @@ import {
   ArrowRight,
   ArrowUp,
   CalendarDays,
+  CalendarRange,
   Check,
   ChevronRight,
   Clock3,
@@ -47,6 +48,19 @@ export function StudentWizard({
   );
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
+  const bannerMessages = [
+    "Organize sua rotina de estudos.",
+    "Estude com lápis e papel na mão!",
+    "Sempre faça registros dos seus estudos.",
+  ];
+  const [messageIndex, setMessageIndex] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(
+      () => setMessageIndex((i) => (i + 1) % bannerMessages.length),
+      4000,
+    );
+    return () => clearInterval(timer);
+  }, [bannerMessages.length]);
   const years = school.schoolYears
     .filter((y) => y.active)
     .sort((a, b) => a.order - b.order);
@@ -111,7 +125,7 @@ export function StudentWizard({
     "Vamos encontrar o seu tempo.",
   ][step];
   const subtitle = [
-    "Diga seu nome e escolha seu ano e sua turma para começar.",
+    "Diga seu nome completo e escolha seu ano e sua turma para começar.",
     "Escolha as matérias que deseja priorizar no seu plano.",
     "Selecione apenas os horários que você consegue cumprir.",
   ][step];
@@ -147,7 +161,7 @@ export function StudentWizard({
             {step === 0 ? (
               <div className="student-basics">
                 <div className="basics-panel name-panel">
-                  <label htmlFor="student-name">Seu nome</label>
+                  <label htmlFor="student-name">Nome completo</label>
                   <input
                     id="student-name"
                     name="studentName"
@@ -155,7 +169,7 @@ export function StudentWizard({
                     value={studentName}
                     onChange={(e) => setName(e.target.value)}
                     maxLength={100}
-                    placeholder="Como podemos chamar você?"
+                    placeholder="Digite seu nome completo"
                     required
                   />
                 </div>
@@ -315,7 +329,14 @@ export function StudentWizard({
                 </div>
                 <details className="period-options">
                   <summary>
-                    Personalizar período <ChevronRight size={14} />
+                    <span className="period-options-icon">
+                      <CalendarRange size={18} />
+                    </span>
+                    <span className="period-options-text">
+                      <strong>Personalizar período</strong>
+                      <small>Defina as datas de início e fim do seu plano.</small>
+                    </span>
+                    <ChevronRight size={16} className="period-options-chevron" />
                   </summary>
                   <div className="form-grid">
                     <label>
@@ -392,10 +413,8 @@ export function StudentWizard({
             <div className="aside-chip">
               <Sparkles size={13} /> SEU PRÓXIMO PASSO
             </div>
-            <h2>
-              Pequenos passos.
-              <br />
-              <span>Grandes conquistas.</span>
+            <h2 className="inspiration-message" key={messageIndex}>
+              {bannerMessages[messageIndex]}
             </h2>
             <p>Um plano que combina com o seu jeito de aprender.</p>
             <div className="aside-divider" />

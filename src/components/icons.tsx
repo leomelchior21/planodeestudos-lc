@@ -1,6 +1,8 @@
 import {
+  Atom,
   BookOpen,
   Calculator,
+  Dna,
   FlaskConical,
   Globe2,
   Landmark,
@@ -10,8 +12,10 @@ import {
   type LucideProps,
 } from "lucide-react";
 const icons: Record<string, React.ComponentType<LucideProps>> = {
+  Atom,
   BookOpen,
   Calculator,
+  Dna,
   FlaskConical,
   Globe2,
   Landmark,

@@ -28,8 +28,6 @@ export function PlanView({
   debug?: boolean;
 }) {
   const { school, plan } = saved;
-  const [full, setFull] = useState(false);
-  const [weekIndex, setWeek] = useState(0);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const cls = school.classes.find((c) => c.id === plan.classId)!;
@@ -87,7 +85,7 @@ export function PlanView({
           <h4>Seu passo a passo</h4>
           {s.steps.map((step, i) => (
             <div className="recipe-step" key={i}>
-              <span>{step.minutes} min</span>
+              <span>{i + 1}</span>
               <p>{step.instruction}</p>
             </div>
           ))}
@@ -197,41 +195,25 @@ export function PlanView({
             <div className="section-title">
               <h2>
                 <CalendarDays size={21} />
-                {full
-                  ? "Seu plano completo"
-                  : weekIndex === 0
-                    ? "Esta semana"
-                    : `Semana ${weekIndex + 1}`}
+                Seu plano completo
               </h2>
-              <button className="text-link" onClick={() => setFull(!full)}>
-                {full ? "Ver uma semana" : "Ver plano completo"}
-                <ArrowRight size={15} />
+              <button
+                className="button secondary small-button"
+                onClick={pdf}
+                disabled={busy}
+              >
+                <Download size={16} />
+                {busy ? "Preparando PDF…" : "Baixar meu plano"}
               </button>
             </div>
-            {!full && (
-              <div className="week-tabs">
-                {plan.weeks.map((week, i) => (
-                  <button
-                    key={week.startDate}
-                    className={weekIndex === i ? "active" : ""}
-                    onClick={() => setWeek(i)}
-                  >
-                    Semana {i + 1}
-                    <small>{formatDate(week.startDate)}</small>
-                  </button>
-                ))}
-              </div>
-            )}
-            {(full ? plan.weeks : [plan.weeks[weekIndex]]).map((week, i) => (
+            {plan.weeks.map((week, i) => (
               <div key={week.startDate} className="plan-week">
-                {full && (
-                  <h3 className="week-heading">
-                    Semana {i + 1}
-                    <span>
-                      {formatDate(week.startDate)} — {formatDate(week.endDate)}
-                    </span>
-                  </h3>
-                )}
+                <h3 className="week-heading">
+                  Semana {i + 1}
+                  <span>
+                    {formatDate(week.startDate)} — {formatDate(week.endDate)}
+                  </span>
+                </h3>
                 <div className="session-list">
                   {week.sessions.length ? (
                     week.sessions.map(sessionCard)
@@ -296,15 +278,22 @@ export function PlanView({
             </div>
             <div className="plan-tip">
               <span>✦</span>
-              <h3>
-                Consistência vale mais
-                <br />
-                que pressa.
-              </h3>
-              <p>
-                Comece com o que está no plano de hoje. Amanhã, você dá mais um
-                passo.
-              </p>
+              <h3>Como estudar para recuperação</h3>
+              <ul className="plan-tip-list">
+                <li>
+                  Começar com a observação das datas de provas, as quais estão
+                  disponíveis no Canvas.
+                </li>
+                <li>
+                  Verificar os roteiros de estudos de AB e AP, os quais estão
+                  disponíveis no Canvas.
+                </li>
+                <li>
+                  Frequentar o Grupo de Estudos Monitorados – GEM para tirar
+                  dúvidas. É importante preparar-se antes: estude e anote as
+                  dúvidas antes de vir ao GEM.
+                </li>
+              </ul>
             </div>
           </aside>
         </div>

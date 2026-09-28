@@ -1,5 +1,5 @@
 import "server-only";
-import { mkdir, readFile, writeFile, rename } from "node:fs/promises";
+import { mkdir, readFile, writeFile, rename, readdir } from "node:fs/promises";
 import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
 import seed from "../../data/seed/school-data.json";
@@ -14,6 +14,7 @@ export interface SchoolRepository {
 export interface StudyPlanRepository {
   get(id: string): Promise<SavedPlan | null>;
   save(value: SavedPlan): Promise<void>;
+  list(): Promise<SavedPlan[]>;
 }
 const directory = path.join(process.cwd(), ".local");
 async function atomicWrite(file: string, data: unknown) {
@@ -59,6 +60,28 @@ class LocalPlanRepository implements StudyPlanRepository {
       path.join(directory, "plans", `${value.plan.id}.json`),
       value,
     );
+  }
+  async list() {
+    try {
+      const files = await readdir(path.join(directory, "plans"));
+      const plans = await Promise.all(
+        files
+          .filter((file) => file.endsWith(".json"))
+          .map(async (file) => {
+            try {
+              return JSON.parse(
+                await readFile(path.join(directory, "plans", file), "utf8"),
+              ) as SavedPlan;
+            } catch {
+              return null;
+            }
+          }),
+      );
+      return plans.filter((plan): plan is SavedPlan => plan !== null);
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code === "ENOENT") return [];
+      throw error;
+    }
   }
 }
 export const tableMap = {
@@ -114,6 +137,11 @@ class SupabasePlanRepository implements StudyPlanRepository {
       .from("study_plans")
       .insert({ id: value.plan.id, data: value });
     if (error) throw new Error(error.message);
+  }
+  async list() {
+    const { data, error } = await client().from("study_plans").select("data");
+    if (error) throw new Error(error.message);
+    return (data ?? []).map((row) => row.data as SavedPlan);
   }
 }
 const remote = process.env.SCHOOL_STORAGE === "supabase";
