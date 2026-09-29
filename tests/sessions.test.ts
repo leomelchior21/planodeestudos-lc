@@ -110,6 +110,22 @@ test("sessões consecutivas da mesma matéria e material são agrupadas", () => 
   assert.equal(merged[1].subjectId, "geography");
 });
 
+test("sessões de dias diferentes ficam em ordem cronológica", () => {
+  const merged = mergeConsecutiveSessions([
+    session({ id: "b", date: "2026-09-29", startTime: "15:30", endTime: "16:00" }),
+    session({ id: "a", date: "2026-09-28" }),
+    session({
+      id: "c",
+      date: "2026-09-28",
+      startTime: "15:30",
+      endTime: "16:00",
+    }),
+  ]);
+  assert.deepEqual(
+    merged.map((s) => `${s.date} ${s.startTime}`),
+    ["2026-09-28 15:00", "2026-09-29 15:30"],
+  );
+});
 test("materiais diferentes ou intervalos não são agrupados", () => {
   const merged = mergeConsecutiveSessions([
     session({ id: "a" }),
@@ -117,4 +133,29 @@ test("materiais diferentes ou intervalos não são agrupados", () => {
     session({ id: "c", startTime: "16:30", endTime: "17:00" }),
   ]);
   assert.equal(merged.length, 3);
+});
+
+test("blocos agrupados da mesma disciplina não passam de 2 horas", () => {
+  const times = [
+    ["15:00", "15:30"],
+    ["15:30", "16:00"],
+    ["16:00", "16:30"],
+    ["16:30", "17:00"],
+    ["17:00", "17:30"],
+  ];
+  const merged = mergeConsecutiveSessions(
+    times.map(([startTime, endTime], i) =>
+      session({ id: String(i), startTime, endTime }),
+    ),
+  );
+  assert.equal(merged.length, 2);
+  assert.equal(merged[0].startTime, "15:00");
+  assert.equal(merged[0].endTime, "17:00");
+  assert.equal(merged[1].startTime, "17:00");
+  assert.equal(merged[1].endTime, "17:30");
+  const long = mergeConsecutiveSessions([
+    session({ id: "a", endTime: "16:30" }),
+    session({ id: "b", startTime: "16:30", endTime: "17:30" }),
+  ]);
+  assert.equal(long.length, 2);
 });

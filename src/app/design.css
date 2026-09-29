@@ -1088,6 +1088,15 @@ textarea {
   font-weight: 650;
   color: #a18dbb;
 }
+.recipe-priority-label {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 650;
+  color: #7040c8;
+}
 .recipe-optional .recipe-step {
   background: #fdfbff;
   border-color: #f1eafa;

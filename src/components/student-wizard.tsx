@@ -327,12 +327,11 @@ export function StudentWizard({
                 <div className="inline-tip">
                   <Lightbulb size={18} />
                   <span>
-                    Tempo livre também é para descansar. Seu plano usará cerca
-                    de{" "}
-                    {Math.round(
-                      school.settings.targetStudyLoadPercentage * 100,
-                    )}
-                    % da disponibilidade.
+                    {school.settings.targetStudyLoadPercentage >= 1
+                      ? "Seu plano vai usar todo o tempo que você marcar como disponível."
+                      : `Tempo livre também é para descansar. Seu plano usará cerca de ${Math.round(
+                          school.settings.targetStudyLoadPercentage * 100,
+                        )}% da disponibilidade.`}
                   </span>
                 </div>
                 <details className="period-options">

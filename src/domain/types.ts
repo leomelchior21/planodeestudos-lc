@@ -19,7 +19,7 @@ export const schoolSchema = z.object({
     academicYear: z.number().int(),
     planDefaultWeeks: z.number().int().min(1).max(12),
     minimumStudyMinutes: z.number().int().min(10).max(120),
-    maxStudyMinutesPerDay: z.number().int().min(10).max(240),
+    maxStudyMinutesPerDay: z.number().int().min(10).max(480),
     targetStudyLoadPercentage: z.number().min(0.1).max(1),
     availabilitySlotMinutes: z.number().int().min(10).max(60),
     weekdays: z.array(z.number().int().min(0).max(6)).min(1),

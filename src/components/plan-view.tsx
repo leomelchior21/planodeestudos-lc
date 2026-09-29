@@ -61,10 +61,11 @@ export function PlanView({
     const resource = school.resources.find((v) => v.id === s.resourceId);
     const sessionMinutes = minutes(s.endTime) - minutes(s.startTime);
     const steps = buildSessionSteps(school, s.recipeId, sessionMinutes);
-    const optional =
-      sessionMinutes >= 60
-        ? buildOptionalSessionSteps(school, s.recipeId, sessionMinutes)
-        : [];
+    const optional = buildOptionalSessionSteps(
+      school,
+      s.recipeId,
+      sessionMinutes,
+    );
     return (
       <details key={s.id} className="session-card">
         <summary>
@@ -100,6 +101,9 @@ export function PlanView({
               {sessionMinutes} min
             </span>
           </div>
+          {steps.length > 0 && (
+            <span className="recipe-priority-label">Prioridade</span>
+          )}
           {steps.map((step, i) => (
             <div className="recipe-step" key={i}>
               <span className="recipe-step-index">{i + 1}</span>

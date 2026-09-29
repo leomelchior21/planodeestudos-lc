@@ -1,8 +1,9 @@
 import { jsPDF } from "jspdf";
 import autoTable from "jspdf-autotable";
 import type { SavedPlan } from "@/domain/types";
-import { formatDate, minutes } from "@/domain/dates";
+import { dayNames, formatDate, minutes } from "@/domain/dates";
 import {
+  buildOptionalSessionSteps,
   buildSessionSteps,
   mergeConsecutiveSessions,
 } from "@/domain/study-plan/sessions";
@@ -18,6 +19,25 @@ export function downloadPlanPdf({ plan, school }: SavedPlan) {
     (sum, s) => sum + minutes(s.endTime) - minutes(s.startTime),
     0,
   );
+  const subjectName = (id: string) =>
+    school.subjects.find((s) => s.id === id)?.name ?? id;
+  const priorityLine = `Prioridades: ${
+    plan.priorities.length
+      ? [...plan.priorities]
+          .sort((a, b) => a.priorityRank - b.priorityRank)
+          .map((p) => `${p.priorityRank}. ${subjectName(p.subjectId)}`)
+          .join("  ·  ")
+      : "plano equilibrado entre as disciplinas"
+  }`;
+  const availabilityLine = `Disponibilidade: ${
+    [...plan.availability]
+      .sort(
+        (a, b) =>
+          a.weekday - b.weekday || a.startTime.localeCompare(b.startTime),
+      )
+      .map((a) => `${dayNames[a.weekday]} ${a.startTime}–${a.endTime}`)
+      .join("  ·  ") || "—"
+  }`;
   const header = () => {
     doc.setFillColor(100, 62, 175);
     doc.rect(0, 0, width, 6, "F");
@@ -43,12 +63,17 @@ export function downloadPlanPdf({ plan, school }: SavedPlan) {
     }
     doc.setTextColor(90);
     doc.text(studentLine, 12, 24);
+    doc.setFontSize(shrink(8.5));
+    doc.setTextColor(120);
+    doc.text(priorityLine, 12, 30);
+    doc.text(availabilityLine, 12, 35);
   };
   const body: string[][] = [];
   plan.weeks.forEach((week, index) => {
     if (!week.sessions.length) {
       body.push([
         `Semana ${index + 1}`,
+        "—",
         "—",
         "—",
         "—",
@@ -59,6 +84,11 @@ export function downloadPlanPdf({ plan, school }: SavedPlan) {
     for (const s of mergeConsecutiveSessions(week.sessions)) {
       const sessionMinutes = minutes(s.endTime) - minutes(s.startTime);
       const steps = buildSessionSteps(school, s.recipeId, sessionMinutes);
+      const optional = buildOptionalSessionSteps(
+        school,
+        s.recipeId,
+        sessionMinutes,
+      );
       body.push([
         `Semana ${index + 1}`,
         formatDate(s.date, {
@@ -69,15 +99,33 @@ export function downloadPlanPdf({ plan, school }: SavedPlan) {
         `${s.startTime}–${s.endTime}`,
         school.subjects.find((v) => v.id === s.subjectId)?.name ?? s.subjectId,
         steps
-          .map((step, i) => `${i + 1}. ${step.instruction} (${step.minutes} min)`)
-          .join(" "),
+          .map(
+            (step, i) =>
+              `${i + 1}. ${step.instruction} (${step.minutes} min)`,
+          )
+          .join("\n"),
+        optional
+          .map(
+            (step, i) =>
+              `${steps.length + i + 1}. ${step.instruction} (${step.minutes} min)`,
+          )
+          .join("\n"),
       ]);
     }
   });
   autoTable(doc, {
-    startY: 30,
-    margin: { left: 12, right: 12, top: 30, bottom: 12 },
-    head: [["Semana", "Data", "Horário", "Disciplina", "Passo a passo"]],
+    startY: 42,
+    margin: { left: 12, right: 12, top: 42, bottom: 12 },
+    head: [
+      [
+        "Semana",
+        "Data",
+        "Horário",
+        "Disciplina",
+        "Prioridade",
+        "Se der tempo",
+      ],
+    ],
     body,
     styles: {
       fontSize: shrink(9),
@@ -99,7 +147,8 @@ export function downloadPlanPdf({ plan, school }: SavedPlan) {
       1: { cellWidth: 22 },
       2: { cellWidth: 19 },
       3: { cellWidth: 32 },
-      4: { cellWidth: "auto" },
+      4: { cellWidth: "auto", fontStyle: "bold" },
+      5: { cellWidth: "auto", fontStyle: "normal" },
     },
     rowPageBreak: "avoid",
     didDrawPage: header,

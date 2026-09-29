@@ -3,8 +3,8 @@
   "academicYear": 2026,
   "planDefaultWeeks": 4,
   "minimumStudyMinutes": 30,
-  "maxStudyMinutesPerDay": 90,
-  "targetStudyLoadPercentage": 0.5,
+  "maxStudyMinutesPerDay": 300,
+  "targetStudyLoadPercentage": 1,
   "availabilitySlotMinutes": 30,
   "weekdays": [
     1,

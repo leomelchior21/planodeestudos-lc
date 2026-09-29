@@ -1,4 +1,7 @@
 import type { SchoolData, StudySession } from "../types";
+import { minutes } from "../dates";
+
+export const MAX_SUBJECT_BLOCK_MINUTES = 120;
 
 function recipeSteps(
   school: SchoolData,
@@ -48,8 +51,9 @@ export function mergeConsecutiveSessions(
   sessions: StudySession[],
 ): StudySession[] {
   const merged: StudySession[] = [];
-  for (const session of [...sessions].sort((a, b) =>
-    a.startTime.localeCompare(b.startTime),
+  for (const session of [...sessions].sort(
+    (a, b) =>
+      a.date.localeCompare(b.date) || a.startTime.localeCompare(b.startTime),
   )) {
     const last = merged.at(-1);
     if (
@@ -57,7 +61,9 @@ export function mergeConsecutiveSessions(
       last.date === session.date &&
       last.subjectId === session.subjectId &&
       (last.resourceId ?? "") === (session.resourceId ?? "") &&
-      last.endTime === session.startTime
+      last.endTime === session.startTime &&
+      minutes(session.endTime) - minutes(last.startTime) <=
+        MAX_SUBJECT_BLOCK_MINUTES
     ) {
       last.endTime = session.endTime;
       last.reasons = [...new Set([...last.reasons, ...session.reasons])];

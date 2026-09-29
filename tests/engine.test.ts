@@ -7,7 +7,7 @@ import {
   normalizeAvailability,
   validateStudyPlan,
 } from "../src/domain/study-plan/engine";
-import { minutes, weekday } from "../src/domain/dates";
+import { daysBetween, minutes, weekday } from "../src/domain/dates";
 import type { PlanInput } from "../src/domain/types";
 const school = () => parseSchoolData(structuredClone(seed));
 const input = (overrides: Partial<PlanInput> = {}): PlanInput => ({
@@ -107,6 +107,27 @@ test("avaliação em 3 dias eleva GEO e aplica fase de prática", () => {
     "practice",
   );
 });
+test("evento no dia seguinte garante preparação mesmo com prioridades", () => {
+  const d = school();
+  d.events = [
+    {
+      ...d.events[0],
+      id: "exam",
+      subjectId: "geography",
+      eventTypeId: "assessment",
+      startDate: "2026-09-22",
+      endDate: "2026-09-22",
+    },
+  ];
+  const p = generateStudyPlan(
+    d,
+    input({
+      endDate: "2026-09-21",
+      availability: [{ weekday: 1, startTime: "15:00", endTime: "17:00" }],
+    }),
+  );
+  assert.ok(sessions(p).some((s) => s.subjectId === "geography"));
+});
 test("feriado bloqueia segunda-feira", () => {
   const d = school();
   d.events = [
@@ -134,7 +155,7 @@ test("LES e EVO presentes toda semana quando há capacidade", () => {
     assert.ok(w.sessions.some((s) => s.resourceId === "evo"));
   }
 });
-test("não preenche todo o tempo livre e respeita limite diário", () => {
+test("preenche todo o tempo livre respeitando o limite diário", () => {
   const d = school(),
     p = generateStudyPlan(
       d,
@@ -147,22 +168,19 @@ test("não preenche todo o tempo livre e respeita limite diário", () => {
       }),
     );
   for (const week of p.weeks) {
-    assert.ok(
-      week.sessions.reduce(
-        (sum, s) => sum + minutes(s.endTime) - minutes(s.startTime),
-        0,
-      ) <= 600,
-    );
+    assert.ok(week.sessions.length);
     for (const date of new Set(week.sessions.map((s) => s.date)))
-      assert.ok(
+      assert.equal(
         week.sessions
           .filter((s) => s.date === date)
           .reduce(
             (sum, s) => sum + minutes(s.endTime) - minutes(s.startTime),
             0,
-          ) <= 90,
+          ),
+        240,
       );
   }
+  assert.ok(!p.warnings.some((w) => w.code === "DAILY_LIMIT"));
 });
 test("sessões distribuídas entre todos os dias quando há alternativas", () => {
   const d = school();
@@ -200,16 +218,151 @@ test("regras editadas mudam a distribuição", () => {
   const d = school();
   d.events = [];
   const before = generateStudyPlan(d, input());
-  d.rules.find((r) => r.code === "priority_subject_bonus")!.value = 300;
+  d.rules.find((r) => r.code === "longer_session_bonus")!.value = 0;
   const after = generateStudyPlan(d, input());
   assert.notDeepEqual(
-    sessions(before).map((s) => s.subjectId),
-    sessions(after).map((s) => s.subjectId),
+    sessions(before).map((s) => `${s.subjectId}@${s.startTime}-${s.endTime}`),
+    sessions(after).map((s) => `${s.subjectId}@${s.startTime}-${s.endTime}`),
   );
-  assert.ok(
-    sessions(after).filter((s) => s.subjectId === "math").length >
-      sessions(before).filter((s) => s.subjectId === "math").length,
+});
+test("3h no dia com duas prioridades: 2h para a primeira e o restante para a segunda", () => {
+  const d = school();
+  d.events = [];
+  d.resources.find((r) => r.id === "evo")!.weeklyMinimum = 0;
+  const p = generateStudyPlan(
+    d,
+    input({
+      endDate: "2026-09-21",
+      priorities: [
+        { subjectId: "math", priorityRank: 1 },
+        { subjectId: "portuguese", priorityRank: 2 },
+      ],
+      availability: [1, 2, 3, 4, 5].map((weekday) => ({
+        weekday,
+        startTime: "15:00",
+        endTime: "18:00",
+      })),
+    }),
   );
+  const minutesOf = (id: string) =>
+    sessions(p)
+      .filter((s) => s.subjectId === id)
+      .reduce(
+        (sum, s) => sum + minutes(s.endTime) - minutes(s.startTime),
+        0,
+      );
+  assert.equal(minutesOf("math"), 120);
+  assert.equal(minutesOf("portuguese"), 60);
+  assert.equal(
+    sessions(p).reduce(
+      (sum, s) => sum + minutes(s.endTime) - minutes(s.startTime),
+      0,
+    ),
+    180,
+  );
+});
+test("nenhuma disciplina passa de 2h no mesmo dia", () => {
+  const d = school();
+  d.events = [];
+  const p = generateStudyPlan(
+    d,
+    input({
+      priorities: [
+        { subjectId: "math", priorityRank: 1 },
+        { subjectId: "portuguese", priorityRank: 2 },
+        { subjectId: "geography", priorityRank: 3 },
+      ],
+      availability: [1, 2, 3, 4, 5].map((weekday) => ({
+        weekday,
+        startTime: "14:00",
+        endTime: "19:00",
+      })),
+    }),
+  );
+  for (const week of p.weeks)
+    for (const date of new Set(week.sessions.map((s) => s.date)))
+      for (const subjectId of new Set(
+        week.sessions.filter((s) => s.date === date).map((s) => s.subjectId),
+      )) {
+        const minutesOf = week.sessions
+          .filter((s) => s.date === date && s.subjectId === subjectId)
+          .reduce(
+            (sum, s) => sum + minutes(s.endTime) - minutes(s.startTime),
+            0,
+          );
+        assert.ok(
+          minutesOf <= 120,
+          `${subjectId} com ${minutesOf}min em ${date}`,
+        );
+      }
+});
+test("temas não se repetem em dias consecutivos quando há alternativas", () => {
+  const d = school();
+  d.events = [];
+  const p = generateStudyPlan(
+    d,
+    input({
+      priorities: [
+        { subjectId: "math", priorityRank: 1 },
+        { subjectId: "portuguese", priorityRank: 2 },
+        { subjectId: "geography", priorityRank: 3 },
+      ],
+      availability: [1, 2, 3, 4, 5].map((weekday) => ({
+        weekday,
+        startTime: "15:00",
+        endTime: "17:00",
+      })),
+    }),
+  );
+  const all = sessions(p);
+  const dates = [...new Set(all.map((s) => s.date))].sort();
+  for (let i = 1; i < dates.length; i++) {
+    if (daysBetween(dates[i - 1], dates[i]) !== 1) continue;
+    const today = new Set(
+      all.filter((s) => s.date === dates[i]).map((s) => s.subjectId),
+    );
+    const yesterday = new Set(
+      all.filter((s) => s.date === dates[i - 1]).map((s) => s.subjectId),
+    );
+    for (const subjectId of today)
+      assert.ok(
+        !yesterday.has(subjectId),
+        `${subjectId} repetido em ${dates[i - 1]} e ${dates[i]}`,
+      );
+  }
+});
+test("prioridade no topo recebe mais tempo que as demais", () => {
+  const d = school();
+  d.events = [];
+  const p = generateStudyPlan(
+    d,
+    input({
+      priorities: [
+        { subjectId: "math", priorityRank: 1 },
+        { subjectId: "portuguese", priorityRank: 2 },
+      ],
+      availability: [1, 2, 3, 4, 5].map((weekday) => ({
+        weekday,
+        startTime: "15:00",
+        endTime: "17:00",
+      })),
+    }),
+  );
+  const minutesOf = (id: string) =>
+    sessions(p)
+      .filter((s) => s.subjectId === id)
+      .reduce(
+        (sum, s) => sum + minutes(s.endTime) - minutes(s.startTime),
+        0,
+      );
+  assert.ok(minutesOf("math") > minutesOf("portuguese"));
+  for (const s of d.subjects.filter(
+    (s) => s.id !== "math" && s.id !== "portuguese",
+  ))
+    assert.ok(
+      minutesOf("math") > minutesOf(s.id),
+      `${s.id} apareceu mais que MAT`,
+    );
 });
 test("falta de espaço retorna avisos em vez de inventar horários", () => {
   const p = generateStudyPlan(school(), input({ availability: [] }));
