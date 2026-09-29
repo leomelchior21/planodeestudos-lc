@@ -19,7 +19,10 @@ export async function isAdmin() {
     timingSafeEqual(Buffer.from(signature), Buffer.from(expected))
   );
 }
-export async function signIn(password: string) {
+export async function signIn(
+  password: string,
+  secure = process.env.NODE_ENV === "production",
+) {
   const configured = process.env.ADMIN_PASSWORD;
   if (!configured || password.length > 1000) return false;
   const a = Buffer.from(password),
@@ -29,7 +32,7 @@ export async function signIn(password: string) {
   (await cookies()).set("study-admin", `${expiry}.${sign(expiry)}`, {
     httpOnly: true,
     sameSite: "strict",
-    secure: process.env.NODE_ENV === "production",
+    secure,
     path: "/",
     maxAge: 28800,
   });
