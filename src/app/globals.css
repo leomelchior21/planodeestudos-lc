@@ -966,6 +966,7 @@ small {
   font-size: 10px;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 .time-slot {
   border-radius: 6px;

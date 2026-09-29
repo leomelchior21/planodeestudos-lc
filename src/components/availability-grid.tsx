@@ -68,7 +68,7 @@ export function AvailabilityGrid({
             if (cell && event.currentTarget.contains(cell)) update(cell.dataset.slot!, drag.current);
           }}
           style={{
-            gridTemplateColumns: `65px repeat(${settings.weekdays.length}, minmax(48px, 1fr))`,
+            gridTemplateColumns: `max-content repeat(${settings.weekdays.length}, minmax(48px, 1fr))`,
           }}
         >
           <div className="grid-heading">
@@ -81,7 +81,9 @@ export function AvailabilityGrid({
           ))}
           {times.map((t) => (
             <div className="grid-row" key={t}>
-              <span className="grid-time">{clock(t)}</span>
+              <span className="grid-time">
+                {clock(t)} – {clock(t + settings.availabilitySlotMinutes)}
+              </span>
               {settings.weekdays.map((d) => {
                 const key = `${d}|${clock(t)}`,
                   selected = value.includes(key);
